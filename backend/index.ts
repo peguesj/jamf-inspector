@@ -87,8 +87,8 @@ app.get(API_ENDPOINTS.policies, async (_req: Request, res: Response): Promise<vo
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.policies);
-    // TODO: Validate and transform response to Policy[]
-    const policies: Policy[] = response.data.policies || [];
+    const data = response.data as { policies: Policy[] };
+    const policies: Policy[] = data.policies || [];
     cache.set('policies', policies);
     // Audit log
     console.log(`[AUDIT] Fetched policies at ${new Date().toISOString()}`);
@@ -117,7 +117,8 @@ app.get(API_ENDPOINTS.profiles, async (_req: Request, res: Response): Promise<vo
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.profiles);
-    const profiles: Profile[] = response.data.osxconfigurationprofiles || [];
+    const data = response.data as { osxconfigurationprofiles: Profile[] };
+    const profiles: Profile[] = data.osxconfigurationprofiles || [];
     cache.set('profiles', profiles);
     console.log(`[AUDIT] Fetched profiles at ${new Date().toISOString()}`);
     res.json(profiles);
@@ -142,7 +143,8 @@ app.get(API_ENDPOINTS.patches, async (_req: Request, res: Response): Promise<voi
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.patches);
-    const patches: Patch[] = response.data.patches || [];
+    const data = response.data as { patches: Patch[] };
+    const patches: Patch[] = data.patches || [];
     cache.set('patches', patches);
     console.log(`[AUDIT] Fetched patches at ${new Date().toISOString()}`);
     res.json(patches);
@@ -160,7 +162,8 @@ app.get(API_ENDPOINTS.patches, async (_req: Request, res: Response): Promise<voi
 app.get(API_ENDPOINTS.directoryConnections, async (_req: Request, res: Response): Promise<void> => {
   try {
     const response = await jamfClient.get(API_ENDPOINTS.directoryConnections);
-    const ldapservers: any[] = response.data.ldapservers || [];
+    const data = response.data as { ldapservers: any[] };
+    const ldapservers: any[] = data.ldapservers || [];
     res.json(ldapservers);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch directory connections', details: error });
@@ -180,7 +183,8 @@ app.get(API_ENDPOINTS.groups, async (_req: Request, res: Response): Promise<void
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.groups);
-    const groups: Group[] = response.data.computergroups || [];
+    const data = response.data as { computergroups: Group[] };
+    const groups: Group[] = data.computergroups || [];
     cache.set('groups', groups);
     console.log(`[AUDIT] Fetched groups at ${new Date().toISOString()}`);
     res.json(groups);
@@ -203,7 +207,8 @@ app.get(API_ENDPOINTS.users, async (_req: Request, res: Response): Promise<void>
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.users);
-    const users: User[] = response.data.users || [];
+    const data = response.data as { users: User[] };
+    const users: User[] = data.users || [];
     cache.set('users', users);
     console.log(`[AUDIT] Fetched users at ${new Date().toISOString()}`);
     res.json(users);
@@ -226,7 +231,8 @@ app.get(API_ENDPOINTS.devices, async (_req: Request, res: Response): Promise<voi
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.devices);
-    const devices: Device[] = response.data.computers || [];
+    const data = response.data as { computers: Device[] };
+    const devices: Device[] = data.computers || [];
     cache.set('devices', devices);
     console.log(`[AUDIT] Fetched devices at ${new Date().toISOString()}`);
     res.json(devices);
@@ -244,7 +250,8 @@ app.get(API_ENDPOINTS.devices, async (_req: Request, res: Response): Promise<voi
 app.get(API_ENDPOINTS.categories, async (_req: Request, res: Response): Promise<void> => {
   try {
     const response = await jamfClient.get(API_ENDPOINTS.categories);
-    const categories: any[] = response.data.categories || [];
+    const data = response.data as { categories: any[] };
+    const categories: any[] = data.categories || [];
     res.json(categories);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch categories', details: error });
@@ -259,7 +266,8 @@ app.get(API_ENDPOINTS.categories, async (_req: Request, res: Response): Promise<
 app.get(API_ENDPOINTS.smartStaticGroups, async (_req: Request, res: Response): Promise<void> => {
   try {
     const response = await jamfClient.get(API_ENDPOINTS.smartStaticGroups);
-    const groups: Group[] = response.data.computergroups || [];
+    const data = response.data as { computergroups: Group[] };
+    const groups: Group[] = data.computergroups || [];
     res.json(groups);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch smart/static groups', details: error });
@@ -279,7 +287,8 @@ app.get(API_ENDPOINTS.approvalWorkflow, async (_req: Request, res: Response): Pr
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.approvalWorkflow);
-    const approvals: Approval[] = response.data.approvals || [];
+    const data = response.data as { approvals: Approval[] };
+    const approvals: Approval[] = data.approvals || [];
     cache.set('approvals', approvals);
     console.log(`[AUDIT] Fetched approvals at ${new Date().toISOString()}`);
     res.json(approvals);
@@ -302,7 +311,8 @@ app.get(API_ENDPOINTS.feedback, async (_req: Request, res: Response): Promise<vo
       return;
     }
     const response = await jamfClient.get(API_ENDPOINTS.feedback);
-    const feedback: Feedback[] = response.data.feedback || [];
+    const data = response.data as { feedback: Feedback[] };
+    const feedback: Feedback[] = data.feedback || [];
     cache.set('feedback', feedback);
     console.log(`[AUDIT] Fetched feedback at ${new Date().toISOString()}`);
     res.json(feedback);
