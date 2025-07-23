@@ -29,6 +29,8 @@ const Dashboard: React.FC = () => {
   const [data, setData] = useState<DashboardData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [analyticsData, setAnalyticsData] = useState<any>(null);
+  const [telemetryData, setTelemetryData] = useState<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,15 +46,20 @@ const Dashboard: React.FC = () => {
           axios.get('/api/v1/feedback'),
         ]);
         setData({
-          policies: policies.data,
-          profiles: profiles.data,
-          patches: patches.data,
-          groups: groups.data,
-          users: users.data,
-          devices: devices.data,
-          approvals: approvals.data,
-          feedback: feedback.data,
+          policies: policies.data as Policy[],
+          profiles: profiles.data as Profile[],
+          patches: patches.data as Patch[],
+          groups: groups.data as Group[],
+          users: users.data as User[],
+          devices: devices.data as Device[],
+          approvals: approvals.data as Approval[],
+          feedback: feedback.data as Feedback[],
         });
+        // Fetch analytics and telemetry data
+        const analyticsResponse = await axios.get('/api/v1/analytics');
+        const telemetryResponse = await axios.get('/api/v1/telemetry');
+        setAnalyticsData(analyticsResponse.data);
+        setTelemetryData(telemetryResponse.data);
       } catch (err: any) {
         setError('Failed to load dashboard data');
       } finally {
@@ -175,6 +182,8 @@ const Dashboard: React.FC = () => {
             <li>Groups: {groupCount}</li>
             <li>Users: {userCount}</li>
             <li>Devices: {deviceCount}</li>
+            <li>Analytics Data: {analyticsData ? JSON.stringify(analyticsData) : 'Loading...'}</li>
+            <li>Telemetry Data: {telemetryData ? JSON.stringify(telemetryData) : 'Loading...'}</li>
           </ul>
         </div>
         <div className="bg-red-50 p-4 rounded">
