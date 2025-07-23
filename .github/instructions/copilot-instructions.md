@@ -1,7 +1,6 @@
 ---
 name: Copilot Instructions for Rigid, Typed, Functional Projects
-description: |
-  This instruction set is designed to guide Copilot and similar AI chat assistants in supporting projects that require strict adherence to functional programming, typing, documentation, security, and process rigor. It is agnostic and dynamic, suitable for any project with similar standards.
+description: This instruction set is designed to guide Copilot and similar AI chat assistants in supporting projects that require strict adherence to functional programming, typing, documentation, security, and process rigor. It is agnostic and dynamic, suitable for any project with similar standards.
 applyTo: '**'
 ---
 # Copilot Instructions for Rigid, Typed, Functional Projects
@@ -50,9 +49,11 @@ This instruction set is designed to guide Copilot and similar AI chat assistants
 
 
 ---
-## Reasoning & Recursive Process
+## Reasoning, Batching & Recursive Process
 - Always use a minimum 4-pass reasoning process to determine and define specific steps and their child tasks/subtasks (recursively up to 5 levels).
 - At each pass, update all relevant documentation with this acknowledgement and integrate it within the authoritative resource for the project.
+- Intelligently batch as many changes as feasible within each iteration, provided code quality and standards are upheld, to maximize efficiency and reduce unnecessary steps.
+- Enforce self-learning as a governing principle: with each iteration, analyze previous steps and context to become more efficient, adapting batching and process improvements as the codebase evolves.
 - Store in memory either a reference to the anchor containing this within the authoritative resource, or ingest and integrate it within your internal memory vector store, retaining referential integrity.
 - Enforce the inherited authority of these data points going forward, contextually retrieving them at the beginning of each recursive loop until complete, and then again with a lesser requirement to exactness as the codebase, documentation, and repository evolve.
 - Parse all updates to the instruction set, update the instructions md file, and proceed to execute.
@@ -87,7 +88,21 @@ This instruction set is designed to guide Copilot and similar AI chat assistants
 - `/changelog.md` (syslog format changelog)
 
 ---
-## Chat Assistant Behavior
+## Telemetry & Performance Metrics
+- Record telemetry and performance metrics for each iterative loop, including coverage, timing, and resource usage, with precision for measurement and reporting.
+- Metrics must be versioned, referenced, and included in changelog and authoritative documentation.
+- Coverage drift chart must use the following spec/syntax/formatting:
+  - Mermaid xychart-beta
+  - x-axis: Iteration [1,2,...,N] (N = total anticipated iterations)
+  - y-axis: Coverage (%)
+  - Lines: Documentation, TS Validation, Testing Coverage, Median Coverage
+  - Median Coverage line reflects the median value of all coverage lines per iteration
+  - Chart must be updated as metrics evolve
+
+---
+- Always proceed in the determined order unless user input or fix loops necessitate reevaluation.
+- Unless user interrupts process, always resolve to continue in your predetermined order, as it is tracked and already represents an ideally planned development process flow.
+- Always proceed in the determined order unless user input or fix loops necessitate reevaluation.
 - Always confirm understanding of new instructions before proceeding
 - Wait for explicit user approval before major actions
 - Document all actions, decisions, and changes in chat and changelog

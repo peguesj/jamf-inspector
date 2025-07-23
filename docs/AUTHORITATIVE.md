@@ -37,17 +37,13 @@ References:
 - All API calls typed and validated
 - All data models defined in `/types` and referenced everywhere
 - All dependencies and standards referenced in code comments
-- All code and documentation versioned and referenced to PLANNING.md
 
 ## Authoritative Resources
-- `/docs/PLANNING.md` (project requirements, architecture, standards)
-- `/config/stack.ts` (technology stack, coding standards)
 - `/types/` (data models, API types)
 - `/docs/` (additional standards, references)
 
 ---
 ## Next Steps
 1. Create `/config/stack.ts` with stack and coding standards
-2. Create `/types/` for all data models
 3. Scaffold backend and frontend with strict TypeScript and functional programming
 4. Reference PLANNING.md and this file in all code and documentation
