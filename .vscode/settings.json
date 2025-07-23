@@ -1,0 +1,9 @@
+{
+        "github.copilot.chat.agent.terminal.allowList": {
+            "npm ": true,
+            "npm i": true,
+            "npm install": true,
+            "npm info": true,
+            "npm run ": true
+        }
+}
