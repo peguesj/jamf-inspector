@@ -58,6 +58,9 @@ graph TD
 - Ensure security (API credentials, HTTPS)
 - Maintain version control and documentation
 - Reference official docs and standards
+- Always verify fixes and solutions with authoritative online resources before applying (e.g., MDN, official docs)
+- For every fix, outline the problem, diagnosis steps, method of resolution, authoritative reference, and steps taken
+- In recursive processes, provide insights for reducing attempts (e.g., note deprecated commands, recommend alternatives, enforce stricter verification)
 
 ## Visual Aids
 - Mermaid diagrams for architecture and workflows
@@ -70,6 +73,11 @@ graph TD
 
 ## Next Steps
 1. Define API endpoints and data models
+2. Integrate iterative development process:
+   - At each iteration, batch feasible changes for efficiency while upholding standards
+   - After each change, document learnings, problems, diagnosis, fix, and reference
+   - Continuously update best practices and planning docs with new learnings
+   - Enforce self-learning and process improvement as governing principles
    - Policies: /JSSResource/policies
    - Configuration Profiles: /JSSResource/osxconfigurationprofiles
    - Patch Management: /JSSResource/patches

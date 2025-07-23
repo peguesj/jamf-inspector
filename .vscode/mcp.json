@@ -1,0 +1,101 @@
+{
+  "$schema": "https://github.com/modelcontextprotocol/modelcontextprotocol/raw/refs/heads/main/schema/2025-06-18/schema.json",
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "supabase-access-token",
+      "description": "Supabase personal access token",
+      "password": true
+    },
+    {
+      "type": "promptString",
+      "id": "supabase-project-ref",
+      "default": "avhkarubghowkkdswye",
+      "description": "Supabase project URL (e.g., https://your-project.supabase.co)"
+    }
+  ],
+  "servers": {
+    "force-mcp-stdio": {
+      "command": "force-mcp-stdio",
+      "args": [],
+      "cwd": "${workspaceFolder}/portal",
+      "env": {
+        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+        "PYTHONUNBUFFERED": "1"
+      },
+      "pattern": ".*(?:Force MCP server|Starting Force MCP server|Listening).*",
+      "transport": "stdio",
+      "timeout": 30000
+    },
+    "dev_sentinel_stdio": {
+      "command": "dev-sentinel-stdio",
+      "args": [
+        "--mcp-port",
+        "8090"
+      ],
+      "cwd": "${workspaceFolder}/portal",
+      "pattern": ".*(?:Dev Sentinel|MCP Server).*",
+      "transport": "stdio",
+      "timeout": 30000
+    },
+    // "force_mcp_http": {
+    //   "command": "force-mcp-http",
+    //   "args": ["--port", "8080"],
+    //   "cwd": "${workspaceFolder}",
+    //   "env": {
+    //     "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+    //     "PYTHONUNBUFFERED": "1"
+    //   },
+    //   "pattern": ".*(?:Force MCP|HTTP server).*",
+    //   "transport": "http",
+    //   "timeout": 30000
+    // },
+    "linear": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.linear.app/sse"
+      ]
+    },
+    "dev_sentinel_http": {
+      "command": "dev-sentinel-http",
+      "args": [
+        "--http-port",
+        "8000",
+        "--mcp-port",
+        "8090"
+      ],
+      "cwd": "${workspaceFolder}/portal",
+      "env": {
+        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+        "PYTHONUNBUFFERED": "1"
+      },
+      "pattern": ".*(?:Dev Sentinel|HTTP API).*",
+      "transport": "http",
+      "timeout": 30000
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}"
+      ]
+    },
+    "supabase": {
+      "command": "npx",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=${input:supabase-project-ref}"
+      ],
+      "env": {
+                "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+
+        "SUPABASE_ACCESS_TOKEN": "${input:supabase-access-token}"
+      }
+    }
+  }
+}

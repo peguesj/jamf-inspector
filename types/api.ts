@@ -1,6 +1,12 @@
-// Version: 0.1
+
+// Version: 0.2
 // API Endpoints for Jamf Pro ITIL/ITAM Dashboard
-// Reference: ../docs/AUTHORITATIVE.md, ../PLANNING.md
+// Reference: ../docs/AUTHORITATIVE.md, ../PLANNING.md, https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-10.44.0/page/Jamf_Pro_Documentation.html
+
+/**
+ * Jamf Pro API endpoints (10.44.1)
+ * @see https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-10.44.0/page/Jamf_Pro_Documentation.html
+ */
 
 export const API_ENDPOINTS = {
   policies: '/JSSResource/policies',

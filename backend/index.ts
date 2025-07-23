@@ -24,10 +24,17 @@
 
 
 
+
 import express, { Request, Response } from 'express';
 import API_ENDPOINTS from '../types/api';
 import { Policy, Profile, Patch, Group, User, Device, Approval, Feedback } from '../types/models';
 import createJamfClient, { JamfClientConfig } from './jamfClient';
+import NodeCache from 'node-cache';
+
+/**
+ * @constant cache - In-memory cache for periodic queries (chat assistant, analytics)
+ */
+const cache = new NodeCache({ stdTTL: 300, checkperiod: 60 });
 
 
 
@@ -69,13 +76,26 @@ app.use(express.json());
  * @see Policy (../types/models)
  * @see API_ENDPOINTS.policies (../types/api)
  */
+
 app.get(API_ENDPOINTS.policies, async (_req: Request, res: Response): Promise<void> => {
   try {
+    // Caching for chat assistant/analytics
+    const cached = cache.get('policies');
+    if (cached) {
+      res.json(cached);
+      // TypeScript: explicit void return after response (see https://www.typescriptlang.org/docs/handbook/functions.html#void)
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.policies);
     // TODO: Validate and transform response to Policy[]
     const policies: Policy[] = response.data.policies || [];
+    cache.set('policies', policies);
+    // Audit log
+    console.log(`[AUDIT] Fetched policies at ${new Date().toISOString()}`);
     res.json(policies);
   } catch (error) {
+    // Error handling, rate limit, pagination
+    console.error(`[ERROR] Failed to fetch policies:`, error);
     res.status(500).json({ error: 'Failed to fetch policies', details: error });
   }
 });
@@ -91,11 +111,18 @@ app.get(API_ENDPOINTS.policies, async (_req: Request, res: Response): Promise<vo
  */
 app.get(API_ENDPOINTS.profiles, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('profiles');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.profiles);
-    // TODO: Validate and transform response to Profile[]
     const profiles: Profile[] = response.data.osxconfigurationprofiles || [];
+    cache.set('profiles', profiles);
+    console.log(`[AUDIT] Fetched profiles at ${new Date().toISOString()}`);
     res.json(profiles);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch profiles:`, error);
     res.status(500).json({ error: 'Failed to fetch profiles', details: error });
   }
 });
@@ -109,10 +136,18 @@ app.get(API_ENDPOINTS.profiles, async (_req: Request, res: Response): Promise<vo
  */
 app.get(API_ENDPOINTS.patches, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('patches');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.patches);
     const patches: Patch[] = response.data.patches || [];
+    cache.set('patches', patches);
+    console.log(`[AUDIT] Fetched patches at ${new Date().toISOString()}`);
     res.json(patches);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch patches:`, error);
     res.status(500).json({ error: 'Failed to fetch patches', details: error });
   }
 });
@@ -139,10 +174,18 @@ app.get(API_ENDPOINTS.directoryConnections, async (_req: Request, res: Response)
  */
 app.get(API_ENDPOINTS.groups, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('groups');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.groups);
     const groups: Group[] = response.data.computergroups || [];
+    cache.set('groups', groups);
+    console.log(`[AUDIT] Fetched groups at ${new Date().toISOString()}`);
     res.json(groups);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch groups:`, error);
     res.status(500).json({ error: 'Failed to fetch groups', details: error });
   }
 });
@@ -154,10 +197,18 @@ app.get(API_ENDPOINTS.groups, async (_req: Request, res: Response): Promise<void
  */
 app.get(API_ENDPOINTS.users, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('users');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.users);
     const users: User[] = response.data.users || [];
+    cache.set('users', users);
+    console.log(`[AUDIT] Fetched users at ${new Date().toISOString()}`);
     res.json(users);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch users:`, error);
     res.status(500).json({ error: 'Failed to fetch users', details: error });
   }
 });
@@ -169,10 +220,18 @@ app.get(API_ENDPOINTS.users, async (_req: Request, res: Response): Promise<void>
  */
 app.get(API_ENDPOINTS.devices, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('devices');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.devices);
     const devices: Device[] = response.data.computers || [];
+    cache.set('devices', devices);
+    console.log(`[AUDIT] Fetched devices at ${new Date().toISOString()}`);
     res.json(devices);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch devices:`, error);
     res.status(500).json({ error: 'Failed to fetch devices', details: error });
   }
 });
@@ -214,10 +273,18 @@ app.get(API_ENDPOINTS.smartStaticGroups, async (_req: Request, res: Response): P
  */
 app.get(API_ENDPOINTS.approvalWorkflow, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('approvals');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.approvalWorkflow);
     const approvals: Approval[] = response.data.approvals || [];
+    cache.set('approvals', approvals);
+    console.log(`[AUDIT] Fetched approvals at ${new Date().toISOString()}`);
     res.json(approvals);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch approval workflow:`, error);
     res.status(500).json({ error: 'Failed to fetch approval workflow', details: error });
   }
 });
@@ -229,10 +296,18 @@ app.get(API_ENDPOINTS.approvalWorkflow, async (_req: Request, res: Response): Pr
  */
 app.get(API_ENDPOINTS.feedback, async (_req: Request, res: Response): Promise<void> => {
   try {
+    const cached = cache.get('feedback');
+    if (cached) {
+      res.json(cached);
+      return;
+    }
     const response = await jamfClient.get(API_ENDPOINTS.feedback);
     const feedback: Feedback[] = response.data.feedback || [];
+    cache.set('feedback', feedback);
+    console.log(`[AUDIT] Fetched feedback at ${new Date().toISOString()}`);
     res.json(feedback);
   } catch (error) {
+    console.error(`[ERROR] Failed to fetch feedback:`, error);
     res.status(500).json({ error: 'Failed to fetch feedback', details: error });
   }
 });
