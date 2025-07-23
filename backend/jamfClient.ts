@@ -6,7 +6,7 @@
  * @see ../docs/AUTHORITATIVE.md
  */
 
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios from 'axios';
 
 export interface JamfAuth {
   username: string;
@@ -21,9 +21,9 @@ export interface JamfClientConfig {
 /**
  * Creates a typed, functional Jamf API client.
  * @param {JamfClientConfig} config - Jamf API client configuration
- * @returns {AxiosInstance} Configured Axios instance
+ * @returns {ReturnType<typeof axios.create>} Configured Axios instance
  */
-export const createJamfClient = (config: JamfClientConfig): AxiosInstance => {
+export function createJamfClient(config: JamfClientConfig) {
   return axios.create({
     baseURL: config.baseURL,
     auth: {
@@ -34,7 +34,7 @@ export const createJamfClient = (config: JamfClientConfig): AxiosInstance => {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
-  } as AxiosRequestConfig);
-};
+  });
+}
 
 export default createJamfClient;

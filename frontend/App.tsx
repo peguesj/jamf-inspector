@@ -9,9 +9,9 @@ import store from './store';
 import Dashboard from './components/Dashboard';
 
 const App: React.FC = () => (
-  <Provider store={store}>
-    <Dashboard />
-  </Provider>
+    <Provider store={store}>
+        <Dashboard />
+    </Provider>
 );
 
 export default App;

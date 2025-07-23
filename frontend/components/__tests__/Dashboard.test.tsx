@@ -5,14 +5,16 @@
  * @see ../../PLANNING.md
  * @coverage unit, integration, telemetry
  */
+
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Dashboard from '../Dashboard';
 
 describe('Dashboard', () => {
-  it('renders loading state', () => {
-    render(<Dashboard />);
-    expect(screen.getByText(/Loading.../i)).toBeInTheDocument();
-  });
-  // Add more tests for summary stats, analytics, feedback, drag-and-drop, telemetry, etc.
+    it('renders loading state', () => {
+        render(<Dashboard />);
+        expect(screen.getByText(/Loading.../i)).toBeInTheDocument();
+    });
+    // Add more tests for summary stats, analytics, feedback, drag-and-drop, telemetry, etc.
 });

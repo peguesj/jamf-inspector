@@ -16,11 +16,11 @@
   ],
   "servers": {
     "force-mcp-stdio": {
-      "command": "force-mcp-stdio",
+      "command": "asdf exec python3 -m force-mcp-stdio",
       "args": [],
       "cwd": "${workspaceFolder}/portal",
       "env": {
-        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+        "PATH": "/Users/jeremiah/.asdf/installs/python/3.13.5t/bin/python:${env:PATH}",
         "PYTHONUNBUFFERED": "1"
       },
       "pattern": ".*(?:Force MCP server|Starting Force MCP server|Listening).*",
