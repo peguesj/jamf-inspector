@@ -8,9 +8,8 @@ import react from '@vitejs/plugin-react';
  * - JSX enabled
  * - See /docs/AUTHORITATIVE.md and /.github/instructions/copilot-instructions.md
  */
-import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
   server: {
     port: 5173,
     open: true,

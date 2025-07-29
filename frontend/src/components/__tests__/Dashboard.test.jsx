@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 /**
  * @file Dashboard Component Tests
  * @description Unit and integration tests for Jamf Pro ITIL/ITAM Dashboard

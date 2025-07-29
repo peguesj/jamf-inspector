@@ -1,5 +1,5 @@
-import React from 'react';
-import { HeroUIProvider } from '@heroui/react';
+// import React from 'react';
+// import { HeroUIProvider } from '@heroui/react';
 
 /**
  * AppFrame - Main layout shell for Jamf Inspector dashboard
@@ -7,7 +7,7 @@ import { HeroUIProvider } from '@heroui/react';
  * @see https://www.heroui.com/docs/components/layout
  */
 const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <HeroUIProvider>
+//   <HeroUIProvider>
     <div className="min-h-screen flex flex-col bg-gray-50">
       <header className="bg-blue-900 text-white px-6 py-4 flex items-center justify-between shadow">
         <h1 className="text-2xl font-bold tracking-tight">Jamf Inspector</h1>
@@ -27,7 +27,7 @@ const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
         <main className="flex-1 p-8 overflow-y-auto">{children}</main>
       </div>
     </div>
-  </HeroUIProvider>
+//   </HeroUIProvider>
 );
 
 export default AppFrame;

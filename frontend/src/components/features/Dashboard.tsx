@@ -74,7 +74,9 @@ const demoData: {
 const Dashboard: React.FC = () => {
   return (
     <div className="dashboard" style={{ padding: '2rem' }}>
+      <h2 className="text-2xl font-bold mb-4" role="heading" aria-level={2}>Summary Statistics</h2>
       <SummaryStatsComponent stats={demoData.summaryStats} />
+      <h2 className="text-2xl font-bold mb-4" role="heading" aria-level={2}>Policies (Filtered & Draggable)</h2>
       <PolicyList policies={demoData.policies} />
       <ProfileList profiles={demoData.profiles} />
       <PatchList patches={demoData.patches} />

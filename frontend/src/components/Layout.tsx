@@ -1,5 +1,5 @@
 import React from 'react';
-import AppFrame from './AppFrame';
+import AppFrame from './AppFrame.tsx';
 
 /**
  * Layout - Page layout wrapper for Jamf Inspector
