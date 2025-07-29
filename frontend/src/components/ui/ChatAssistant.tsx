@@ -1,10 +1,11 @@
-// Version: 0.1
-// Chat Assistant Component for Jamf Pro ITIL/ITAM Dashboard
-// Reference: ../../docs/AUTHORITATIVE.md, ../../PLANNING.md
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Policy, Profile, Approval, Feedback } from '../../types/models';
-
+/**
+ * ChatAssistant - Stateless, strictly typed chat assistant for diagnostics, reporting, and feedback
+ * @component
+ * @see ../../docs/AUTHORITATIVE.md
+ * @see ../../PLANNING.md
+ */
+import React, { useState } from "react";
+import axios from "axios";
 /**
  * ChatAssistant - Stateless, strictly typed chat assistant for diagnostics, reporting, and feedback
  * @component
@@ -12,36 +13,34 @@ import { Policy, Profile, Approval, Feedback } from '../../types/models';
  * @see ../../PLANNING.md
  */
 const ChatAssistant: React.FC = () => {
-    const [input, setInput] = useState('');
-    const [messages, setMessages] = useState<Array<{ role: string; text: string }>>([]);
-    const [loading, setLoading] = useState(false);
+    const [input, setInput] = useState<string>('');
+    const [messages, setMessages] = useState<{ role: string; text: string }[]>([]);
+    const [loading, setLoading] = useState<boolean>(false);
 
     /**
      * Handles user input and queries backend endpoints for diagnostics/reporting
      */
-    const handleSend = async () => {
+    const handleSend = async (): Promise<void> => {
         if (!input.trim()) return;
         setLoading(true);
         setMessages([...messages, { role: 'user', text: input }]);
         let responseText = '';
         try {
-            // Example: fetch policies for diagnostics
             if (input.toLowerCase().includes('policy')) {
                 const res = await axios.get('/JSSResource/policies');
-                // Type assertion per TypeScript docs: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions
-                const policies = res.data as Policy[];
+                const policies = Array.isArray(res.data) ? res.data as unknown[] : [];
                 responseText = `Found ${policies.length} policies.`;
             } else if (input.toLowerCase().includes('profile')) {
                 const res = await axios.get('/JSSResource/osxconfigurationprofiles');
-                const profiles = res.data as Profile[];
+                const profiles = res.data as unknown[];
                 responseText = `Found ${profiles.length} profiles.`;
             } else if (input.toLowerCase().includes('approval')) {
                 const res = await axios.get('/api/v1/approval');
-                const approvals = res.data as Approval[];
+                const approvals = res.data as unknown[];
                 responseText = `Approval workflow: ${approvals.length} items.`;
             } else if (input.toLowerCase().includes('feedback')) {
                 const res = await axios.get('/api/v1/feedback');
-                const feedback = res.data as Feedback[];
+                const feedback = res.data as unknown[];
                 responseText = `Feedback count: ${feedback.length}.`;
             } else {
                 responseText = 'Sorry, I can only help with policies, profiles, approval workflow, or feedback.';
@@ -78,7 +77,9 @@ const ChatAssistant: React.FC = () => {
                     onClick={handleSend}
                     className="px-4 py-2 bg-blue-500 text-white rounded"
                     disabled={loading}
-                >Send</button>
+                >
+                    Send
+                </button>
             </div>
         </div>
     );
