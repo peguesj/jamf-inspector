@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfComputer } from '../../../types/models.js';
+import type { JamfComputer } from '../../../../types/models.ts';
 
 interface Props {
   devices: JamfComputer[];

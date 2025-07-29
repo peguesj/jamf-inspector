@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfProfile } from '../../../types/models.js';
+import type { JamfProfile } from '../../../../types/models.ts';
 
 interface Props {
   profiles: JamfProfile[];

@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { SummaryStats } from '../../../types/models.js';
+import type { SummaryStats } from '../../../../types/models.ts';
 
 interface Props {
   stats: SummaryStats;

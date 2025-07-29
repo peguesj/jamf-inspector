@@ -3,7 +3,6 @@ import express, { Request, Response } from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import API_ENDPOINTS from '../types/api.js';
-import { Policy, Profile, Patch, Group, User, Device, Approval, Feedback } from '../types/models.js';
 import createJamfClient, { JamfClientConfig } from './jamfClient.js';
 import NodeCache from 'node-cache';
 

@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfApproval } from '../../../types/models.js';
+import type { JamfApproval } from '../../../../types/models.ts';
 
 interface Props {
   approvals: JamfApproval[];

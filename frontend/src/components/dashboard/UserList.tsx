@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfUser } from '../../../types/models.js';
+import type { JamfUser } from '../../../../types/models.ts';
 
 interface Props {
   users: JamfUser[];

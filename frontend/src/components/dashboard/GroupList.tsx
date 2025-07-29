@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfGroup } from '../../../types/models.js';
+import type { JamfGroup } from '../../../../types/models.ts';
 
 interface Props {
   groups: JamfGroup[];

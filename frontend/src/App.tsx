@@ -1,28 +1,22 @@
 import React from 'react';
-import Dashboard from '../components/Dashboard.js';
-import ChatAssistant from '../components/ChatAssistant.js';
-import AppFrame from '../components/AppFrame.js';
-import SetupWizard from '../components/SetupWizard.js';
+// import '@heroui/core/dist/heroui.min.css
+import './main.css';
+import Layout from './components/Layout.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import ChatAssistant from './components/ChatAssistant.tsx';
+import SetupWizard from './components/SetupWizard.tsx';
+import './style.css';
 
-const App: React.FC = () => {
-  return (
-    <AppFrame
-      header={
-        <>
-          <h1 className="text-2xl font-bold">Jamf Inspector Dashboard</h1>
-          <span className="text-xs text-gray-500">v0.3 &mdash; Strictly Typed, Functional, Demo Data</span>
-        </>
-      }
-      left={<Dashboard />}
-      right={
-        <>
-          <SetupWizard />
-          <ChatAssistant />
-        </>
-      }
-      footer={<>&copy; 2025 Jamf Inspector &mdash; See <a href="/docs/AUTHORITATIVE.md" className="underline">Authoritative Docs</a></>}
-    />
-  );
-};
+const App: React.FC = () => (
+        <Layout>
+            <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex-1">
+                    <Dashboard />
+                </div>
+                <SetupWizard />
+            </div>
+            <ChatAssistant />
+        </Layout>
+);
 
 export default App;

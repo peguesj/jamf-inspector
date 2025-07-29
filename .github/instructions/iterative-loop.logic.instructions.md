@@ -19,6 +19,16 @@ This document defines the iterative loop logic for software development, ensurin
 - **User Approval:** Wait for explicit user approval before major actions.
 
 
+
+## Branching & Atomic Workflow
+- **Always start each new task or batch of work by creating or checking out a feature branch with an atomic, descriptive name (e.g., `feat/scaffold`, `fix/issue-123`, `chore/docs-update`).**
+- This ensures all changes are isolated, traceable, and can be reviewed or reverted independently.
++- **Update the terminal allowList in settings.json with all approved and used commands for the current and future workflows.**
++- This ensures all required commands are whitelisted for agent-driven automation and compliance.
+
+- **Always start each new task or batch of work by creating or checking out a feature branch with an atomic, descriptive name (e.g., `feat/scaffold`, `fix/issue-123`, `chore/docs-update`).**
+- This ensures all changes are isolated, traceable, and can be reviewed or reverted independently.
+
 ## Iterative Loop Flowchart & Atomic Commit Workflow
 
 ```mermaid

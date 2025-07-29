@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfFeedback } from '../../../types/models.js';
+import type { JamfFeedback } from '../../../../types/models.ts';
 
 interface Props {
   feedback: JamfFeedback[];

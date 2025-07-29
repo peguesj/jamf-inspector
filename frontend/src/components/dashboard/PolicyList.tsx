@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfPolicy } from '../../../types/models.js';
+import type { JamfPolicy } from '../../../../types/models.ts';
 
 interface Props {
   policies: JamfPolicy[];

@@ -5,7 +5,7 @@
  * @see ../../../docs/AUTHORITATIVE.md
  */
 import React from 'react';
-import type { JamfPatch } from '../../../types/models.js';
+import type { JamfPatch } from '../../../../types/models.ts';
 
 interface Props {
   patches: JamfPatch[];
