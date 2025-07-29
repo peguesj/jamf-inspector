@@ -1,10 +1,14 @@
-/*
+<!--
 Project: Jamf Pro ITIL/ITAM Dashboard
 Author: Jeremiah Pegues
 Company: Pegues OPSCORP
 License: Exclusive non-perpetual license to VERSUS VERSUS VERSUS LLC dba 3VS Vantage, transferrable to authorized clients
 Email: jeremiah@pegues.io
 Version: 0.1 (Stack & Coding Standards)
+-->
+---
+    description: "Jamf Pro ITIL/ITAM Dashboard"
+---
 References:
 - PLANNING.md (authoritative)
 - Jamf Pro Documentation: https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-10.44.0/page/Jamf_Pro_Documentation.html
@@ -12,7 +16,6 @@ References:
 - ITAM: https://www.itassetmanagement.net/itam-standards/
 - Mac OS Configuration Profiles: https://developer.apple.com/documentation/devicemanagement/configuration_profiles
 
----
 # Authoritative Stack, Coding Standards, and API Coverage
 
 ## Technology Stack

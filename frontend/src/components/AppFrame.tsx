@@ -1,33 +1,40 @@
-// import React from 'react';
-// import { HeroUIProvider } from '@heroui/react';
+
+import React, { useState } from 'react';
+import Header from './Header.tsx';
+import Navigation from './Navigation.tsx';
 
 /**
  * AppFrame - Main layout shell for Jamf Inspector dashboard
  * Provides header, sidebar, and main content area.
  * @see https://www.heroui.com/docs/components/layout
  */
-const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-//   <HeroUIProvider>
+
+const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [showAssistant, setShowAssistant] = useState(false);
+  // TODO: Wire up real user/server/version/lastUpdated from state or API
+  const user = { name: 'Admin', email: 'admin@example.com' };
+  const server = 'Jamf Pro';
+  const version = 'v10.44.1';
+  const lastUpdated = new Date().toLocaleString();
+  const handleReload = () => window.location.reload();
+  const handleOpenAssistant = () => setShowAssistant(true);
+  return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <header className="bg-blue-900 text-white px-6 py-4 flex items-center justify-between shadow">
-        <h1 className="text-2xl font-bold tracking-tight">Jamf Inspector</h1>
-        <span className="text-sm opacity-80">AI-Assisted ITAM & SPM Dashboard</span>
-      </header>
+      <Header
+        user={user}
+        server={server}
+        version={version}
+        lastUpdated={lastUpdated}
+        onReload={handleReload}
+        onOpenAssistant={handleOpenAssistant}
+      />
       <div className="flex flex-1">
-        <aside className="w-56 bg-blue-800 text-white flex flex-col p-4 gap-2">
-          <nav className="flex flex-col gap-2">
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Dashboard</a>
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Policies</a>
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Profiles</a>
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Devices</a>
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Users</a>
-            <a href="#" className="hover:bg-blue-700 rounded px-3 py-2">Settings</a>
-          </nav>
-        </aside>
+        <Navigation />
         <main className="flex-1 p-8 overflow-y-auto">{children}</main>
       </div>
+      {/* TODO: Render ChatAssistant as a sliding panel when showAssistant is true */}
     </div>
-//   </HeroUIProvider>
-);
+  );
+};
 
 export default AppFrame;

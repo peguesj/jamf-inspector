@@ -1,17 +1,25 @@
 {
-        "github.copilot.chat.agent.terminal.allowList": {
-            "npm ": true,
-            "npm i": true,
-            "npm install": true,
-            "npm info": true,
-            "npm run ": true
-        },
-        {
-            "tailwindCSS.experimental.classRegex": [
-                [
-                    "([\"'`][^\"'`]*.*?[\"'`])",
-                    "[\"'`]([^\"'`]*).*?[\"'`]"
-                ]
-            ],
-        }
+    "github.copilot.chat.agent.terminal.allowList": {
+        "npm ": true,
+        "npm i": true,
+        "npm install": true,
+        "npm info": true,
+        "npm run ": true,
+        "git ": true,
+        "git status": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true,
+        "git diff": true,
+        "git checkout": true,
+        "git branch": true,
+        "git log": true
+    },
+        "github.copilot.nextEditSuggestions.enabled": true,
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "([\"'`][^\"'`]*.*?[\"'`])",
+            "[\"'`]([^\"'`]*).*?[\"'`]"
+        ]
+    ]
 }
