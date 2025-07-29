@@ -5,5 +5,13 @@
             "npm install": true,
             "npm info": true,
             "npm run ": true
+        },
+        {
+            "tailwindCSS.experimental.classRegex": [
+                [
+                    "([\"'`][^\"'`]*.*?[\"'`])",
+                    "[\"'`]([^\"'`]*).*?[\"'`]"
+                ]
+            ],
         }
 }
