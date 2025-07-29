@@ -8,7 +8,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Dashboard from '../Dashboard';
+import Dashboard from '../features/Dashboard';
 
 describe('Dashboard', () => {
     it('renders Dashboard', () => {

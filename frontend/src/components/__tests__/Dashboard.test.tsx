@@ -9,7 +9,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Dashboard from '../Dashboard.js';
+import Dashboard from '../features/Dashboard.tsx';
 
 describe('Dashboard', () => {
     it('renders Dashboard', () => {

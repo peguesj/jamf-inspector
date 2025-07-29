@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ModalGuide from './ModalGuide.js';
-import SettingsPanel from './SettingsPanel.js';
+import ModalGuide from '../ModalGuide.tsx';
+import SettingsPanel from './SettingsPanel.tsx';
 
 /**
  * SetupWizard - Onboarding/setup wizard for Jamf Inspector

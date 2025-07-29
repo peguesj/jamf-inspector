@@ -1,4 +1,6 @@
-import viteReact from '@vitejs/plugin-react';
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 /**
  * Vite config for Jamf Inspector Dashboard frontend
@@ -6,8 +8,9 @@ import viteReact from '@vitejs/plugin-react';
  * - JSX enabled
  * - See /docs/AUTHORITATIVE.md and /.github/instructions/copilot-instructions.md
  */
-export default {
-  plugins: [viteReact()],
+import tailwindcss from '@tailwindcss/vite';
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
   server: {
     port: 5173,
     open: true,
@@ -21,7 +24,4 @@ export default {
       '@': '/',
     },
   },
-  esbuild: {
-    jsx: 'automatic',
-  },
-};
+});

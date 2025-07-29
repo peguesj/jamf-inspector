@@ -1,13 +1,13 @@
 import React from 'react';
-import SummaryStatsComponent from './dashboard/SummaryStats.js';
-import PolicyList from './dashboard/PolicyList.js';
-import ProfileList from './dashboard/ProfileList.js';
-import PatchList from './dashboard/PatchList.js';
-import GroupList from './dashboard/GroupList.js';
-import UserList from './dashboard/UserList.js';
-import DeviceList from './dashboard/DeviceList.js';
-import ApprovalList from './dashboard/ApprovalList.js';
-import FeedbackList from './dashboard/FeedbackList.js';
+import SummaryStatsComponent from './dashboard/SummaryStatsComponent.tsx';
+import PolicyList from './dashboard/PolicyList.tsx';
+import ProfileList from './dashboard/ProfileList.tsx';
+import PatchList from './dashboard/PatchList.tsx';
+import GroupList from './dashboard/GroupList.tsx';
+import UserList from './dashboard/UserList.tsx';
+import DeviceList from './dashboard/DeviceList.tsx';
+import ApprovalList from './dashboard/ApprovalList.tsx';
+import FeedbackList from './dashboard/FeedbackList.tsx';
 import type {
   SummaryStats,
   JamfPolicy,
@@ -18,7 +18,7 @@ import type {
   JamfComputer,
   JamfApproval,
   JamfFeedback
-} from '../../types/models.js';
+} from '../../../../types/models.ts';
 
 /**
  * Dashboard - Strictly typed, stateless, functional component

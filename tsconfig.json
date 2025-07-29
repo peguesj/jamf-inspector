@@ -33,7 +33,7 @@
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
     /* Language and Environment */
     "target": "es2017", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "jsx": "preserve", /* Enable JSX for React 17+ automatic runtime. */
+    // "jsx": "preserve", /* Enable JSX for React 17+ automatic runtime. */
     "lib": [
       "DOM",
       "DOM.Iterable",
@@ -44,6 +44,7 @@
     ],
     "module": "nodenext", /* Use NodeNext modules for Vite compatibility. */
     "moduleResolution": "nodenext", /* Use NodeNext module resolution for ESM packages. */
+    "jsx": "react-jsx", /* Use React JSX transform for frontend. */
     "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "@/*": [
@@ -53,14 +54,8 @@
     }, /* Alias for frontend directory. */
     // ...existing code...
     "allowJs": true,
-    "plugins": [
-      {
-        "name": "vite-plugin-react-jsx",
-        "options": {
-          "jsxImportSource": "@vitejs/plugin-react"
-        }
-      }
-    ],
+    // No TypeScript plugins needed for Vite or Tailwind. Handled by Vite and PostCSS.
+    "plugins": [],
     /* Include Vite types for frontend. */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
@@ -161,7 +156,8 @@
     "frontend/**/*.ts",
     "frontend/**/*.tsx",
     "frontend/components/__tests__/*.ts",
-    "frontend/components/__tests__/*.tsx"
+    "frontend/components/__tests__/*.tsx",
+    "frontend/src"
   ],
   "exclude": [
     "dist",
