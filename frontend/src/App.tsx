@@ -5,7 +5,8 @@ import Layout from './components/Layout.tsx';
 import Dashboard from './components/Dashboard.tsx';
 import ChatAssistant from './components/ChatAssistant.tsx';
 import SetupWizard from './components/SetupWizard.tsx';
-import './style.css';
+// import './style.css';
+// import '@tailwindcss/index.css'; // Ensure Tailwind CSS is imported
 
 const App: React.FC = () => (
         <Layout>

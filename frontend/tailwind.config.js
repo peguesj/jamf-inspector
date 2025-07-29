@@ -7,7 +7,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      "@custom-variant": {
+        "dark": {
+          "&:is(.dark *)": {
+            // Your dark variant styles here
+          },
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('./hero.ts')],
 };
