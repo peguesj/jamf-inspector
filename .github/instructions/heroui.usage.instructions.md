@@ -19,7 +19,7 @@ Execute the following command to install HeroUI CLI:
 To install the main HeroUI React package and icons, run:
 
 ```bash
-npm install @heroui/react @heroui/icons
+npm install @heroui/react framer-motion
 ```
 
 
@@ -66,8 +66,11 @@ npm install @heroui/react @heroui/icons
 
 
 
-npm install @heroui/core @heroui/icons
+```bash
 
+npm install @heroui/react framer-motion 
+
+```
 
 
 

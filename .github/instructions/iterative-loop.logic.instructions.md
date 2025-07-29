@@ -32,31 +32,114 @@ This document defines the iterative loop logic for software development, ensurin
 ## Iterative Loop Flowchart & Atomic Commit Workflow
 
 ```mermaid
-flowchart TD
-    subgraph INIT["Initialization" style fill:#1e293b,stroke:#fff,color:#fff]
-        A1["Understand Requirements"]:::init --> A2["Design Data Models"]:::init
-        A2 --> A3["Implement Logic"]:::init
-        A3 --> A4["Integrate APIs"]:::init
-        A4 --> A5["Test Thoroughly"]:::init
-        A5 --> A6["Document & Review"]:::init
-        A6 --> A7["Iterate"]:::init
+flowchart TB
+    subgraph INIT Initialization
+
+        A1((Start)):::start --> A2["Understand Requirements"]:::init
+        A2 --> A3["Design Data Models"]:::init
+        A3 --> A4["Implement Logic"]:::init
+        A4 --> A5["Integrate APIs"]:::init
+        A5 --> A6["Test Thoroughly"]:::init
+        A6 --> A7["Document & Review"]:::init
+        A7 --> A8((End Init)):::END
     end
-    subgraph LOOP["Iterative Loop" style fill:#0f766e,stroke:#fff,color:#fff]
-        B1["Multi-Pass Reasoning"]:::loop --> B2["Batching"]:::loop
-        B2 --> B3["Self-Learning"]:::loop
-        B3 --> B4["Documentation"]:::loop
-        B4 --> B5["Process Recall"]:::loop
-        B5 --> B6["Loop Continuity"]:::loop
-        B6 --> B7["Error-Driven Fix Loop"]:::error
-        B7 --> B8["Atomic Commit Workflow"]:::commit
-        B8 --> B1
+    subgraph LOOP["Iterative Loop"]
+        %%{init: {'direction': 'TB'}}%%
+        B1((Start Loop)):::start --> B2["Multi-Pass Reasoning"]:::loop
+        B2 --> B3["Batching"]:::loop
+        B3 --> B4["Self-Learning"]:::loop
+        B4 --> B5["Documentation"]:::loop
+        B5 --> B6["Process Recall"]:::loop
+        B6 --> B7["Loop Continuity"]:::loop
+        B7 --> B8["Error-Driven Fix Loop"]:::error
+        B8 -->|"if errors remain"| B2
+        B8 -->|"if no errors and work remains"| B1
+        B8 -->|"if no errors and no work"| C1((Enter ACW)):::commit
+    end
+    subgraph ACW["Atomic Commit Workflow" direction_lr style fill:#f59e42,stroke:#fff,color:#fff]
+        C1((Start ACW)):::start --> D1["Atomic Commit Workflow"]:::commit
+        D1 -->|"if more staged work"| D1
+        D1 -->|"if all committed"| E1((Resume Main Loop)):::END
+        F1((Start ACW Loop)):::start --> F2["Batch & Apply Changes"]:::commit
+        F2 --> F3["Re-run Tests"]:::commit
+        F3 -->|"if tests pass" | F4["Commit Changes"]:::commit
+        F4 --> F5((End ACW Loop)):::nd
+        classDef commit fill:#f59e42,stroke:#fff,color:#fff;
+        classDef start fill:#f59e42,stroke:#fff,color:#fff;
+        classDef error fill:#dc2626,stroke:#fff,color:#fff;
+        classDef nd fill:#64748b,stroke:#fff,color:#fff;
+        end
+        %%{init: {'direction': 'LR'}}
     end
     INIT --> LOOP
+    C1 --> D1["Atomic Commit Workflow"]:::commit
+    D1 -->|"if more staged work"| D1
+    D1 -->|"if all committed"| E1((Resume Main Loop)):::END
+    classDef start fill:#f59e42,stroke:#fff,color:#fff;
+    classDef END fill:#64748b,stroke:#fff,color:#fff;
     classDef init fill:#1e293b,stroke:#fff,color:#fff;
     classDef loop fill:#0f766e,stroke:#fff,color:#fff;
     classDef error fill:#dc2626,stroke:#fff,color:#fff;
     classDef commit fill:#f59e42,stroke:#fff,color:#fff;
 ```
+
+### Error-Driven Fix Loop (Subprocess)
+
+```mermaid
+flowchart TD
+    F1((Start Fix Loop)):::start --> F2["Detect Errors"]:::error
+    F2 --> F3["Batch & Apply Fixes"]:::error
+    F3 --> F4["Re-run Tests"]:::error
+    F4 -->|"if errors remain"| F2
+    F4 -->|"if no errors"| F5((Exit Fix Loop)):::END
+    classDef start fill:#f59e42,stroke:#fff,color:#fff;
+    classDef END fill:#64748b,stroke:#fff,color:#fff;
+    classDef error fill:#dc2626,stroke:#fff,color:#fff;
+```
+
+### Atomic Commit Workflow (ACW Loop)
+```mermaid
+flowchart TB
+
+    subgraph Iterative Loop Logic
+        A[Iterative Loop Logic: Authoritative Process & Flow]
+        A1[Purpose]
+        A2[Core Loop Principles]
+        A3[Branching & Atomic Workflow]
+        A4[Iterative Loop: Dev]
+        A5[Error-Driven Fix Loop]
+        A6[Atomic Commit Workflow]
+    end
+    subgraph ACW Atomic Commit Workflow 
+        
+        F1((Start ACW Loop)):::start --> F2["Batch & Apply Changes"]:::commit
+        F2 --> F3["Re-run Tests"]:::commit
+        F3 -->|"if tests pass" | F4["Commit Changes"]:::commit
+        F4 --> F5((End ACW Loop)):::nd
+        classDef commit fill:#f59e42,stroke:#fff,color:#fff;
+        classDef start fill:#f59e42,stroke:#fff,color:#fff;
+        classDef error fill:#dc2626,stroke:#fff,color:#fff;
+        classDef nd fill:#64748b,stroke:#fff,color:#fff;
+        LR
+    end
+    A --> A1
+    A1 --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> A5 --> A6
+    A4--> A6 --> F1
+    A6  --> A2
+```
+
+
+#### Node Types
+- **(Start)/(End):** Process entry/exit
+- **[Action]:** Step or subprocess
+- **Conditional connectors:** Labeled arrows for process logic
+
+#### ACW/Loop Conditions
+- If error loop is successful and there is no remaining implementation work, proceed to ACW.
+- If there is more to be done, proceed to start of loop.
 
 ### Atomic Commit Workflow (Branch/Task End)
 
