@@ -21,15 +21,16 @@ Jamf Inspector is a strictly typed, functional, and accessible dashboard for IT 
 - **Continuous Improvement:** Iteratively update logic, UI, and documentation as standards and requirements evolve.
 
 ## Functional Requirements
-- **Dashboard:** Modular, extensible dashboard with widgets for all major Jamf Pro resources (policies, profiles, devices, users, groups, patches, feedback, approvals, etc.).
-- **AI Assistant:** Integrated AI chat for guidance, troubleshooting, and logic execution.
-- **Settings & Onboarding:** Modal/drawer for guided setup and configuration.
-- **Data Grid & Cards:** Use HeroUI DataGrid and Card for all tabular and widget displays.
-- **Navigation:** Use HeroUI Navigation for accessible routing.
-- **Theming:** Support dark/light/system themes via HeroUI ThemeProvider.
-- **API Integration:** All API calls must be strictly typed, validated, and documented.
-- **Security & Compliance:** Enforce OWASP, GDPR, HIPAA, and least privilege access.
-- **Metrics & Telemetry:** Record and report coverage, performance, and usage metrics.
+
+- **Getting Started Guide:** A guided onboarding experience must pop up automatically for new users or on first load, walking through setup and key features.
+- **Caching Library:** Integrate a robust, standards-compliant caching library for frontend data (e.g., react-query, SWR, or similar) to optimize API usage and UX.
+- **Dashboarding Library Research:** Research and recommend third-party libraries for dashboarding (charts, widgets, layout, drilldown, filtering, etc.) with full UX feature coverage. Document findings and rationale in `/docs`.
+- **Onboarding Steps & Progress:** The onboarding modal must use slide tabs with centered progress dots (below content, above action buttons) to show user progress through steps.
+- **Header Auth Info:** The dashboard header must display authenticated user info, server name, Jamf version, last updated timestamp, and a reload icon. The reload icon must trigger a reconnect and reload from the backend API.
+- **Backend API Connection:** The frontend must be connected to the backend API for all data and actions, using typed models and error handling.
+- **Chat Assistant Panel:** The AI chat assistant must be a full-height panel that slides in from the right, triggered by a sparkle icon in the header. The panel must be accessible and support all AI guidance and logic execution.
+
+All requirements must reference and align with the standards in the Jamf ITAM/ITSM alignment instructions and authoritative frameworks (CIS, NIST, ISO, etc.).
 
 ## Authoritative References
 - [Jamf Pro API Docs](https://developer.jamf.com/jamf-pro/reference/classic-api)
