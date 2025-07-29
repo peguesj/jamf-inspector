@@ -1,1 +1,3 @@
+# Ignore Continue extension config with secrets
+.continue/config.yaml
 **/node_modules
