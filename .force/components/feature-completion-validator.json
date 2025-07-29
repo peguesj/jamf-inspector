@@ -1,0 +1,92 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "Advanced Feature Completion Validator",
+  "description": "Tool for validating the completeness and functionality of implemented features beyond basic file existence",
+  "version": "1.0.0",
+  "type": "tool",
+  "category": "validation",
+  "metadata": {
+    "complexity": "high",
+    "impact": "high",
+    "learning_source": "crm_implementation_realignment_20250710",
+    "confidence_level": 0.90
+  },
+  "parameters": {
+    "validation_depth": {
+      "type": "string",
+      "enum": ["basic", "functional", "comprehensive"],
+      "default": "comprehensive",
+      "description": "Depth of feature validation"
+    },
+    "feature_categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["database", "api", "ui", "auth", "integration", "performance"]
+      },
+      "default": ["database", "api", "ui", "auth"],
+      "description": "Categories of features to validate"
+    },
+    "complexity_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.7,
+      "description": "Minimum complexity score for feature completeness"
+    }
+  },
+  "execution": {
+    "steps": [
+      {
+        "action": "analyze_code_complexity",
+        "description": "Measure file sizes, function counts, and implementation depth",
+        "validation": "verify_complexity_metrics"
+      },
+      {
+        "action": "test_feature_functionality",
+        "description": "Validate working features through interaction testing",
+        "validation": "confirm_feature_operation"
+      },
+      {
+        "action": "assess_integration_completeness",
+        "description": "Check feature integration and data flow",
+        "validation": "verify_end_to_end_functionality"
+      },
+      {
+        "action": "evaluate_production_readiness",
+        "description": "Assess error handling, security, and performance",
+        "validation": "check_production_criteria"
+      },
+      {
+        "action": "generate_completeness_score",
+        "description": "Calculate overall feature completion percentage",
+        "validation": "validate_scoring_accuracy"
+      }
+    ]
+  },
+  "scoring_algorithm": {
+    "weights": {
+      "code_complexity": 0.25,
+      "functional_completeness": 0.30,
+      "integration_quality": 0.25,
+      "production_readiness": 0.20
+    },
+    "thresholds": {
+      "incomplete": 0.30,
+      "partial": 0.60,
+      "complete": 0.80,
+      "production_ready": 0.95
+    }
+  },
+  "success_criteria": {
+    "validation_accuracy": 0.85,
+    "false_positive_rate": 0.10,
+    "false_negative_rate": 0.05
+  },
+  "learning_insights": [
+    "File line counts correlate with feature completeness",
+    "Working UI components indicate higher backend completion",
+    "Integration testing reveals true feature maturity",
+    "Error handling completeness affects production readiness"
+  ]
+}

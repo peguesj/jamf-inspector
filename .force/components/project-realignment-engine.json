@@ -1,0 +1,89 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "Project Realignment Engine",
+  "description": "Advanced tool for detecting and correcting project status misalignments through comprehensive analysis",
+  "version": "1.0.0",
+  "type": "tool",
+  "category": "management",
+  "metadata": {
+    "complexity": "expert",
+    "impact": "critical",
+    "learning_source": "crm_implementation_realignment_20250710",
+    "confidence_level": 0.95
+  },
+  "parameters": {
+    "analysis_type": {
+      "type": "string",
+      "enum": ["completion", "timeline", "scope", "quality", "full"],
+      "default": "full",
+      "description": "Type of realignment analysis"
+    },
+    "baseline_assessment": {
+      "type": "object",
+      "properties": {
+        "completion_percentage": {"type": "number", "minimum": 0, "maximum": 1},
+        "estimated_timeline": {"type": "string"},
+        "scope_definition": {"type": "string"}
+      },
+      "description": "Original project assessment for comparison"
+    },
+    "include_learnings": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include learning insights in output"
+    }
+  },
+  "execution": {
+    "steps": [
+      {
+        "action": "gather_project_artifacts",
+        "description": "Collect all project reports, code, and documentation",
+        "validation": "verify_artifact_completeness"
+      },
+      {
+        "action": "analyze_actual_implementation",
+        "description": "Deep dive into working features and code complexity",
+        "validation": "test_feature_functionality"
+      },
+      {
+        "action": "compare_assessment_vs_reality",
+        "description": "Identify gaps between perceived and actual status",
+        "validation": "calculate_assessment_accuracy"
+      },
+      {
+        "action": "recalibrate_project_metrics",
+        "description": "Update completion, timeline, and scope metrics",
+        "validation": "verify_metric_accuracy"
+      },
+      {
+        "action": "generate_realignment_plan",
+        "description": "Create updated project roadmap and priorities",
+        "validation": "validate_plan_feasibility"
+      }
+    ]
+  },
+  "success_criteria": {
+    "assessment_accuracy_improvement": 0.75,
+    "timeline_precision": 0.85,
+    "scope_clarity": 0.90
+  },
+  "learning_insights": [
+    "Regular realignment prevents major project miscalculations",
+    "Working features indicate higher completion than file creation metrics",
+    "Comprehensive analysis improves project visibility and timeline accuracy",
+    "Timeline adjustments significantly impact resource planning and delivery",
+    "Feature depth analysis reveals true implementation status",
+    "Database and API integration maturity affects overall completion assessment"
+  ],
+  "success_metrics": {
+    "assessment_accuracy_improvement": 0.75,
+    "timeline_precision": 0.85,
+    "scope_clarity": 0.90,
+    "completion_variance_reduction": 0.40
+  },
+  "risk_mitigation": {
+    "assessment_bias": "Use multiple analysis methods for validation",
+    "feature_overestimation": "Test actual functionality before claiming completion",
+    "timeline_compression": "Account for testing and integration complexity"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "branch_task_end_tasks",
+  "name": "Branch Task End Tasks",
+  "description": "Comprehensive pattern for handling end-of-branch tasks including quality checks, documentation updates, and release preparation.",
+  "category": "workflow",
+  "version": "1.0.0",
+  "context": {
+    "when_to_use": "When completing feature branches, preparing for merges, or finishing development milestones",
+    "benefits": [
+      "Consistent branch completion process",
+      "Automated quality validation",
+      "Comprehensive documentation updates",
+      "Release readiness assessment",
+      "Knowledge preservation"
+    ],
+    "trade_offs": [
+      "Additional time investment per branch",
+      "May slow down rapid iteration",
+      "Requires tooling setup",
+      "May be overkill for small changes"
+    ],
+    "anti_patterns": [
+      "Merging without quality checks",
+      "Missing documentation updates",
+      "No release readiness validation",
+      "Inconsistent branch completion"
+    ]
+  },
+  "implementation": {
+    "steps": [
+      "Fetch latest changes and tags from remote",
+      "Check existing version tags to determine next version",
+      "Execute code quality analysis",
+      "Run security and compliance checks",
+      "Analyze code changes for documentation impact",
+      "Update documentation as needed",
+      "Generate changelog entries",
+      "Perform release readiness assessment",
+      "Create atomic commits with proper messages",
+      "Validate tag doesn't already exist",
+      "Tag version increments if applicable",
+      "Push changes and tags to remote"
+    ],
+    "examples": [
+      {
+        "name": "Branch End Task Checklist",
+        "checklist": [
+          "✅ Latest changes fetched from remote",
+          "✅ Existing tags checked and next version determined",
+          "✅ Code quality score > 80%",
+          "✅ Security scan passed",
+          "✅ Documentation updated",
+          "✅ Tests passing",
+          "✅ Changelog updated",
+          "✅ Version tag validated (doesn't exist)",
+          "✅ Version tagged and pushed",
+          "✅ Ready for merge"
+        ]
+      },
+      {
+        "name": "Quality Gate Validation",
+        "gates": [
+          "static_analysis",
+          "security_scan",
+          "test_coverage",
+          "documentation_completeness",
+          "performance_validation"
+        ]
+      }
+    ],
+    "code_templates": [
+      {
+        "name": "Branch End Script Template",
+        "template": "#!/bin/bash\\n# Branch End Tasks for {branch_name}\\n\\n# Fetch Latest\\ngit fetch --all --tags\\n\\n# Check Existing Tags\\necho \"Existing version tags:\"\\ngit tag --list | grep -E '^v[0-9]' | sort -V | tail -10\\n\\n# Quality Checks\\nforce-execute code-quality-check\\nforce-execute security-analysis\\n\\n# Documentation\\nforce-execute docs-analysis\\nforce-execute generate-docs-update-summary\\n\\n# Release Preparation\\nforce-execute check-release-readiness\\nforce-execute generate-changelog\\n\\n# Version Management\\necho \"Checking if version tag v{version} exists...\"\\nif git tag --list | grep -q \"^v{version}$\"; then\\n  echo \"Tag v{version} already exists. Please choose a different version.\"\\n  exit 1\\nfi\\ngit tag -a v{version} -m \"Release {version}\"\\ngit push origin v{version}"
+      }
+    ]
+  },
+  "metadata": {
+    "created": "2025-07-09T00:54:29.450903Z",
+    "updated": "2025-07-09T00:54:29.450906Z",
+    "version": "1.0.0"
+  }
+}

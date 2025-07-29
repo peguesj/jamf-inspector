@@ -1,0 +1,70 @@
+{
+  "id": "status_annotation_constraint",
+  "name": "Status Annotation Constraint",
+  "version": "1.0.0",
+  "description": "Ensures consistent status annotation and governance record generation for implementation tracking",
+  "category": "governance",
+  "severity": "error",
+  "scope": ["implementation_plans", "force_reports", "governance_records"],
+  "rules": [
+    {
+      "id": "SAC-001",
+      "name": "Status Emoji Consistency",
+      "description": "All implementation items must have consistent status emoji annotation",
+      "pattern": "^(🟢|🟡|🔴|⚫|⚪)\\s+(EPIC|STORY|TASK|SUBTASK)-\\d+",
+      "message": "Implementation items must start with a status emoji (🟢🟡🔴⚫⚪) followed by item type and ID"
+    },
+    {
+      "id": "SAC-002", 
+      "name": "Governance Record Requirement",
+      "description": "Items without Linear issues must have governance records generated",
+      "condition": "not contains('[Linear]')",
+      "action": "generate_governance_record",
+      "message": "Items without Linear issues require governance record generation"
+    },
+    {
+      "id": "SAC-003",
+      "name": "Status Mapping Validation", 
+      "description": "Status assignments must follow defined criteria",
+      "validation": {
+        "completed": "Has Linear issue marked 'Done' OR implementation evidence exists",
+        "in_progress": "Has Linear issue marked 'In Progress' OR partially implemented",
+        "not_started": "No Linear issue AND no implementation evidence",
+        "blocked": "Has dependencies that are not met",
+        "deprecated": "No longer relevant to current implementation"
+      }
+    },
+    {
+      "id": "SAC-004",
+      "name": "Governance ID Format",
+      "description": "Governance record IDs must follow the standard format",
+      "pattern": "^GVR-[0-9]{8}-[a-f0-9]{8}$",
+      "message": "Governance record IDs must be in format GVR-YYYYMMDD-HASH8"
+    },
+    {
+      "id": "SAC-005",
+      "name": "Hierarchical Consistency",
+      "description": "Child items cannot have higher completion status than parents",
+      "validation": "child_status <= parent_status",
+      "message": "Child items cannot be more complete than their parent items"
+    }
+  ],
+  "auto_fix": {
+    "enabled": true,
+    "actions": [
+      "add_missing_status_emoji",
+      "generate_governance_records",
+      "validate_status_hierarchy",
+      "update_status_summary"
+    ]
+  },
+  "reporting": {
+    "enabled": true,
+    "metrics": [
+      "completion_percentage",
+      "status_distribution", 
+      "governance_record_count",
+      "linear_issue_coverage"
+    ]
+  }
+}

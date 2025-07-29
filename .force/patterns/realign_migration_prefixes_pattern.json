@@ -1,0 +1,39 @@
+{
+  "$schema": "https://force.agentic.dev/schemas/extended/v1.0.0",
+  "id": "realign_migration_prefixes_pattern",
+  "name": "Realign Migration Prefixes Pattern",
+  "category": "workflow",
+  "description": "Pattern for ensuring all migration files have unique, sequential numeric prefixes. Used to maintain migration order and prevent conflicts.",
+  "context": {
+    "when_to_use": "Whenever new migration files are added or prefix conflicts are detected.",
+    "benefits": ["Prevents migration conflicts", "Ensures correct migration order", "Automates tedious renaming task"],
+    "trade_offs": ["May overwrite manual file ordering if not careful"],
+    "anti_patterns": ["Manual renaming without validation"]
+  },
+  "implementation": {
+    "steps": [
+      "Detect duplicate or out-of-order migration prefixes.",
+      "Run the realign_migration_prefixes tool to fix prefixes.",
+      "Validate that all migration files are uniquely and sequentially numbered.",
+      "The below command can be used to rename migration files in the migrations directory (use as blueprint and adjust logic to sui use case:",
+      "cd ./portal/supabase/migrations && ls -v | grep -E '^[0-9]{3}_.*\\.sql$' | awk '{printf \"mv %s %03d_%s\\n\", $0, NR, substr($0,5)}' | bash"
+    ],
+    "executable_steps": [
+      {
+        "name": "Run realign_migration_prefixes tool",
+        "toolId": "realign_migration_prefixes",
+        "parameters": {
+          "migrations_dir": "/Users/jeremiah/Developer/vantage-v2/portal/supabase/migrations"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "created": "2025-07-16T00:00:00Z",
+    "updated": "2025-07-16T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "low",
+    "tags": ["migrations", "pattern", "automation"],
+    "author": "GitHub Copilot"
+  }
+}

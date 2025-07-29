@@ -1,0 +1,2 @@
+export {};
+// This file has been migrated to index.mts for ESM compatibility. Please use backend/index.mts as the entry point.

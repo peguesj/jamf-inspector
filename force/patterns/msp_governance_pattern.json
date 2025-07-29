@@ -1,0 +1,101 @@
+{
+  "id": "msp_governance_pattern",
+  "name": "MSP Platform Governance Pattern",
+  "version": "1.0.0",
+  "description": "Standardized pattern for governance and tracking of MSP platform implementation items",
+  "category": "governance",
+  "applicability": {
+    "project_types": ["msp_platform", "force_implementation", "enterprise_portal"],
+    "complexity_levels": ["medium", "high", "enterprise"],
+    "phases": ["all"]
+  },
+  "components": [
+    {
+      "name": "Status Annotation System",
+      "description": "Visual status indicators for implementation items",
+      "implementation": "status_emoji_mapping",
+      "tools": ["issue_status_annotation"]
+    },
+    {
+      "name": "Governance Record Generation", 
+      "description": "Structured tracking for non-Linear items",
+      "implementation": "json_governance_records",
+      "tools": ["governance_record_generator"]
+    },
+    {
+      "name": "Hierarchical Status Validation",
+      "description": "Ensures logical status progression in item hierarchy",
+      "implementation": "constraint_validation",
+      "constraints": ["status_annotation_constraint"]
+    },
+    {
+      "name": "Future Import Preparation",
+      "description": "Prepares governance records for Linear import",
+      "implementation": "linear_import_format",
+      "tools": ["linear_import_generator"]
+    }
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "name": "Parse Implementation Plan",
+      "description": "Extract all implementation items from Force reports",
+      "inputs": ["force_report_file"],
+      "outputs": ["item_hierarchy", "existing_linear_links"]
+    },
+    {
+      "step": 2,
+      "name": "Determine Status",
+      "description": "Assess current implementation status for each item",
+      "inputs": ["item_hierarchy", "linear_issues", "codebase_evidence"],
+      "outputs": ["status_assignments"]
+    },
+    {
+      "step": 3,
+      "name": "Annotate Report",
+      "description": "Add status emojis to implementation plan",
+      "inputs": ["force_report_file", "status_assignments"],
+      "outputs": ["annotated_report"]
+    },
+    {
+      "step": 4,
+      "name": "Generate Governance Records",
+      "description": "Create tracking records for non-Linear items",
+      "inputs": ["non_linear_items", "status_assignments"],
+      "outputs": ["governance_json_files"]
+    },
+    {
+      "step": 5,
+      "name": "Validate Constraints",
+      "description": "Ensure all governance constraints are met",
+      "inputs": ["annotated_report", "governance_records"],
+      "outputs": ["validation_report", "constraint_violations"]
+    },
+    {
+      "step": 6,
+      "name": "Generate Summary Report",
+      "description": "Create executive summary of implementation status",
+      "inputs": ["status_assignments", "governance_records"],
+      "outputs": ["status_summary", "progress_metrics"]
+    }
+  ],
+  "governance_schema": {
+    "storage_format": "json",
+    "naming_convention": "GVR-{date}-{hash8}.json",
+    "directory_structure": "/governance/records/{phase}/{epic_id}/",
+    "backup_strategy": "git_versioned",
+    "retention_policy": "permanent_until_imported"
+  },
+  "metrics": {
+    "completion_tracking": {
+      "total_items": "count(all_items)",
+      "completed_items": "count(status == 'completed')",
+      "completion_percentage": "completed_items / total_items * 100"
+    },
+    "governance_coverage": {
+      "linear_coverage": "count(has_linear_issue) / total_items * 100",
+      "governance_records": "count(governance_records)",
+      "import_ready": "count(linear_ready == true)"
+    }
+  }
+}

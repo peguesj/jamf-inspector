@@ -1,0 +1,9 @@
+{
+  "id": "GooglePromptChaining",
+  "type": "Pattern",
+  "description": "Prompt chaining workflow pattern for decomposing complex tasks.",
+  "properties": {
+    "usage": "Break task into sequential LLM calls with validation.",
+    "examples": ["Document generation", "Multistep content creation"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://force.agentic.dev/schemas/extended/v1.0.0",
+  "id": "realign_migration_prefixes_lesson",
+  "title": "Lesson Learned: Migration Prefix Realignment",
+  "description": "Automating migration prefix realignment prevents conflicts and ensures smooth migration workflows.",
+  "category": "lesson_learned",
+  "content": {
+    "policies": [],
+    "guidelines": [
+      {"title": "Always use automation for migration prefix realignment.", "description": "Manual renaming is error-prone and can lead to migration conflicts."}
+    ],
+    "lessons": [
+      {"title": "Prefix conflicts are a common source of migration errors.", "description": "Automated tools can resolve these quickly and reliably."}
+    ],
+    "insights": [
+      {"title": "FORCE Orchestration", "description": "Integrating prefix realignment as a FORCE tool and pattern enables repeatable, auditable, and error-free migration management."}
+    ]
+  },
+  "metadata": {
+    "created": "2025-07-16T00:00:00Z",
+    "updated": "2025-07-16T00:00:00Z",
+    "version": "1.0.0",
+    "author": "GitHub Copilot",
+    "tags": ["migrations", "lesson"]
+  }
+}

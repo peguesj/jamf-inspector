@@ -1,0 +1,1 @@
+- feat(crm): add opportunities table migration with RLS and indexes (#PEG-344)

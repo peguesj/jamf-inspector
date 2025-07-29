@@ -1,0 +1,12 @@
+{
+  "id": "GooglePlanReActPlanner",
+  "type": "Planner",
+  "description": "Google PlanReAct planner driving multi-step reasoning and actions.",
+  "properties": {
+    "planningSteps": ["Plan", "Act", "Reflect"],
+    "parameters": {
+      "thinkingBudget": 1024,
+      "includeThoughts": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "force-mcp-stdio-iterative-loop",
+  "name": "FORCE MCP STDIO Iterative Implementation Loop",
+  "description": "Agentic iterative loop for autonomous implementation of annotated roadmap items, maintaining full referential integrity between codebase, Linear, and FORCE learnings.",
+  "category": "project",
+  "applicability": ["supabase", "nextjs", "typescript", "react", "linear", "force"],
+  "phases": [
+    {
+      "name": "Enumerate Incomplete Roadmap Items",
+      "steps": [
+        "Parse annotated implementation report for all items marked incomplete or in-progress.",
+        "Map each item to its Linear issue and technical requirements."
+      ]
+    },
+    {
+      "name": "Implement Item",
+      "steps": [
+        "Implement required code and database changes using Supabase tools only.",
+        "Perform git workflow (#force-mcp-stdio pattern): commit code, capture commit hash.",
+        "Update corresponding Linear issue status, adding a detailed comment with commit hash and summary of changes.",
+        "Document changes in FORCE learnings and annotated report as needed."
+      ]
+    },
+    {
+      "name": "Iterate Until Complete",
+      "steps": [
+        "Repeat for all remaining items, minimizing user interaction and maintaining full referential integrity.",
+        "Validate completion and update governance records."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Supabase tools only for all DB operations.",
+    "No Prisma usage.",
+    "All Linear status changes must include detailed comments and git commit hashes.",
+    "Strict adherence to annotated implementation plan.",
+    "Minimize user interaction; agent should work autonomously."
+  ],
+  "outputs": [
+    "Updated codebase (committed with hash)",
+    "Updated Linear issues with comments and status",
+    "Updated FORCE learnings and annotated report"
+  ]
+}

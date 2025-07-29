@@ -1,0 +1,12 @@
+{
+  "id": "PromptChainingWorkflow",
+  "type": "Pattern",
+  "description": "Workflow pattern: decomposes a task into sequential steps with programmatic checks.",
+  "properties": {
+    "whenToUse": "For tasks decomposable into fixed subtasks, trading latency for accuracy.",
+    "examples": [
+      "Generating marketing copy then translating it.",
+      "Writing document outline and then writing document."
+    ]
+  }
+}

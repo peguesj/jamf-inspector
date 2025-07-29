@@ -37,13 +37,16 @@ graph TD
 ```
 
 ## Key Features
-- Jamf Pro API integration
+- Full Jamf Pro API resource and endpoint coverage (see /types/models.ts and /types/api.ts)
 - Policy/profile analysis (duplicate, conflict, unused)
 - Refactoring and remediation tools
 - Pilot group creation and management
 - Approval and scheduling workflows
 - Chat interface with AI assistant
 - Responsive, accessible UI/UX (drag-and-drop, filters, tags, animations)
+
+## Version History
+- 2025-07-29: All Jamf Pro Classic API resources and endpoints strictly typed and exported (v0.3)
 
 ## Dependencies
 - Jamf Pro API access

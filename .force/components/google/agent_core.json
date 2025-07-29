@@ -1,0 +1,14 @@
+{
+  "id": "GoogleAgentCore",
+  "type": "Agent",
+  "description": "Core Google LLM agent defining identity, instructions, and tool integration.",
+  "roleCategory": "AgentCore",
+  "responsibilities": [
+    "Unique Name & Identity",
+    "Dynamic Instructions",
+    "Tool Use & Planning"
+  ],
+  "relatedIssues": [],
+  "parentAgentId": null,
+  "childrenAgentIds": []
+}

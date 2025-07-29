@@ -1,0 +1,9 @@
+{
+  "id": "BuiltInPlanner",
+  "type": "Planner",
+  "description": "Planner using built-in LLM capabilities, controlling thinking budget and thought inclusion.",
+  "properties": {
+    "thinkingBudget": 1024,
+    "includeThoughts": true
+  }
+}

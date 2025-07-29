@@ -1,0 +1,38 @@
+{
+  "id": "generate_autogpt_agent",
+  "name": "Generate AutoGPT Agent",
+  "category": "generator",
+  "description": "Generates a new AutoGPT agent code file based on project, issue, and agentic mapping context.",
+  "parameters": {
+    "required": [
+      {"name": "agent_name", "type": "string", "description": "Name of the agent to generate."},
+      {"name": "issue_id", "type": "string", "description": "Linear issue ID for context."}
+    ],
+    "optional": [
+      {"name": "template", "type": "string", "description": "Template to use for agent code generation."}
+    ]
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {"action": "render_template", "description": "Render agent code template with provided parameters."},
+      {"action": "write_file", "description": "Write generated agent code to the appropriate directory."}
+    ],
+    "validation": {
+      "pre_conditions": ["agent_name is valid", "issue_id is valid"],
+      "post_conditions": ["Agent code file exists and passes schema validation"],
+      "error_handling": [
+        {"error_type": "template_error", "strategy": "abort", "action": "Notify user and stop generation."},
+        {"error_type": "file_write_error", "strategy": "retry", "action": "Retry file write up to 2 times."}
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-27T00:00:00Z",
+    "updated": "2025-07-27T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "medium",
+    "tags": ["autogpt", "generator", "agent"],
+    "author": "GitHub Copilot"
+  }
+}

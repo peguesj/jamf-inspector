@@ -1,0 +1,191 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "Version Management Best Practices",
+  "description": "Comprehensive pattern for managing semantic versioning, tag creation, and release workflows with conflict resolution",
+  "version": "1.0.0",
+  "type": "pattern",
+  "category": "release_management",
+  "complexity_level": "medium",
+  "applicability": {
+    "project_types": ["web_application", "api_service", "library", "enterprise_platform"],
+    "team_sizes": ["small", "medium", "large"],
+    "project_phases": ["development", "testing", "deployment", "maintenance"]
+  },
+  "implementation": {
+    "prerequisites": [
+      "Git repository with remote access",
+      "Semantic versioning strategy defined",
+      "Release branch naming conventions established",
+      "CI/CD pipeline integration planned"
+    ],
+    "steps": [
+      {
+        "id": "fetch_latest_state",
+        "title": "Fetch Latest Repository State",
+        "description": "Always fetch latest changes and tags before version operations",
+        "commands": [
+          "git fetch --all --tags",
+          "git status --porcelain",
+          "git branch -v"
+        ],
+        "validation": "Repository state is current with remote"
+      },
+      {
+        "id": "analyze_existing_versions",
+        "title": "Analyze Existing Version Tags",
+        "description": "Review existing version tags to understand version history and determine next version",
+        "commands": [
+          "git tag --list | grep -E '^v[0-9]' | sort -V | tail -10",
+          "git describe --tags --abbrev=0",
+          "git log --oneline --decorate | head -5"
+        ],
+        "validation": "Latest version tags identified and understood"
+      },
+      {
+        "id": "determine_version_increment",
+        "title": "Determine Appropriate Version Increment",
+        "description": "Analyze changes to determine if increment should be major, minor, or patch",
+        "commands": [
+          "git diff HEAD~1 --name-only",
+          "git log --oneline HEAD~1..HEAD",
+          "# Review breaking changes, new features, and bug fixes"
+        ],
+        "validation": "Version increment type determined based on semantic versioning rules"
+      },
+      {
+        "id": "validate_proposed_version",
+        "title": "Validate Proposed Version",
+        "description": "Ensure proposed version follows semantic versioning and doesn't conflict",
+        "commands": [
+          "# Check if version already exists",
+          "if git tag --list | grep -q '^v{proposed_version}$'; then echo 'Version exists!'; exit 1; fi",
+          "# Validate semantic versioning format",
+          "echo '{proposed_version}' | grep -E '^v[0-9]+\\.[0-9]+\\.[0-9]+(-.+)?$'"
+        ],
+        "validation": "Proposed version is unique and follows semantic versioning"
+      },
+      {
+        "id": "create_version_tag",
+        "title": "Create and Push Version Tag",
+        "description": "Create annotated tag with comprehensive release notes",
+        "commands": [
+          "git tag -a v{version} -m \"{release_message}\"",
+          "git push origin v{version}",
+          "git verify-tag v{version}"
+        ],
+        "validation": "Version tag created successfully and pushed to remote"
+      }
+    ],
+    "conflict_resolution": {
+      "version_already_exists": {
+        "detection": "git tag --list | grep -q '^v{version}$'",
+        "resolution_steps": [
+          "Display existing version tags",
+          "Suggest next available version",
+          "Provide guidance on version increment rules",
+          "Allow user to choose new version"
+        ],
+        "commands": [
+          "echo 'Existing version tags:'",
+          "git tag --list | grep -E '^v[0-9]' | sort -V | tail -5",
+          "echo 'Suggested next versions:'",
+          "# Provide patch, minor, and major increment suggestions"
+        ]
+      },
+      "remote_out_of_sync": {
+        "detection": "git status --porcelain=v1 2>/dev/null | grep -q '^##.*behind'",
+        "resolution_steps": [
+          "Fetch latest changes",
+          "Review incoming changes",
+          "Merge or rebase as appropriate",
+          "Retry version creation"
+        ],
+        "commands": [
+          "git fetch --all",
+          "git log HEAD..origin/$(git branch --show-current) --oneline",
+          "git merge origin/$(git branch --show-current)"
+        ]
+      }
+    },
+    "files_created": [
+      "CHANGELOG.md (updated)",
+      "package.json (version field updated)",
+      "Git tag annotations"
+    ],
+    "configuration": {
+      "version_format": "v{major}.{minor}.{patch}[-{prerelease}]",
+      "tag_message_template": "Release {version}\\n\\n{changelog_summary}\\n\\nChanges in this release:\\n{commit_summary}",
+      "automatic_changelog": true,
+      "require_release_notes": true
+    }
+  },
+  "best_practices": [
+    "Always fetch latest tags before creating new versions",
+    "Use semantic versioning consistently (MAJOR.MINOR.PATCH)",
+    "Include meaningful release notes in tag annotations",
+    "Validate version uniqueness before tag creation",
+    "Push tags immediately after creation to avoid conflicts",
+    "Use conventional commit messages to aid version determination",
+    "Maintain CHANGELOG.md with each release",
+    "Create pre-release tags for testing (v1.2.3-alpha.1)",
+    "Use annotated tags instead of lightweight tags for releases",
+    "Verify tag signatures when security is important"
+  ],
+  "troubleshooting": [
+    {
+      "issue": "Tag already exists error",
+      "solution": "Fetch latest tags and increment version appropriately",
+      "prevention": "Always check existing tags before version creation",
+      "commands": [
+        "git fetch --all --tags",
+        "git tag --list | sort -V | tail -10"
+      ]
+    },
+    {
+      "issue": "Remote repository out of sync",
+      "solution": "Fetch and merge latest changes before tagging",
+      "prevention": "Regular synchronization with remote repository",
+      "commands": [
+        "git fetch origin",
+        "git status",
+        "git merge origin/$(git branch --show-current)"
+      ]
+    },
+    {
+      "issue": "Version format validation failure",
+      "solution": "Follow semantic versioning format (v1.2.3)",
+      "prevention": "Use version validation tools and templates",
+      "commands": [
+        "echo 'v1.2.3' | grep -E '^v[0-9]+\\.[0-9]+\\.[0-9]+(-.+)?$'"
+      ]
+    }
+  ],
+  "integration_patterns": [
+    {
+      "name": "CI/CD Pipeline Integration",
+      "description": "Integrate version management into automated pipelines",
+      "implementation": "Use version tags to trigger deployment workflows"
+    },
+    {
+      "name": "Automated Changelog Generation",
+      "description": "Generate changelogs from conventional commits",
+      "implementation": "Parse commit messages to create release notes"
+    },
+    {
+      "name": "Multi-Repository Versioning",
+      "description": "Coordinate versions across multiple repositories",
+      "implementation": "Use monorepo tools or version synchronization scripts"
+    }
+  ],
+  "related_patterns": [
+    "branch_task_end_tasks",
+    "git_workflow_commit",
+    "release_preparation",
+    "changelog_management"
+  ],
+  "learning_integration": {
+    "captures_metrics": true,
+    "enables_optimization": true,
+    "supports_continuous_improvement": true
+  }
+}

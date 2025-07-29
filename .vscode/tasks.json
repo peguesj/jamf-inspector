@@ -1,0 +1,79 @@
+	{
+		"type": "shell",
+		"label": "kill:port4000",
+		"command": "lsof -ti :4000 | xargs kill -9 || true",
+		"problemMatcher": [],
+		"group": "build",
+		"detail": "Kill any process using port 4000"
+	},
+	{
+		"type": "shell",
+		"label": "serve:all:clean",
+		"dependsOn": [
+			"kill:port4000",
+			"build:frontend",
+			"build:backend"
+		],
+		"command": "npm run serve:all",
+		"problemMatcher": [],
+		"group": "test",
+		"detail": "Kill port 4000, build frontend/backend, then serve all"
+	},
+	{
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"type": "shell",
+				"label": "build:frontend",
+				"command": "npm run build:frontend",
+				"group": "build",
+				"problemMatcher": [
+					"$tsc"
+				]
+			},
+			{
+				"type": "shell",
+				"label": "build:backend",
+				"command": "npx tsc --project tsconfig.json",
+				"group": "build",
+				"problemMatcher": [
+					"$tsc"
+				]
+			},
+			{
+				"type": "shell",
+				"label": "serve:frontend:dev",
+				"command": "npm run dev",
+				"group": "test",
+				"problemMatcher": []
+			},
+			{
+				"type": "shell",
+				"label": "serve:backend:dev",
+				"command": "npm run start",
+				"group": "test",
+				"problemMatcher": []
+			},
+			{
+				"type": "shell",
+				"label": "test:backend",
+				"command": "npm run test",
+				"group": "test",
+				"problemMatcher": []
+			},
+			{
+				"type": "shell",
+				"label": "coverage:backend",
+				"command": "npm run coverage",
+				"group": "test",
+				"problemMatcher": []
+			},
+			{
+				"type": "shell",
+				"label": "serve:all",
+				"command": "npm run build:frontend && npx tsc --project tsconfig.json && node dist/backend/index.js",
+				"group": "test",
+				"problemMatcher": []
+			}
+		]
+	}

@@ -1,0 +1,283 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "Production Deployment Preparation Tool",
+  "description": "Comprehensive tool for preparing enterprise applications for production deployment with infrastructure setup, monitoring, and disaster recovery",
+  "version": "1.0.0",
+  "type": "tool",
+  "category": "deployment",
+  "complexity_level": "high",
+  "execution_context": {
+    "environments": ["staging", "production"],
+    "platforms": ["web", "api", "database"],
+    "team_roles": ["devops", "sre", "developer", "architect"]
+  },
+  "parameters": {
+    "required": [
+      {
+        "name": "application_name",
+        "type": "string",
+        "description": "Name of the application being deployed"
+      },
+      {
+        "name": "environment_type",
+        "type": "string",
+        "enum": ["staging", "production"],
+        "description": "Target deployment environment"
+      },
+      {
+        "name": "infrastructure_requirements",
+        "type": "object",
+        "properties": {
+          "compute_instances": {"type": "number"},
+          "database_tier": {"type": "string"},
+          "storage_requirements": {"type": "string"},
+          "network_configuration": {"type": "string"}
+        },
+        "description": "Infrastructure resource requirements"
+      }
+    ],
+    "optional": [
+      {
+        "name": "monitoring_config",
+        "type": "object",
+        "description": "Custom monitoring and alerting configuration"
+      },
+      {
+        "name": "backup_schedule",
+        "type": "string",
+        "description": "Backup frequency and retention policy"
+      },
+      {
+        "name": "performance_targets",
+        "type": "object",
+        "description": "Performance SLA targets and thresholds"
+      }
+    ]
+  },
+  "execution_steps": [
+    {
+      "id": "infrastructure_setup",
+      "title": "Set Up Production Infrastructure",
+      "description": "Configure production servers, database, and networking",
+      "commands": [
+        "Provision compute instances with appropriate sizing",
+        "Set up high-availability database cluster",
+        "Configure load balancer and SSL certificates",
+        "Set up CDN for static asset delivery",
+        "Configure network security groups and firewalls"
+      ],
+      "validation": "Infrastructure health checks pass",
+      "rollback": "Terminate provisioned resources"
+    },
+    {
+      "id": "monitoring_setup",
+      "title": "Configure Monitoring and Alerting",
+      "description": "Set up comprehensive monitoring for application and infrastructure",
+      "commands": [
+        "Deploy application performance monitoring (APM)",
+        "Configure database monitoring and alerts",
+        "Set up log aggregation and analysis",
+        "Configure uptime monitoring and alerts",
+        "Set up security monitoring and incident response"
+      ],
+      "validation": "All monitoring systems reporting correctly",
+      "rollback": "Disable monitoring configurations"
+    },
+    {
+      "id": "backup_recovery_setup",
+      "title": "Implement Backup and Disaster Recovery",
+      "description": "Configure automated backups and disaster recovery procedures",
+      "commands": [
+        "Set up automated database backups",
+        "Configure application state backups",
+        "Implement point-in-time recovery capability",
+        "Set up cross-region disaster recovery",
+        "Test backup and recovery procedures"
+      ],
+      "validation": "Backup and recovery tests pass",
+      "rollback": "Disable backup systems"
+    },
+    {
+      "id": "security_hardening",
+      "title": "Apply Security Hardening",
+      "description": "Implement production security configurations",
+      "commands": [
+        "Apply OS security patches and hardening",
+        "Configure application security headers",
+        "Set up Web Application Firewall (WAF)",
+        "Implement intrusion detection system",
+        "Configure security scanning and compliance checks"
+      ],
+      "validation": "Security scans pass with no critical issues",
+      "rollback": "Revert security configurations"
+    },
+    {
+      "id": "performance_optimization",
+      "title": "Optimize for Production Performance",
+      "description": "Apply performance optimizations for production workloads",
+      "commands": [
+        "Configure database connection pooling",
+        "Set up application caching layers",
+        "Optimize asset delivery and compression",
+        "Configure auto-scaling policies",
+        "Implement rate limiting and circuit breakers"
+      ],
+      "validation": "Performance tests meet SLA requirements",
+      "rollback": "Revert performance configurations"
+    },
+    {
+      "id": "deployment_pipeline",
+      "title": "Set Up Deployment Pipeline",
+      "description": "Configure automated deployment and rollback capabilities",
+      "commands": [
+        "Set up CI/CD pipeline for production deployments",
+        "Configure blue-green or canary deployment strategy",
+        "Implement automated rollback mechanisms",
+        "Set up deployment approval workflows",
+        "Configure deployment monitoring and alerts"
+      ],
+      "validation": "Deployment pipeline tests pass",
+      "rollback": "Disable deployment automation"
+    }
+  ],
+  "validation_criteria": [
+    {
+      "category": "availability",
+      "checks": [
+        "Load balancer health checks pass",
+        "Database cluster is highly available",
+        "Application instances are distributed across availability zones"
+      ]
+    },
+    {
+      "category": "performance",
+      "checks": [
+        "API response times meet SLA (<200ms)",
+        "Database query performance is optimized",
+        "CDN is properly configured and functioning"
+      ]
+    },
+    {
+      "category": "security",
+      "checks": [
+        "All security patches are applied",
+        "Security scanning shows no critical vulnerabilities",
+        "Access controls and authentication are properly configured"
+      ]
+    },
+    {
+      "category": "monitoring",
+      "checks": [
+        "All monitoring systems are operational",
+        "Alerting is configured and tested",
+        "Log aggregation is functioning correctly"
+      ]
+    },
+    {
+      "category": "backup_recovery",
+      "checks": [
+        "Automated backups are running successfully",
+        "Recovery procedures have been tested",
+        "Disaster recovery plans are documented and validated"
+      ]
+    }
+  ],
+  "success_metrics": {
+    "deployment_success_rate": 0.99,
+    "mean_time_to_deployment": "30_minutes",
+    "rollback_time": "5_minutes",
+    "uptime_target": 0.999,
+    "security_compliance_score": 1.0
+  },
+  "dependencies": [
+    "infrastructure_provider",
+    "monitoring_platform", 
+    "backup_service",
+    "security_scanning_tools",
+    "deployment_automation"
+  ],
+  "outputs": [
+    {
+      "name": "infrastructure_config",
+      "type": "object",
+      "description": "Production infrastructure configuration details"
+    },
+    {
+      "name": "monitoring_endpoints",
+      "type": "array",
+      "description": "List of monitoring dashboard and alert endpoints"
+    },
+    {
+      "name": "backup_schedule",
+      "type": "object", 
+      "description": "Configured backup schedules and retention policies"
+    },
+    {
+      "name": "deployment_pipeline_url",
+      "type": "string",
+      "description": "URL to the configured deployment pipeline"
+    },
+    {
+      "name": "runbook_documentation",
+      "type": "object",
+      "description": "Operational runbooks and procedures"
+    }
+  ],
+  "error_handling": [
+    {
+      "error_type": "infrastructure_provisioning_failure",
+      "mitigation": "Retry with exponential backoff, fallback to alternative regions",
+      "recovery": "Clean up partial resources and restart provisioning"
+    },
+    {
+      "error_type": "monitoring_setup_failure",
+      "mitigation": "Use alternative monitoring providers or manual setup",
+      "recovery": "Validate monitoring manually before proceeding"
+    },
+    {
+      "error_type": "backup_configuration_failure",
+      "mitigation": "Set up manual backup procedures as temporary measure",
+      "recovery": "Fix backup configuration and validate functionality"
+    }
+  ],
+  "best_practices": [
+    "Use infrastructure as code for all provisioning",
+    "Implement immutable infrastructure patterns",
+    "Use blue-green deployments for zero-downtime updates",
+    "Automate all operational procedures",
+    "Implement comprehensive logging and monitoring",
+    "Use secrets management for all credentials",
+    "Follow security hardening guidelines",
+    "Test disaster recovery procedures regularly",
+    "Implement gradual rollout strategies",
+    "Monitor business metrics alongside technical metrics"
+  ],
+  "integration_points": [
+    {
+      "system": "CI/CD Pipeline",
+      "integration_type": "webhook",
+      "description": "Trigger deployment on successful build"
+    },
+    {
+      "system": "Monitoring Platform",
+      "integration_type": "api",
+      "description": "Send metrics and receive alerts"
+    },
+    {
+      "system": "Incident Management",
+      "integration_type": "webhook",
+      "description": "Create incidents for critical alerts"
+    },
+    {
+      "system": "Security Scanning",
+      "integration_type": "api",
+      "description": "Automated security validation"
+    }
+  ],
+  "learning_integration": {
+    "captures_deployment_metrics": true,
+    "tracks_performance_improvements": true,
+    "enables_predictive_scaling": true,
+    "supports_capacity_planning": true
+  }
+}

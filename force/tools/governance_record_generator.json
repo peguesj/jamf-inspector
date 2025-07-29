@@ -1,0 +1,82 @@
+{
+  "id": "governance_record_generator",
+  "name": "Governance Record Generator",
+  "version": "1.0.0",
+  "description": "Generates governance tracking records for implementation items without Linear issues",
+  "category": "governance",
+  "complexity": "low",
+  "tags": ["governance", "tracking", "json", "import", "linear"],
+  "inputs": [
+    {
+      "name": "item_text",
+      "type": "string",
+      "description": "The text of the implementation item (epic, story, task, subtask)",
+      "required": true
+    },
+    {
+      "name": "item_type",
+      "type": "string", 
+      "description": "Type of implementation item",
+      "required": true,
+      "enum": ["EPIC", "STORY", "TASK", "SUBTASK"]
+    },
+    {
+      "name": "parent_id",
+      "type": "string",
+      "description": "ID of parent item for hierarchical tracking",
+      "required": false
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Current implementation status", 
+      "required": true,
+      "enum": ["completed", "in_progress", "not_started", "blocked", "deprecated"]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "governance_record",
+      "type": "object",
+      "description": "Structured governance record for the item"
+    },
+    {
+      "name": "json_file_path",
+      "type": "string",
+      "description": "Path to generated JSON file for future Linear import"
+    }
+  ],
+  "implementation": {
+    "type": "python",
+    "entry_point": "generate_governance_record",
+    "dependencies": ["json", "datetime", "uuid", "hashlib"]
+  },
+  "schema": {
+    "governance_record": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string", "pattern": "^GVR-[0-9]{8}-[a-f0-9]{8}$"},
+        "title": {"type": "string", "maxLength": 200},
+        "description": {"type": "string"},
+        "type": {"type": "string", "enum": ["EPIC", "STORY", "TASK", "SUBTASK"]},
+        "status": {"type": "string", "enum": ["completed", "in_progress", "not_started", "blocked", "deprecated"]},
+        "parent_id": {"type": "string", "nullable": true},
+        "created_at": {"type": "string", "format": "date-time"},
+        "updated_at": {"type": "string", "format": "date-time"},
+        "linear_ready": {"type": "boolean"},
+        "import_priority": {"type": "integer", "minimum": 1, "maximum": 5},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "source_file": {"type": "string"},
+            "source_line": {"type": "integer"},
+            "phase": {"type": "string"},
+            "epic_id": {"type": "string"}
+          }
+        }
+      },
+      "required": ["id", "title", "type", "status", "created_at", "updated_at", "linear_ready"]
+    }
+  }
+}

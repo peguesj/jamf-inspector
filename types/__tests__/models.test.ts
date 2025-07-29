@@ -4,7 +4,7 @@
  * @see ../docs/AUTHORITATIVE.md
  * @coverage unit, telemetry
  */
-import { Policy, Profile, Patch, Group, User, Device, Approval, Feedback } from '../models';
+import { Policy, Profile, Patch, Group, User, Device, Approval, Feedback } from '../models.ts';
 describe('Models', () => {
   it('should create a valid Policy', () => {
     const policy: Policy = {

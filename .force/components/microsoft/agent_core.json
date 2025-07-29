@@ -1,0 +1,13 @@
+{
+  "id": "MicrosoftAgentCore",
+  "type": "Agent",
+  "description": "Core Microsoft AI agent including identity and configuration.",
+  "roleCategory": "AgentCore",
+  "responsibilities": [
+    "Identity and Configuration",
+    "Planning and Reasoning"
+  ],
+  "relatedIssues": [],
+  "parentAgentId": null,
+  "childrenAgentIds": []
+}

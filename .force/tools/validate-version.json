@@ -1,0 +1,70 @@
+{
+  "id": "validate_version",
+  "name": "Validate Version",
+  "description": "Validates release version format and uniqueness.",
+  "category": "release_management",
+  "version": "1.0.0",
+  "parameters": {
+    "required": [],
+    "optional": []
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {
+        "action": "fetch_latest_tags",
+        "description": "Fetch all latest tags from remote repository",
+        "command": "git fetch --all --tags"
+      },
+      {
+        "action": "list_existing_versions",
+        "description": "List existing version tags to check for conflicts",
+        "command": "git tag --list | grep -E '^v[0-9]' | sort -V"
+      },
+      {
+        "action": "validate_version_format",
+        "description": "Validate version follows semantic versioning format"
+      },
+      {
+        "action": "check_version_uniqueness",
+        "description": "Ensure proposed version doesn't already exist",
+        "command": "git tag --list | grep -q '^v{version}$'"
+      },
+      {
+        "action": "suggest_next_version",
+        "description": "Suggest next available version if conflict exists"
+      }
+    ],
+    "validation": {
+      "pre_conditions": [
+        "Git repository is accessible",
+        "Current branch has commit access",
+        "Network connectivity for remote fetch"
+      ],
+      "post_conditions": [
+        "Version format is valid (semantic versioning)",
+        "Version is unique (doesn't exist)",
+        "Next version suggestions provided if needed"
+      ],
+      "error_handling": [
+        "Network failure: Retry fetch operation",
+        "Version conflict: Display existing tags and suggest alternatives",
+        "Invalid format: Provide semantic versioning guidance",
+        "Permission issues: Check git credentials and repository access"
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-01T03:54:59.844909Z",
+    "updated": "2025-07-01T03:54:59.844910Z",
+    "version": "1.0.0",
+    "complexity": "medium",
+    "tags": [],
+    "dependencies": [],
+    "performance_metrics": {
+      "avg_execution_time": 0.0,
+      "success_rate": 0.0,
+      "usage_count": 0
+    }
+  }
+}

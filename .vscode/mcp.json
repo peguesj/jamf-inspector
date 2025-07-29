@@ -16,11 +16,14 @@
   ],
   "servers": {
     "force-mcp-stdio": {
-      "command": "asdf exec python3 -m force-mcp-stdio",
-      "args": [],
-      "cwd": "${workspaceFolder}/portal",
+      "command": "force-mcp-stdio",
+      "args": [
+        "--force-dir",
+        "${workspaceFolder}/.force"
+      ],
+      "cwd": "${workspaceFolder}",
       "env": {
-        "PATH": "/Users/jeremiah/.asdf/installs/python/3.13.5t/bin/python:${env:PATH}",
+        "PATH": "$(which python | xargs dirname):${env:PATH}",
         "PYTHONUNBUFFERED": "1"
       },
       "pattern": ".*(?:Force MCP server|Starting Force MCP server|Listening).*",
@@ -92,8 +95,7 @@
         "--project-ref=${input:supabase-project-ref}"
       ],
       "env": {
-                "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
-
+        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
         "SUPABASE_ACCESS_TOKEN": "${input:supabase-access-token}"
       }
     }

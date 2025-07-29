@@ -1,0 +1,8 @@
+{
+  "id": "GoogleToolFunctional",
+  "type": "Tool",
+  "description": "Functional tools integrated with Google LLM agents.",
+  "properties": {
+    "capabilities": ["Reasoning", "Content Generation", "Tool Invocation"]
+  }
+}

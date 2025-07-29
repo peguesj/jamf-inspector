@@ -1,0 +1,4 @@
+{
+  "solution": "When running Supabase migrations, ensure migration filenames match the required pattern '<timestamp>_name.sql'. Migrations with incorrect filenames (e.g., .bak) will be skipped. To apply all local migrations, rerun the migration command with the --include-all flag. This ensures all pending migrations are applied, including those not yet synced to the remote database.",
+  "context": "Terminal output showed skipped migrations due to filename pattern mismatch and suggested using --include-all to apply all local migrations."
+}

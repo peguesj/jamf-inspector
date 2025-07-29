@@ -1,0 +1,14 @@
+{
+  "id": "AnthropicAgentCore",
+  "type": "Agent",
+  "description": "Core Anthropic agent including identity, dynamic process control, autonomy.",
+  "roleCategory": "AgentCore",
+  "responsibilities": [
+    "Identity and Purpose",
+    "Dynamic Process Control",
+    "Autonomy vs Code Workflows"
+  ],
+  "relatedIssues": [],
+  "parentAgentId": null,
+  "childrenAgentIds": []
+}

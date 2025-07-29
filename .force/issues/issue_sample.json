@@ -1,0 +1,10 @@
+{
+  "id": "EPIC-INFRA",
+  "title": "Infrastructure Setup",
+  "description": "Core cloud and network provisioning",
+  "ownerAgents": ["InfraLeadAgent"],
+  "priority": "High",
+  "parentIssueId": null,
+  "anchor": "#epic-infra",
+  "type": "Epic"
+}

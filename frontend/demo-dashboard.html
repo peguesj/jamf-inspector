@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamf Inspector Dashboard Demo</title>
+  <link href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.css" rel="stylesheet">
+</head>
+<body class="p-8 bg-gray-50">
+  <h1 class="text-3xl font-bold mb-4">Jamf Pro ITIL/ITAM Dashboard (Demo)</h1>
+  <div class="mb-4">
+    <input type="text" placeholder="Filter policies by name..." class="border p-2 rounded w-full" value="" />
+  </div>
+  <div class="mb-4 grid grid-cols-3 gap-4">
+    <div class="bg-blue-50 p-4 rounded">
+      <h2 class="text-lg font-semibold mb-2">Summary Statistics</h2>
+      <ul class="text-sm">
+        <li>Total Policies: 5</li>
+        <li>Total Profiles: 3</li>
+        <li>Total Conflicts: 2</li>
+        <li>Patches: 4</li>
+        <li>Groups: 2</li>
+        <li>Users: 6</li>
+        <li>Devices: 10</li>
+        <li>Analytics Data: {"logins": 120, "actions": 45}</li>
+        <li>Telemetry Data: {"uptime": "99.9%", "errors": 1}</li>
+      </ul>
+    </div>
+    <div class="bg-red-50 p-4 rounded">
+      <h2 class="text-lg font-semibold mb-2">Duplicate Policies/Profiles</h2>
+      <div class="text-sm">
+        <div>Policies: PolicyA, PolicyB</div>
+        <div>Profiles: ProfileX</div>
+      </div>
+    </div>
+    <div class="bg-yellow-50 p-4 rounded">
+      <h2 class="text-lg font-semibold mb-2">Conflicts & Remediation</h2>
+      <div class="text-sm">
+        <div>Policy Conflicts: #1 & #2 (Scope Overlap) <button class="ml-2 px-2 py-1 bg-green-200 rounded text-xs">Remediate</button></div>
+        <div>Profile Conflicts: #3 & #4 (Settings Clash) <button class="ml-2 px-2 py-1 bg-green-200 rounded text-xs">Remediate</button></div>
+        <div class="mt-4">
+          <label>Pilot Group Assignment:</label>
+          <select class="ml-2 px-2 py-1">
+            <option value="">Select group</option>
+            <option value="1">Group Alpha</option>
+            <option value="2">Group Beta</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label>Approval Workflow:</label>
+          <button class="ml-2 px-2 py-1 bg-blue-200 rounded text-xs">Approve</button>
+          <button class="ml-2 px-2 py-1 bg-red-200 rounded text-xs">Reject</button>
+          <span class="ml-2">Status: pending</span>
+        </div>
+        <div class="mt-4">
+          <label>Feedback:</label>
+          <input type="text" class="ml-2 px-2 py-1 border rounded" value="" />
+          <button class="ml-2 px-2 py-1 bg-yellow-200 rounded text-xs">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 gap-4">
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Policies (Filtered & Draggable)</h2>
+      <div>
+        <div class="bg-gray-100 p-2 rounded text-xs mb-2 cursor-move">PolicyA</div>
+        <div class="bg-gray-100 p-2 rounded text-xs mb-2 cursor-move">PolicyB</div>
+        <div class="bg-gray-100 p-2 rounded text-xs mb-2 cursor-move">PolicyC</div>
+        <div class="bg-gray-100 p-2 rounded text-xs mb-2 cursor-move">PolicyD</div>
+        <div class="bg-gray-100 p-2 rounded text-xs mb-2 cursor-move">PolicyE</div>
+      </div>
+    </div>
+    <div class="bg-gray-50 p-2 rounded min-h-[100px]">
+      <h2 class="text-xl font-semibold mb-2">Drop Zone (Assign to Group)</h2>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Profiles</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"profiles": [{"id":1,"name":"ProfileX"},{"id":2,"name":"ProfileY"},{"id":3,"name":"ProfileZ"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Patches</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"patches": [{"id":1,"name":"PatchA"},{"id":2,"name":"PatchB"},{"id":3,"name":"PatchC"},{"id":4,"name":"PatchD"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Groups</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"groups": [{"id":1,"name":"Group Alpha"},{"id":2,"name":"Group Beta"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Users</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"users": [{"id":1,"name":"User1"},{"id":2,"name":"User2"},{"id":3,"name":"User3"},{"id":4,"name":"User4"},{"id":5,"name":"User5"},{"id":6,"name":"User6"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Devices</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"devices": [{"id":1,"name":"DeviceA"},{"id":2,"name":"DeviceB"},{"id":3,"name":"DeviceC"},{"id":4,"name":"DeviceD"},{"id":5,"name":"DeviceE"},{"id":6,"name":"DeviceF"},{"id":7,"name":"DeviceG"},{"id":8,"name":"DeviceH"},{"id":9,"name":"DeviceI"},{"id":10,"name":"DeviceJ"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Approvals</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"approvals": [{"id":1,"status":"pending"},{"id":2,"status":"approved"}]}</pre>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Feedback</h2>
+      <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{"feedback": [{"id":1,"message":"Great dashboard!"},{"id":2,"message":"Needs more charts."}]}</pre>
+    </div>
+  </div>
+</body>
+</html>

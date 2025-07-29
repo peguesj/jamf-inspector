@@ -1,0 +1,9 @@
+{
+  "id": "OrchestratorWorkersWorkflow",
+  "type": "Pattern",
+  "description": "Dynamic task breakdown with an orchestrator delegating subtasks to worker agents.",
+  "properties": {
+    "whenToUse": "For complex unpredictable tasks needing dynamic delegation.",
+    "examples": ["Coding across multiple files.", "Multi-source search and analysis."]
+  }
+}

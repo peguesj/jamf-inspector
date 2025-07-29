@@ -4,7 +4,7 @@
  * @see ../docs/AUTHORITATIVE.md
  * @coverage unit, telemetry
  */
-import API_ENDPOINTS from '../api';
+import API_ENDPOINTS from '../api.ts';
 describe('API Types', () => {
   it('should have policies endpoint', () => {
     expect(API_ENDPOINTS.policies).toBeDefined();

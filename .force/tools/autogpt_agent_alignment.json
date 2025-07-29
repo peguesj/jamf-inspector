@@ -1,0 +1,38 @@
+{
+  "id": "autogpt_agent_alignment",
+  "name": "AutoGPT Agent Alignment",
+  "category": "analysis",
+  "description": "Analyzes and aligns generated AutoGPT agent and block code with project requirements, agentic mapping, and FORCE schemas.",
+  "parameters": {
+    "required": [
+      {"name": "agent_file_path", "type": "string", "description": "Path to the generated agent code file."},
+      {"name": "block_file_paths", "type": "array", "description": "Paths to the generated block code files."}
+    ],
+    "optional": [
+      {"name": "schema_version", "type": "string", "description": "FORCE schema version to validate against."}
+    ]
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {"action": "analyze_alignment", "description": "Analyze agent and block code for alignment with project and mapping."},
+      {"action": "validate_schema", "description": "Validate code files against FORCE schemas."}
+    ],
+    "validation": {
+      "pre_conditions": ["agent_file_path exists", "block_file_paths are valid"],
+      "post_conditions": ["Alignment report generated", "Code passes schema validation"],
+      "error_handling": [
+        {"error_type": "alignment_error", "strategy": "abort", "action": "Notify user and stop alignment."},
+        {"error_type": "validation_error", "strategy": "abort", "action": "Notify user and stop validation."}
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-27T00:00:00Z",
+    "updated": "2025-07-27T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "high",
+    "tags": ["autogpt", "alignment", "analysis"],
+    "author": "GitHub Copilot"
+  }
+}

@@ -1,0 +1,49 @@
+---
+description: Hierarchical project structure for React app development, visualized as a Mermaid diagram. Use as a reference for organizing codebases to best practices.
+applyTo: '**'
+---
+
+# Project Structure: Hierarchical Diagram
+
+```mermaid
+mindmap
+  root((Project Root))
+    src
+      components
+        hooks
+        utils
+        __tests__
+      App.tsx
+      main.tsx
+      style.css
+    types
+      api.ts
+      models.ts
+      ...
+    config
+      stack.ts
+      ...
+    docs
+      AUTHORITATIVE.md
+      PLANNING.md
+      ...
+    tests
+      unit
+      integration
+      e2e
+    public
+      index.html
+      assets
+    .github
+      instructions
+        react-app.standards.instructions.md
+        iterative-loop.logic.instructions.md
+        ...
+    package.json
+    tsconfig.json
+    vite.config.ts
+    ...
+```
+
+---
+This diagram should be updated as the project structure evolves.

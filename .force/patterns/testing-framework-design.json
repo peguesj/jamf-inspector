@@ -1,0 +1,199 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "Testing Framework Design Pattern",
+  "description": "Comprehensive testing strategy for enterprise applications covering unit, integration, and end-to-end testing with performance and security validation",
+  "version": "1.0.0",
+  "type": "pattern",
+  "category": "quality_assurance",
+  "complexity_level": "high",
+  "applicability": {
+    "project_types": ["web_application", "api_service", "enterprise_platform"],
+    "team_sizes": ["small", "medium", "large"],
+    "project_phases": ["testing", "production_prep", "maintenance"]
+  },
+  "implementation": {
+    "prerequisites": [
+      "Existing application codebase",
+      "Defined API endpoints",
+      "User workflows documented",
+      "Performance requirements specified"
+    ],
+    "steps": [
+      {
+        "id": "setup_unit_testing",
+        "title": "Configure Unit Testing Framework",
+        "description": "Set up Jest and React Testing Library for component and API testing",
+        "commands": [
+          "npm install --save-dev jest @testing-library/react @testing-library/jest-dom",
+          "npm install --save-dev @types/jest",
+          "Configure jest.config.js with coverage requirements"
+        ],
+        "validation": "Unit test suite runs successfully with 70%+ coverage"
+      },
+      {
+        "id": "implement_integration_tests",
+        "title": "Build Integration Testing Suite",
+        "description": "Create integration tests for API endpoints and database operations",
+        "commands": [
+          "npm install --save-dev supertest",
+          "Create test database setup and teardown procedures",
+          "Implement API integration test suite"
+        ],
+        "validation": "Integration tests validate API and database interactions"
+      },
+      {
+        "id": "setup_e2e_testing",
+        "title": "Configure End-to-End Testing",
+        "description": "Set up Cypress or Playwright for user workflow testing",
+        "commands": [
+          "npm install --save-dev cypress",
+          "Configure cypress.config.js",
+          "Create user workflow test scenarios"
+        ],
+        "validation": "E2E tests validate complete user workflows"
+      },
+      {
+        "id": "performance_testing",
+        "title": "Implement Performance Testing",
+        "description": "Set up performance testing with k6 or Artillery",
+        "commands": [
+          "npm install --save-dev k6",
+          "Create performance test scenarios",
+          "Define performance budgets and thresholds"
+        ],
+        "validation": "Performance tests meet defined SLA requirements"
+      },
+      {
+        "id": "security_testing",
+        "title": "Configure Security Testing",
+        "description": "Implement security vulnerability scanning and testing",
+        "commands": [
+          "npm install --save-dev eslint-plugin-security",
+          "Configure OWASP ZAP for automated security scanning",
+          "Implement authentication and authorization tests"
+        ],
+        "validation": "Security tests identify and prevent vulnerabilities"
+      }
+    ],
+    "files_created": [
+      "jest.config.js",
+      "jest.setup.js", 
+      "cypress.config.js",
+      "tests/unit/**/*.test.ts",
+      "tests/integration/**/*.test.ts",
+      "tests/e2e/**/*.cy.ts",
+      "tests/performance/**/*.js"
+    ],
+    "configuration": {
+      "test_coverage_target": 0.90,
+      "performance_thresholds": {
+        "api_response_time": "200ms",
+        "page_load_time": "1000ms",
+        "database_query_time": "100ms"
+      },
+      "security_requirements": {
+        "vulnerability_level": "zero_critical",
+        "owasp_compliance": true,
+        "data_privacy": "gdpr_compliant"
+      }
+    }
+  },
+  "constraints": [
+    {
+      "id": "test_coverage_minimum",
+      "type": "testing",
+      "enforcement": {
+        "level": "error",
+        "automated": true,
+        "validation_rules": ["coverage >= 0.90"]
+      },
+      "description": "Minimum 90% code coverage for all modules",
+      "validation_rule": "coverage >= 0.90"
+    },
+    {
+      "id": "performance_budget",
+      "type": "performance",
+      "enforcement": {
+        "level": "error",
+        "automated": true,
+        "validation_rules": ["response_time <= 200"]
+      },
+      "description": "API responses must complete within 200ms",
+      "validation_rule": "response_time <= 200"
+    },
+    {
+      "id": "security_compliance",
+      "type": "security",
+      "enforcement": {
+        "level": "error",
+        "automated": true,
+        "validation_rules": ["critical_vulnerabilities == 0"]
+      },
+      "description": "Zero critical security vulnerabilities allowed",
+      "validation_rule": "critical_vulnerabilities == 0"
+    }
+  ],
+  "metrics": {
+    "test_execution_time": "Total time for complete test suite execution",
+    "test_coverage_percentage": "Percentage of code covered by tests",
+    "performance_score": "Composite score of performance metrics",
+    "security_score": "Security vulnerability assessment score",
+    "flaky_test_rate": "Percentage of tests that fail intermittently"
+  },
+  "integration_patterns": [
+    {
+      "name": "CI/CD Integration",
+      "description": "Integrate testing into continuous integration pipeline",
+      "implementation": "Configure GitHub Actions or Jenkins for automated testing"
+    },
+    {
+      "name": "Test Data Management",
+      "description": "Manage test data lifecycle and isolation",
+      "implementation": "Create test database seeding and cleanup procedures"
+    },
+    {
+      "name": "Monitoring Integration",
+      "description": "Integrate test results with monitoring systems",
+      "implementation": "Send test metrics to monitoring dashboards"
+    }
+  ],
+  "best_practices": [
+    "Follow test pyramid structure (70% unit, 20% integration, 10% E2E)",
+    "Use page object model for E2E tests",
+    "Implement test data builders for consistent test setup",
+    "Create shared test utilities and helpers",
+    "Use descriptive test names that explain expected behavior",
+    "Isolate tests to prevent interdependencies",
+    "Mock external dependencies in unit tests",
+    "Use real services in integration tests",
+    "Implement parallel test execution for faster feedback",
+    "Create visual regression tests for UI components"
+  ],
+  "troubleshooting": [
+    {
+      "issue": "Low test coverage",
+      "solution": "Identify untested code paths and add targeted unit tests",
+      "prevention": "Enforce coverage gates in CI/CD pipeline"
+    },
+    {
+      "issue": "Flaky E2E tests",
+      "solution": "Add explicit waits and retry mechanisms",
+      "prevention": "Use deterministic test data and stable selectors"
+    },
+    {
+      "issue": "Slow test execution",
+      "solution": "Implement parallel execution and optimize test database",
+      "prevention": "Regular test performance monitoring and optimization"
+    }
+  ],
+  "related_patterns": [
+    "production_deployment_preparation",
+    "performance_optimization",
+    "security_compliance_validation"
+  ],
+  "learning_integration": {
+    "captures_metrics": true,
+    "enables_optimization": true,
+    "supports_continuous_improvement": true
+  }
+}

@@ -13,7 +13,7 @@ References:
 - Mac OS Configuration Profiles: https://developer.apple.com/documentation/devicemanagement/configuration_profiles
 
 ---
-# Authoritative Stack & Coding Standards
+# Authoritative Stack, Coding Standards, and API Coverage
 
 ## Technology Stack
 - **Frontend:** React (TypeScript, functional components, strict typing)
@@ -38,9 +38,19 @@ References:
 - All data models defined in `/types` and referenced everywhere
 - All dependencies and standards referenced in code comments
 
+
 ## Authoritative Resources
-- `/types/` (data models, API types)
-- `/docs/` (additional standards, references)
+- `/types/models.ts` (all Jamf Pro resource types, strictly typed)
+- `/types/api.ts` (all Jamf Pro API endpoints, strictly typed)
+- `/docs/` (standards, references, planning)
+
+## API Coverage (v0.3)
+All Jamf Pro Classic API resources and endpoints are now strictly typed and exported:
+- Directory Bindings, Disk Encryption Configurations, Distribution Points, Dock Items, Ebooks, File Uploads, GSX Connections, Healthcare Listeners, LDAP Servers, Licensed Software, Log Flush, Mac Applications, Managed Preference Profiles, Mobile Device resources, Netboot Servers, Network Segments, Packages, Patch Management, Peripherals, Printers, Removable MAC Addresses, Restricted Software, Scripts, Sites, SMTP Servers, Software Update Servers, User Extension Attributes, User Groups, VPP Accounts/Assignments/Invitations, Webhooks, and more.
+
+See `/types/models.ts` and `/types/api.ts` for full details. All business logic, Redux, and UI components must reference these authoritative types and endpoints.
+
+_Last updated: 2025-07-29 by GitHub Copilot_
 
 ---
 ## Next Steps

@@ -1,0 +1,81 @@
+{
+  "id": "git_workflow_commit",
+  "name": "Git Workflow Commit",
+  "description": "Commits changes with semantic versioning and scope.",
+  "category": "git",
+  "version": "1.0.0",
+  "parameters": {
+    "required": [
+      {
+        "name": "scope",
+        "type": "string",
+        "description": "Scope of the commit (feature, docs, etc.)"
+      },
+      {
+        "name": "semantic_version_increment",
+        "type": "string",
+        "description": "Parameter semanticVersionIncrement",
+        "enum": [
+          "major",
+          "minor",
+          "patch"
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {
+        "action": "git_fetch_latest",
+        "description": "Fetch all latest changes and tags from remote",
+        "command": "git fetch --all --tags"
+      },
+      {
+        "action": "check_existing_tags",
+        "description": "Check existing version tags to determine next version",
+        "command": "git tag --list | grep -E '^v[0-9]' | sort -V | tail -10"
+      },
+      {
+        "action": "semantic_commit",
+        "description": "Create semantic commit with proper scope and message"
+      },
+      {
+        "action": "version_tag",
+        "description": "Create version tag only if it doesn't exist",
+        "validation": "Check for tag existence before creation"
+      }
+    ],
+    "validation": {
+      "pre_conditions": [
+        "Working directory is clean or changes are staged",
+        "Remote repository is accessible",
+        "Current branch allows commits"
+      ],
+      "post_conditions": [
+        "Commit created successfully",
+        "Version tag created if applicable",
+        "Changes pushed to remote"
+      ],
+      "error_handling": [
+        "Tag already exists: Check existing tags and increment appropriately",
+        "Network issues: Retry fetch operations",
+        "Permission issues: Verify git credentials"
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-01T03:54:07.609751Z",
+    "updated": "2025-07-01T03:54:07.609752Z",
+    "version": "1.0.0",
+    "complexity": "medium",
+    "tags": [],
+    "dependencies": [],
+    "performance_metrics": {
+      "avg_execution_time": 0.0,
+      "success_rate": 0.0,
+      "usage_count": 0
+    }
+  }
+}

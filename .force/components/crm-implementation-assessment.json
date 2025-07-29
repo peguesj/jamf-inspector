@@ -1,0 +1,82 @@
+{
+  "$schema": "../schemas/force-schema.json",
+  "title": "CRM Implementation Assessment Tool",
+  "description": "Comprehensive tool for analyzing CRM system implementation status and identifying completion gaps",
+  "version": "1.0.0",
+  "type": "tool",
+  "category": "assessment",
+  "metadata": {
+    "complexity": "high",
+    "impact": "critical",
+    "learning_source": "crm_implementation_realignment_20250710",
+    "confidence_level": 0.95
+  },
+  "parameters": {
+    "analysis_scope": {
+      "type": "string",
+      "enum": ["database", "api", "ui", "integration", "full"],
+      "default": "full",
+      "description": "Scope of implementation analysis"
+    },
+    "assessment_depth": {
+      "type": "string",
+      "enum": ["surface", "detailed", "comprehensive"],
+      "default": "comprehensive",
+      "description": "Depth of feature analysis"
+    },
+    "include_metrics": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include quantitative completion metrics"
+    }
+  },
+  "execution": {
+    "steps": [
+      {
+        "action": "analyze_database_schema",
+        "description": "Examine database migrations and table structures",
+        "validation": "verify_table_existence_and_relationships"
+      },
+      {
+        "action": "assess_api_completeness",
+        "description": "Analyze API routes and functionality depth",
+        "validation": "check_crud_operations_and_authentication"
+      },
+      {
+        "action": "evaluate_ui_functionality",
+        "description": "Review UI components and user interactions",
+        "validation": "verify_component_integration_and_features"
+      },
+      {
+        "action": "measure_code_complexity",
+        "description": "Analyze file sizes and functional complexity",
+        "validation": "calculate_implementation_depth_metrics"
+      },
+      {
+        "action": "generate_completion_report",
+        "description": "Create comprehensive status analysis",
+        "validation": "verify_accuracy_against_working_features"
+      }
+    ]
+  },
+  "success_criteria": {
+    "accuracy_threshold": 0.85,
+    "feature_coverage": 0.90,
+    "assessment_confidence": 0.80
+  },
+  "learning_insights": [
+    "File line counts indicate implementation depth and maturity",
+    "Working features may be more complete than initial assessment suggests",
+    "Comprehensive codebase analysis prevents underestimation errors",
+    "Regular realignment checks improve project accuracy and efficiency",
+    "Database schema completeness correlates with overall system readiness",
+    "API endpoint complexity reveals true backend implementation status",
+    "UI component functionality indicates integration maturity"
+  ],
+  "success_metrics": {
+    "accuracy_threshold": 0.85,
+    "feature_coverage": 0.90,
+    "assessment_confidence": 0.80,
+    "realignment_improvement": 0.75
+  }
+}

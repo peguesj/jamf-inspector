@@ -1,0 +1,54 @@
+{
+  "$schema": "https://force.agentic.dev/schemas/extended/v1.0.0",
+  "id": "realign_migration_prefixes",
+  "name": "Realign Migration Prefixes",
+  "category": "implementation",
+  "description": "Renames all migration files in the migrations directory to have unique, sequential numeric prefixes, fixing duplicate or out-of-order prefixes.",
+  "parameters": {
+    "required": [
+      {
+        "name": "migrations_dir",
+        "type": "string",
+        "description": "Absolute path to the migrations directory."
+      }
+    ],
+    "optional": []
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {
+        "action": "shell",
+        "description": "Rename migration files to have unique, sequential numeric prefixes.",
+        "parameters": {
+          "command": "cd {{migrations_dir}} && ls -v | grep -E '^[0-9]{3}_.*\\.sql$' | awk '{printf \"mv %s %03d_%s\\n\", $0, NR, substr($0,5)}' | bash"
+        }
+      }
+    ],
+    "validation": {
+      "pre_conditions": [
+        "Directory exists and contains migration files with numeric prefixes."
+      ],
+      "post_conditions": [
+        "All migration files have unique, sequential numeric prefixes."
+      ],
+      "error_handling": [
+        {
+          "error_type": "file_conflict",
+          "strategy": "abort",
+          "action": "Abort if a file with the target name already exists."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-16T00:00:00Z",
+    "updated": "2025-07-16T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "low",
+    "tags": ["migrations", "prefix", "automation"],
+    "author": "GitHub Copilot",
+    "maintainer": "GitHub Copilot",
+    "documentation_url": "https://force.agentic.dev/docs/tools/realign_migration_prefixes"
+  }
+}

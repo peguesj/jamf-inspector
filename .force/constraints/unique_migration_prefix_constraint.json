@@ -1,0 +1,24 @@
+{
+  "$schema": "https://force.agentic.dev/schemas/extended/v1.0.0",
+  "id": "unique_migration_prefix_constraint",
+  "name": "Unique Migration Prefix Constraint",
+  "category": "quality",
+  "description": "Ensures all migration files have unique numeric prefixes to prevent migration order conflicts.",
+  "validation": {
+    "rules": ["All migration files in the directory must have a unique numeric prefix."],
+    "severity": "error",
+    "scope": ["/Users/jeremiah/Developer/vantage-v2/portal/supabase/migrations"]
+  },
+  "enforcement": {
+    "auto_fix": true,
+    "require_approval": false,
+    "blocking": true
+  },
+  "metadata": {
+    "created": "2025-07-16T00:00:00Z",
+    "updated": "2025-07-16T00:00:00Z",
+    "version": "1.0.0",
+    "author": "GitHub Copilot",
+    "tags": ["migrations", "constraint"]
+  }
+}

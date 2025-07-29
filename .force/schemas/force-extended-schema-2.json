@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/force-extended-schema-20240726.json",
+  "title": "FORCE Extended Schema",
+  "description": "Extended FORCE schema to include agentic project planning components",
+  "type": "object",
+  "definitions": {
+    "Agent": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "description": {"type": "string"},
+        "responsibilities": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "roleCategory": {"type": "string"},
+        "relatedIssues": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "parentAgentId": {"type": ["string", "null"]},
+        "childrenAgentIds": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "required": ["id", "description", "roleCategory"]
+    },
+    "Issue": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "ownerAgents": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["High", "Medium", "Low"]
+        },
+        "parentIssueId": {"type": ["string", "null"]},
+        "anchor": {"type": "string"},
+        "type": {
+          "type": "string",
+          "enum": ["Epic", "Story", "Task"]
+        }
+      },
+      "required": ["id", "title", "ownerAgents", "priority", "type"]
+    },
+    "LinearIntegrationAgent": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "description": {"type": "string"},
+        "responsibilities": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "managedIssueIds": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "required": ["id", "description"]
+    },
+    "TelemetryMetric": {
+      "type": "object",
+      "properties": {
+        "metricId": {"type": "string"},
+        "agentId": {"type": "string"},
+        "description": {"type": "string"},
+        "measurementUnit": {"type": "string"}
+      },
+      "required": ["metricId", "agentId", "description"]
+    }
+  }
+}

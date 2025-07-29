@@ -1,0 +1,9 @@
+{
+  "id": "OrchestrationWorkflow",
+  "type": "Pattern",
+  "description": "Workflow pattern for orchestration of AI tasks.",
+  "properties": {
+    "whenToUse": "When tasks involve coordination and flexible delegation.",
+    "examples": ["AI task orchestration", "Dynamic multi-agent delegation"]
+  }
+}

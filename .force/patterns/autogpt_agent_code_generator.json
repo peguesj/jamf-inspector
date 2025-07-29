@@ -1,0 +1,55 @@
+{
+  "id": "autogpt_agent_code_generator",
+  "name": "AutoGPT Agent Code Generator",
+  "category": "generator",
+  "description": "Pattern for generating AutoGPT agent and block code, including agent alignment and block definitions, following the Vantage agentic architecture.",
+  "context": {
+    "when_to_use": "When a new AutoGPT agent or block needs to be generated and aligned with project requirements.",
+    "benefits": [
+      "Automates agent and block code generation",
+      "Ensures alignment with project and issue context",
+      "Reduces manual coding effort"
+    ],
+    "trade_offs": [
+      "Requires up-to-date schema and mapping",
+      "May need manual review for complex logic"
+    ],
+    "anti_patterns": [
+      "Manual agent code duplication",
+      "Unaligned block definitions"
+    ]
+  },
+  "implementation": {
+    "steps": [
+      "Parse project and issue context from Linear and codebase",
+      "Generate agent and block code using templates",
+      "Align generated code with agentic mapping and project plan",
+      "Validate generated code against FORCE schemas"
+    ],
+    "executable_steps": [
+      {
+        "name": "Generate AutoGPT Agent",
+        "toolId": "generate_autogpt_agent",
+        "parameters": {}
+      },
+      {
+        "name": "Generate AutoGPT Blocks",
+        "toolId": "generate_autogpt_blocks",
+        "parameters": {}
+      },
+      {
+        "name": "Align Agent and Blocks",
+        "toolId": "autogpt_agent_alignment",
+        "parameters": {}
+      }
+    ]
+  },
+  "metadata": {
+    "created": "2025-07-27T00:00:00Z",
+    "updated": "2025-07-27T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "high",
+    "tags": ["autogpt", "generator", "pattern", "agentic"],
+    "author": "GitHub Copilot"
+  }
+}

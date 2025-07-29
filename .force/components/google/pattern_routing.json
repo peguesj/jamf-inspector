@@ -1,0 +1,9 @@
+{
+  "id": "GoogleRouting",
+  "type": "Pattern",
+  "description": "Routing workflow pattern for dispatching to specialized agents.",
+  "properties": {
+    "usage": "Classify input and route to appropriate handler.",
+    "examples": ["Customer support query routing", "Model selection based on input type"]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "issue_status_annotation",
+  "name": "Issue Status Annotation Tool",
+  "version": "1.0.0",
+  "description": "Annotates implementation plan items with status emojis and tracks progress for MSP platform development",
+  "category": "governance",
+  "complexity": "medium",
+  "tags": ["tracking", "annotation", "status", "governance", "msp"],
+  "inputs": [
+    {
+      "name": "report_file_path",
+      "type": "string",
+      "description": "Path to the Force completion report file",
+      "required": true
+    },
+    {
+      "name": "start_line",
+      "type": "number",
+      "description": "Starting line number for annotation",
+      "required": true
+    },
+    {
+      "name": "end_line",
+      "type": "number", 
+      "description": "Ending line number for annotation",
+      "required": true
+    },
+    {
+      "name": "status_mapping",
+      "type": "object",
+      "description": "Mapping of status criteria to emoji indicators",
+      "required": false,
+      "default": {
+        "completed": "🟢",
+        "in_progress": "🟡", 
+        "not_started": "🔴",
+        "blocked": "⚫",
+        "deprecated": "⚪"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "name": "annotated_report",
+      "type": "string",
+      "description": "Path to the annotated report file"
+    },
+    {
+      "name": "status_summary",
+      "type": "object",
+      "description": "Summary of status counts and percentages"
+    },
+    {
+      "name": "governance_records",
+      "type": "array",
+      "description": "Array of governance tracking records for items without Linear issues"
+    }
+  ],
+  "implementation": {
+    "type": "python",
+    "entry_point": "annotate_implementation_status",
+    "dependencies": ["re", "json", "datetime", "uuid", "pathlib"]
+  },
+  "governance": {
+    "approval_required": false,
+    "audit_trail": true,
+    "version_control": true
+  },
+  "constraints": [
+    "Must preserve existing Linear issue links",
+    "Must generate unique IDs for non-Linear items", 
+    "Must maintain report formatting and structure",
+    "Must create governance JSON files for future import"
+  ]
+}

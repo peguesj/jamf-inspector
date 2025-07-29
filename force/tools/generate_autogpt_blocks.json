@@ -1,0 +1,38 @@
+{
+  "id": "generate_autogpt_blocks",
+  "name": "Generate AutoGPT Blocks",
+  "category": "generator",
+  "description": "Generates AutoGPT block code files based on agentic mapping and project context.",
+  "parameters": {
+    "required": [
+      {"name": "block_names", "type": "array", "description": "List of block names to generate."},
+      {"name": "agent_name", "type": "string", "description": "Name of the parent agent."}
+    ],
+    "optional": [
+      {"name": "template", "type": "string", "description": "Template to use for block code generation."}
+    ]
+  },
+  "execution": {
+    "strategy": "sequential",
+    "commands": [
+      {"action": "render_template", "description": "Render block code templates with provided parameters."},
+      {"action": "write_file", "description": "Write generated block code to the appropriate directory."}
+    ],
+    "validation": {
+      "pre_conditions": ["block_names is not empty", "agent_name is valid"],
+      "post_conditions": ["Block code files exist and pass schema validation"],
+      "error_handling": [
+        {"error_type": "template_error", "strategy": "abort", "action": "Notify user and stop generation."},
+        {"error_type": "file_write_error", "strategy": "retry", "action": "Retry file write up to 2 times."}
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2025-07-27T00:00:00Z",
+    "updated": "2025-07-27T00:00:00Z",
+    "version": "1.0.0",
+    "complexity": "medium",
+    "tags": ["autogpt", "generator", "block"],
+    "author": "GitHub Copilot"
+  }
+}

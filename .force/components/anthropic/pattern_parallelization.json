@@ -1,0 +1,10 @@
+{
+  "id": "ParallelizationWorkflow",
+  "type": "Pattern",
+  "description": "Workflow pattern running multiple subtasks or votes in parallel.",
+  "properties": {
+    "variations": ["Sectioning", "Voting"],
+    "whenToUse": "For speeding execution and increasing confidence in complex tasks.",
+    "examples": ["Sectioning task into independent components.", "Multiple evaluations for content safety."]
+  }
+}

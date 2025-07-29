@@ -1,0 +1,9 @@
+{
+  "id": "EvaluatorOptimizerWorkflow",
+  "type": "Pattern",
+  "description": "Workflow of generation followed by evaluation and iterative refinement.",
+  "properties": {
+    "whenToUse": "Where evaluation criteria exist and iterative improvement matters.",
+    "examples": ["Literary translation improvement.", "Multi-step search refinement."]
+  }
+}

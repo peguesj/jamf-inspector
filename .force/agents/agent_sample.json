@@ -1,0 +1,9 @@
+{
+  "id": "InfraLeadAgent",
+  "description": "Oversees infrastructure provisioning and cloud setup",
+  "responsibilities": ["Manage cloud setup", "Establish network and storage"],
+  "roleCategory": "Infrastructure",
+  "relatedIssues": ["EPIC-INFRA", "INFRA-CORE"],
+  "parentAgentId": null,
+  "childrenAgentIds": ["InfraCICDAgent", "InfraMonitoringAgent"]
+}

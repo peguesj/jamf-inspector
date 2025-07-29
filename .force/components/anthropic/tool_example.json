@@ -1,0 +1,9 @@
+{
+  "id": "AugmentedLLMTool",
+  "type": "Tool",
+  "description": "Tool representing LLM with retrieval, tools, and memory augmentations.",
+  "properties": {
+    "toolType": "AugmentedLLM",
+    "capabilities": ["Search Queries", "Tool Selection", "Information Retention"]
+  }
+}

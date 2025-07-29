@@ -1,0 +1,27 @@
+{
+  "id": "translation_pattern",
+  "name": "Reference to FORCE Component Translation",
+  "description": "Pattern for translating agentic reference architectures into FORCE variant component definitions with validation",
+  "steps": [
+    {
+      "name": "identify_elements",
+      "description": "Extract generic elements from reference data",
+      "action": "parse_reference_data"
+    },
+    {
+      "name": "map_elements",
+      "description": "Map extracted elements to FORCE types",
+      "action": "element_to_force_mapping"
+    },
+    {
+      "name": "translate_elements",
+      "description": "Generate FORCE JSON component definitions",
+      "action": "generate_force_definitions"
+    },
+    {
+      "name": "validate_components",
+      "description": "Validate generated components against extended FORCE schema",
+      "action": "validate_against_schema"
+    }
+  ]
+}

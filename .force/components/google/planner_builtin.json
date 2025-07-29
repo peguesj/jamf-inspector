@@ -1,0 +1,9 @@
+{
+  "id": "GoogleBuiltInPlanner",
+  "type": "Planner",
+  "description": "Planner leveraging Google's built-in planning and thinking capabilities.",
+  "properties": {
+    "thinkingBudget": 1024,
+    "includeThoughts": true
+  }
+}

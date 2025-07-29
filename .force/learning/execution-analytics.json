@@ -1,0 +1,4608 @@
+[
+  {
+    "id": "project_structure_analysis_20250701_190243_561364",
+    "timestamp": "2025-07-01T19:02:43.561364+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "project_structure_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.065154,
+      "metrics": {
+        "executionTimeMs": 65.15400000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:02:43.626540+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_190313_192736",
+    "timestamp": "2025-07-01T19:03:13.192736+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006921,
+      "metrics": {
+        "executionTimeMs": 6.921,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:03:13.199675+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "project_structure_analysis_20250701_191012_555453",
+    "timestamp": "2025-07-01T19:10:12.555453+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "project_structure_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.010036,
+      "metrics": {
+        "executionTimeMs": 10.036,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:10:12.565510+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250701_191155_218811",
+    "timestamp": "2025-07-01T19:11:55.218811+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.014198,
+      "metrics": {
+        "executionTimeMs": 14.198,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:11:55.233032+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250701_191204_433379",
+    "timestamp": "2025-07-01T19:12:04.433379+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.010589,
+      "metrics": {
+        "executionTimeMs": 10.588999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:12:04.443997+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_191216_304453",
+    "timestamp": "2025-07-01T19:12:16.304453+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007715,
+      "metrics": {
+        "executionTimeMs": 7.715,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:12:16.312190+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "modular_documentation_structure_20250701_191245_602562",
+    "timestamp": "2025-07-01T19:12:45.602562+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "modular_documentation_structure",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008047,
+      "metrics": {
+        "executionTimeMs": 8.047,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:12:45.610626+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_191249_720067",
+    "timestamp": "2025-07-01T19:12:49.720067+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006596,
+      "metrics": {
+        "executionTimeMs": 6.596,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:12:49.726698+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "project_structure_analysis_20250701_191338_859283",
+    "timestamp": "2025-07-01T19:13:38.859283+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "project_structure_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.009791,
+      "metrics": {
+        "executionTimeMs": 9.790999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:13:38.869097+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250701_191342_000055",
+    "timestamp": "2025-07-01T19:13:42.000055+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00625,
+      "metrics": {
+        "executionTimeMs": 6.25,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:13:42.006330+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250701_191345_847905",
+    "timestamp": "2025-07-01T19:13:45.847905+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.005897,
+      "metrics": {
+        "executionTimeMs": 5.897,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:13:45.853815+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_191349_489723",
+    "timestamp": "2025-07-01T19:13:49.489723+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008362,
+      "metrics": {
+        "executionTimeMs": 8.362,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:13:49.498106+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_191405_390327",
+    "timestamp": "2025-07-01T19:14:05.390327+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008262,
+      "metrics": {
+        "executionTimeMs": 8.262,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:14:05.398633+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250701_191422_620401",
+    "timestamp": "2025-07-01T19:14:22.620401+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007527,
+      "metrics": {
+        "executionTimeMs": 7.527,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:14:22.628001+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250701_191433_586811",
+    "timestamp": "2025-07-01T19:14:33.586811+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.015211,
+      "metrics": {
+        "executionTimeMs": 15.211,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:14:33.602063+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250701_191500_813663",
+    "timestamp": "2025-07-01T19:15:00.813663+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.013258,
+      "metrics": {
+        "executionTimeMs": 13.258000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:15:00.826942+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_192210_235093",
+    "timestamp": "2025-07-01T19:22:10.235093+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008019,
+      "metrics": {
+        "executionTimeMs": 8.019,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:22:10.243133+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250701_193011_370159",
+    "timestamp": "2025-07-01T19:30:11.370159+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008668,
+      "metrics": {
+        "executionTimeMs": 8.668000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:30:11.378847+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250701_193128_512670",
+    "timestamp": "2025-07-01T19:31:28.512670+00:00",
+    "context": {
+      "projectPhase": "development",
+      "complexityLevel": "enterprise",
+      "environment": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007235,
+      "metrics": {
+        "executionTimeMs": 7.235,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T19:31:28.519928+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250701_200015_159066",
+    "timestamp": "2025-07-01T20:00:15.159066+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008716,
+      "metrics": {
+        "executionTimeMs": 8.716,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:00:15.167814+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_200157_388246",
+    "timestamp": "2025-07-01T20:01:57.388246+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007495,
+      "metrics": {
+        "executionTimeMs": 7.495,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:01:57.395765+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_200252_756427",
+    "timestamp": "2025-07-01T20:02:52.756427+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006609,
+      "metrics": {
+        "executionTimeMs": 6.609,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:02:52.763056+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250701_200418_715164",
+    "timestamp": "2025-07-01T20:04:18.715164+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006706,
+      "metrics": {
+        "executionTimeMs": 6.706,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:18.721891+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250701_200427_451836",
+    "timestamp": "2025-07-01T20:04:27.451836+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007328,
+      "metrics": {
+        "executionTimeMs": 7.328,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:27.459181+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250701_200437_152457",
+    "timestamp": "2025-07-01T20:04:37.152457+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006136,
+      "metrics": {
+        "executionTimeMs": 6.136,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:37.158612+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250701_200443_539828",
+    "timestamp": "2025-07-01T20:04:43.539828+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006009,
+      "metrics": {
+        "executionTimeMs": 6.0089999999999995,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:43.545855+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250701_200453_761943",
+    "timestamp": "2025-07-01T20:04:53.761943+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006429,
+      "metrics": {
+        "executionTimeMs": 6.428999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:53.768397+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250701_200458_141030",
+    "timestamp": "2025-07-01T20:04:58.141030+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006713,
+      "metrics": {
+        "executionTimeMs": 6.713,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:04:58.147766+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250701_200504_481879",
+    "timestamp": "2025-07-01T20:05:04.481879+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.009085,
+      "metrics": {
+        "executionTimeMs": 9.084999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:05:04.490982+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_200508_781306",
+    "timestamp": "2025-07-01T20:05:08.781306+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006739,
+      "metrics": {
+        "executionTimeMs": 6.739,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:05:08.788062+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_mcp_integration_20250701_200516_876212",
+    "timestamp": "2025-07-01T20:05:16.876212+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_mcp_integration",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007393,
+      "metrics": {
+        "executionTimeMs": 7.393000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:05:16.883627+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_200521_252881",
+    "timestamp": "2025-07-01T20:05:21.252881+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.005858,
+      "metrics": {
+        "executionTimeMs": 5.8580000000000005,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:05:21.258766+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250701_200604_918666",
+    "timestamp": "2025-07-01T20:06:04.918666+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006604,
+      "metrics": {
+        "executionTimeMs": 6.603999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:04.925288+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250701_200609_142946",
+    "timestamp": "2025-07-01T20:06:09.142946+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.008705,
+      "metrics": {
+        "executionTimeMs": 8.705,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:09.151676+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250701_200613_630953",
+    "timestamp": "2025-07-01T20:06:13.630953+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.005569,
+      "metrics": {
+        "executionTimeMs": 5.569,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:13.636540+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250701_200618_562967",
+    "timestamp": "2025-07-01T20:06:18.562967+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006593,
+      "metrics": {
+        "executionTimeMs": 6.593,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:18.569579+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250701_200622_877211",
+    "timestamp": "2025-07-01T20:06:22.877211+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006216,
+      "metrics": {
+        "executionTimeMs": 6.216,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:22.883444+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250701_200628_493186",
+    "timestamp": "2025-07-01T20:06:28.493186+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006625,
+      "metrics": {
+        "executionTimeMs": 6.625,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:28.499837+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250701_200633_032157",
+    "timestamp": "2025-07-01T20:06:33.032157+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006404,
+      "metrics": {
+        "executionTimeMs": 6.404,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:06:33.038585+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_tasks_20250701_200857_735867",
+    "timestamp": "2025-07-01T20:08:57.735867+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_tasks",
+    "outcome": {
+      "success": false,
+      "executionTime": 5e-05,
+      "errorMessage": "Tool not found: git_tasks"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_tasks",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_workflow_commit_20250701_200907_305065",
+    "timestamp": "2025-07-01T20:09:07.305065+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_workflow_commit",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007405,
+      "metrics": {
+        "executionTimeMs": 7.405,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:09:07.312493+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_201002_663878",
+    "timestamp": "2025-07-01T20:10:02.663878+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007244,
+      "metrics": {
+        "executionTimeMs": 7.244,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:10:02.671145+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_branch_end_tasks_20250701_201043_090760",
+    "timestamp": "2025-07-01T20:10:43.090760+00:00",
+    "context": {
+      "complexityLevel": "enterprise",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_branch_end_tasks",
+    "outcome": {
+      "success": false,
+      "executionTime": 3.2e-05,
+      "errorMessage": "Tool not found: git_branch_end_tasks"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_branch_end_tasks",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_status_20250701_201050_257988",
+    "timestamp": "2025-07-01T20:10:50.257988+00:00",
+    "context": {
+      "complexityLevel": "enterprise",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_status",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007753,
+      "metrics": {
+        "executionTimeMs": 7.753,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:10:50.265757+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_20250701_201128_396639",
+    "timestamp": "2025-07-01T20:11:28.396639+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_status",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.019879,
+      "metrics": {
+        "executionTimeMs": 19.879,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:11:28.416536+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_20250701_201427_529517",
+    "timestamp": "2025-07-01T20:14:27.529517+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_status",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007208,
+      "metrics": {
+        "executionTimeMs": 7.208,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:14:27.536761+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_diff_20250701_201431_017612",
+    "timestamp": "2025-07-01T20:14:31.017612+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_diff",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00651,
+      "metrics": {
+        "executionTimeMs": 6.51,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:14:31.024154+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_workflow_commit_20250701_202214_067012",
+    "timestamp": "2025-07-01T20:22:14.067012+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_workflow_commit",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.007365,
+      "metrics": {
+        "executionTimeMs": 7.365,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:22:14.074395+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250701_202218_163843",
+    "timestamp": "2025-07-01T20:22:18.163843+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.010608,
+      "metrics": {
+        "executionTimeMs": 10.607999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:22:18.174474+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250701_203014_328500",
+    "timestamp": "2025-07-01T20:30:14.328500+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.006596,
+      "metrics": {
+        "executionTimeMs": 6.596,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:30:14.335117+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250701_203151_000406",
+    "timestamp": "2025-07-01T20:31:51.000406+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.005961,
+      "metrics": {
+        "executionTimeMs": 5.961,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-01T20:31:51.006383+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "iterative_development_learning_20250702_170000",
+    "timestamp": "2025-07-02T17:00:00.000Z",
+    "context": {
+      "complexityLevel": "enterprise",
+      "environment": "development",
+      "projectPhase": "learning_synthesis"
+    },
+    "toolId": "learning_synthesis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.0,
+      "metrics": {
+        "patternsGenerated": 3,
+        "constraintsGenerated": 3,
+        "learningsExtracted": 8,
+        "improvementMeasured": "22.6%"
+      }
+    },
+    "insights": [
+      {
+        "type": "development_pattern",
+        "description": "Iterative enhancement with frequent validation prevents technical debt accumulation",
+        "confidence": 0.95,
+        "applicability": [
+          "system_enhancement",
+          "quality_assurance"
+        ]
+      },
+      {
+        "type": "schema_design",
+        "description": "Extended schemas with flexible validation improve tool loading success rates",
+        "confidence": 0.9,
+        "applicability": [
+          "schema_evolution",
+          "validation_systems"
+        ]
+      },
+      {
+        "type": "integration_pattern",
+        "description": "MCP integration requires comprehensive error handling and client configuration examples",
+        "confidence": 0.85,
+        "applicability": [
+          "mcp_integration",
+          "protocol_implementation"
+        ]
+      },
+      {
+        "type": "workflow_optimization",
+        "description": "Atomic commit workflow enables clean feature branch management",
+        "confidence": 0.9,
+        "applicability": [
+          "git_workflow",
+          "version_control"
+        ]
+      },
+      {
+        "type": "validation_strategy",
+        "description": "Embedded validation logic provides more reliable results than subprocess-based validation",
+        "confidence": 0.8,
+        "applicability": [
+          "validation_systems",
+          "reliability"
+        ]
+      }
+    ],
+    "derivedComponents": {
+      "patterns": [
+        "iterative_enhancement_workflow",
+        "schema_evolution_pattern",
+        "mcp_integration_pattern"
+      ],
+      "constraints": [
+        "schema_backward_compatibility",
+        "mcp_protocol_compliance",
+        "validation_quality_maintenance"
+      ],
+      "learningInsights": [
+        "iterative_development_insights.json"
+      ]
+    }
+  },
+  {
+    "id": "force_report_generator_20250709_052232_738586",
+    "timestamp": "2025-07-09T05:22:32.738586+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.023232,
+      "metrics": {
+        "executionTimeMs": 23.232,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-09T05:22:32.761842+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250709_052245_879779",
+    "timestamp": "2025-07-09T05:22:45.879779+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.031733,
+      "metrics": {
+        "executionTimeMs": 31.732999999999997,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-09T05:22:45.911540+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_134537_022144",
+    "timestamp": "2025-07-10T13:45:37.022144+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.085238,
+      "metrics": {
+        "executionTimeMs": 85.238,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T13:45:37.107914+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250710_134544_343829",
+    "timestamp": "2025-07-10T13:45:44.343829+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.039801,
+      "metrics": {
+        "executionTimeMs": 39.801,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T13:45:44.383655+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_143307_448138",
+    "timestamp": "2025-07-10T14:33:07.448138+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.0364,
+      "metrics": {
+        "executionTimeMs": 36.4,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T14:33:07.484569+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_145239_843365",
+    "timestamp": "2025-07-10T14:52:39.843365+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.059847,
+      "metrics": {
+        "executionTimeMs": 59.846999999999994,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T14:52:39.903246+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_152743_250865",
+    "timestamp": "2025-07-10T15:27:43.250865+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.036902,
+      "metrics": {
+        "executionTimeMs": 36.901999999999994,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T15:27:43.287795+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_155306_709917",
+    "timestamp": "2025-07-10T15:53:06.709917+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.031711,
+      "metrics": {
+        "executionTimeMs": 31.711000000000002,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T15:53:06.741657+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250710_160902_744621",
+    "timestamp": "2025-07-10T16:09:02.744621+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026951,
+      "metrics": {
+        "executionTimeMs": 26.951,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:09:02.771700+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250710_161427_957044",
+    "timestamp": "2025-07-10T16:14:27.957044+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.032462,
+      "metrics": {
+        "executionTimeMs": 32.461999999999996,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:14:27.989723+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250710_161448_598195",
+    "timestamp": "2025-07-10T16:14:48.598195+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.020473,
+      "metrics": {
+        "executionTimeMs": 20.473000000000003,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:14:48.618697+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250710_161529_841558",
+    "timestamp": "2025-07-10T16:15:29.841558+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.032303,
+      "metrics": {
+        "executionTimeMs": 32.303,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:15:29.873889+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250710_161627_032824",
+    "timestamp": "2025-07-10T16:16:27.032824+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.042955,
+      "metrics": {
+        "executionTimeMs": 42.955,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:16:27.075810+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "anchor_based_cross_referencing_20250710_161739_330899",
+    "timestamp": "2025-07-10T16:17:39.330899+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "anchor_based_cross_referencing",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.029278,
+      "metrics": {
+        "executionTimeMs": 29.278,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:17:39.360287+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_161803_578923",
+    "timestamp": "2025-07-10T16:18:03.578923+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.020632,
+      "metrics": {
+        "executionTimeMs": 20.632,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T16:18:03.599584+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze-code-changes_20250710_190700_219446",
+    "timestamp": "2025-07-10T19:07:00.219446+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze-code-changes",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.003369,
+      "errorMessage": "Tool not found: analyze-code-changes"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: analyze-code-changes",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "code_quality_check_20250710_190803_055759",
+    "timestamp": "2025-07-10T19:08:03.055759+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.057967,
+      "metrics": {
+        "executionTimeMs": 57.967,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:03.113945+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "security_analysis_20250710_190807_003054",
+    "timestamp": "2025-07-10T19:08:07.003054+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "security_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026432,
+      "metrics": {
+        "executionTimeMs": 26.432000000000002,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:07.029513+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "compliance_check_20250710_190810_587400",
+    "timestamp": "2025-07-10T19:08:10.587400+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "compliance_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016121,
+      "metrics": {
+        "executionTimeMs": 16.121,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:10.603544+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250710_190814_454782",
+    "timestamp": "2025-07-10T19:08:14.454782+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.021015,
+      "metrics": {
+        "executionTimeMs": 21.015,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:14.475819+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "performance_analysis_20250710_190819_024854",
+    "timestamp": "2025-07-10T19:08:19.024854+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "performance_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.017472,
+      "metrics": {
+        "executionTimeMs": 17.472,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:19.042347+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "infrastructure_security_check_20250710_190823_445411",
+    "timestamp": "2025-07-10T19:08:23.445411+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "infrastructure_security_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.027396,
+      "metrics": {
+        "executionTimeMs": 27.396,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:23.472833+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "secrets_scan_20250710_190826_850057",
+    "timestamp": "2025-07-10T19:08:26.850057+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "secrets_scan",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.018945,
+      "metrics": {
+        "executionTimeMs": 18.945,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:26.869022+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_190831_026111",
+    "timestamp": "2025-07-10T19:08:31.026111+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.023836,
+      "metrics": {
+        "executionTimeMs": 23.836,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:31.049974+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "project_structure_analysis_20250710_190843_265464",
+    "timestamp": "2025-07-10T19:08:43.265464+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "project_structure_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.027954,
+      "metrics": {
+        "executionTimeMs": 27.954,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:08:43.293445+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "api-generator_20250710_192307_712180",
+    "timestamp": "2025-07-10T19:23:07.712180+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "api-generator",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000111,
+      "errorMessage": "Tool not found: api-generator"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: api-generator",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "docs_analysis_20250710_194352_936275",
+    "timestamp": "2025-07-10T19:43:52.936275+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.062559,
+      "metrics": {
+        "executionTimeMs": 62.559000000000005,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:43:52.998876+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250710_194357_162669",
+    "timestamp": "2025-07-10T19:43:57.162669+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016909,
+      "metrics": {
+        "executionTimeMs": 16.909,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:43:57.179595+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250710_194402_895040",
+    "timestamp": "2025-07-10T19:44:02.895040+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.022636,
+      "metrics": {
+        "executionTimeMs": 22.636,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:44:02.917741+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250710_194407_315472",
+    "timestamp": "2025-07-10T19:44:07.315472+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.021765,
+      "metrics": {
+        "executionTimeMs": 21.765,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:44:07.337269+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "check_release_readiness_20250710_194433_240940",
+    "timestamp": "2025-07-10T19:44:33.240940+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "check_release_readiness",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026638,
+      "metrics": {
+        "executionTimeMs": 26.637999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:44:33.267610+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250710_194438_844669",
+    "timestamp": "2025-07-10T19:44:38.844669+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.020552,
+      "metrics": {
+        "executionTimeMs": 20.552,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T19:44:38.865248+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "anchor_based_cross_referencing_20250710_205559_995344",
+    "timestamp": "2025-07-10T20:55:59.995344+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "anchor_based_cross_referencing",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.048166,
+      "metrics": {
+        "executionTimeMs": 48.166000000000004,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T20:56:00.043842+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "anchor_based_cross_referencing_20250710_212409_896407",
+    "timestamp": "2025-07-10T21:24:09.896407+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "anchor_based_cross_referencing",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.043988,
+      "metrics": {
+        "executionTimeMs": 43.988,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:24:09.940607+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250710_213716_944088",
+    "timestamp": "2025-07-10T21:37:16.944088+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.04578,
+      "metrics": {
+        "executionTimeMs": 45.78,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:37:16.989898+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250710_213936_688014",
+    "timestamp": "2025-07-10T21:39:36.688014+00:00",
+    "context": {},
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.037281,
+      "metrics": {
+        "executionTimeMs": 37.281,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:39:36.725370+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "anchor_based_cross_referencing_20250710_213938_469832",
+    "timestamp": "2025-07-10T21:39:38.469832+00:00",
+    "context": {},
+    "toolId": "anchor_based_cross_referencing",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.027847,
+      "metrics": {
+        "executionTimeMs": 27.847,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:39:38.497704+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250710_213941_000155",
+    "timestamp": "2025-07-10T21:39:41.000155+00:00",
+    "context": {},
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.017968,
+      "metrics": {
+        "executionTimeMs": 17.968,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:39:41.018190+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "check_release_readiness_20250710_213942_714189",
+    "timestamp": "2025-07-10T21:39:42.714189+00:00",
+    "context": {},
+    "toolId": "check_release_readiness",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.01536,
+      "metrics": {
+        "executionTimeMs": 15.360000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:39:42.729577+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250710_214020_156036",
+    "timestamp": "2025-07-10T21:40:20.156036+00:00",
+    "context": {},
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.032802,
+      "metrics": {
+        "executionTimeMs": 32.802,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:20.188864+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "compliance_check_20250710_214029_337023",
+    "timestamp": "2025-07-10T21:40:29.337023+00:00",
+    "context": {},
+    "toolId": "compliance_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.027439,
+      "metrics": {
+        "executionTimeMs": 27.439,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:29.364490+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250710_214031_024049",
+    "timestamp": "2025-07-10T21:40:31.024049+00:00",
+    "context": {},
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016614,
+      "metrics": {
+        "executionTimeMs": 16.614,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:31.040680+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250710_214038_286701",
+    "timestamp": "2025-07-10T21:40:38.286701+00:00",
+    "context": {},
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.024504,
+      "metrics": {
+        "executionTimeMs": 24.504,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:38.311244+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250710_214040_053438",
+    "timestamp": "2025-07-10T21:40:40.053438+00:00",
+    "context": {},
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.017379,
+      "metrics": {
+        "executionTimeMs": 17.378999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:40.070833+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250710_214044_156185",
+    "timestamp": "2025-07-10T21:40:44.156185+00:00",
+    "context": {},
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.028658,
+      "metrics": {
+        "executionTimeMs": 28.657999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:44.184870+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250710_214051_006568",
+    "timestamp": "2025-07-10T21:40:51.006568+00:00",
+    "context": {},
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.036716,
+      "metrics": {
+        "executionTimeMs": 36.716,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:51.043318+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250710_214059_735442",
+    "timestamp": "2025-07-10T21:40:59.735442+00:00",
+    "context": {},
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.051548,
+      "metrics": {
+        "executionTimeMs": 51.547999999999995,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:40:59.787123+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "validate_version_20250710_214120_761578",
+    "timestamp": "2025-07-10T21:41:20.761578+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "production",
+      "projectPhase": "deployment"
+    },
+    "toolId": "validate_version",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.022353,
+      "metrics": {
+        "executionTimeMs": 22.353,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T21:41:20.784000+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250710_220258_627660",
+    "timestamp": "2025-07-10T22:02:58.627660+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.044803,
+      "metrics": {
+        "executionTimeMs": 44.803000000000004,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T22:02:58.672620+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250710_220258_811293",
+    "timestamp": "2025-07-10T22:02:58.811293+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.023306,
+      "metrics": {
+        "executionTimeMs": 23.306,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T22:02:58.834627+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250710_223325_727306",
+    "timestamp": "2025-07-10T22:33:25.727306+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "testing"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.034764,
+      "metrics": {
+        "executionTimeMs": 34.764,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T22:33:25.762102+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250710_233627_416427",
+    "timestamp": "2025-07-10T23:36:27.416427+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.061304,
+      "metrics": {
+        "executionTimeMs": 61.303999999999995,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T23:36:27.477762+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_mcp_integration_20250710_235405_699998",
+    "timestamp": "2025-07-10T23:54:05.699998+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_mcp_integration",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026678,
+      "metrics": {
+        "executionTimeMs": 26.678,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-10T23:54:05.726709+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "linear_mcp_sync_20250710_235441_478492",
+    "timestamp": "2025-07-10T23:54:41.478492+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "linear_mcp_sync",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.002374,
+      "errorMessage": "Tool not found: linear_mcp_sync"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: linear_mcp_sync",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "linear_mcp_sync_20250711_094244_058988",
+    "timestamp": "2025-07-11T09:42:44.058988+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "linear_mcp_sync",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.001471,
+      "errorMessage": "Tool not found: linear_mcp_sync"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: linear_mcp_sync",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "analyze_code_changes_20250711_184232_141231",
+    "timestamp": "2025-07-11T18:42:32.141231+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.025945,
+      "metrics": {
+        "executionTimeMs": 25.945,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-11T18:42:32.167196+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "global-state-management-design_20250711_184329_141731",
+    "timestamp": "2025-07-11T18:43:29.141731+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "global-state-management-design",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.001,
+      "errorMessage": "Tool not found: global-state-management-design"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: global-state-management-design",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "docs_analysis_20250711_194632_381541",
+    "timestamp": "2025-07-11T19:46:32.381541+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.029629,
+      "metrics": {
+        "executionTimeMs": 29.628999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-11T19:46:32.411195+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250711_194632_446959",
+    "timestamp": "2025-07-11T19:46:32.446959+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.033006,
+      "metrics": {
+        "executionTimeMs": 33.006,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-11T19:46:32.479987+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250711_194636_402266",
+    "timestamp": "2025-07-11T19:46:36.402266+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.030126,
+      "metrics": {
+        "executionTimeMs": 30.126,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-11T19:46:36.432427+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250711_194639_911146",
+    "timestamp": "2025-07-11T19:46:39.911146+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.025758,
+      "metrics": {
+        "executionTimeMs": 25.758,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-11T19:46:39.936923+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_analyzer_20250711_211218_564417",
+    "timestamp": "2025-07-11T21:12:18.564417+00:00",
+    "context": {},
+    "toolId": "git_status_analyzer",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.003289,
+      "errorMessage": "Tool not found: git_status_analyzer"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_status_analyzer",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_selective_stage_20250711_211218_567805",
+    "timestamp": "2025-07-11T21:12:18.567805+00:00",
+    "context": {},
+    "toolId": "git_selective_stage",
+    "outcome": {
+      "success": false,
+      "executionTime": 2.1e-05,
+      "errorMessage": "Tool not found: git_selective_stage"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_selective_stage",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_atomic_commit_20250711_211218_567859",
+    "timestamp": "2025-07-11T21:12:18.567859+00:00",
+    "context": {},
+    "toolId": "git_atomic_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 6e-06,
+      "errorMessage": "Tool not found: git_atomic_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_atomic_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_iterative_commit_20250711_211218_567887",
+    "timestamp": "2025-07-11T21:12:18.567887+00:00",
+    "context": {},
+    "toolId": "git_iterative_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 5e-06,
+      "errorMessage": "Tool not found: git_iterative_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_iterative_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "grouped_commit_workflow_20250712_035158_661514",
+    "timestamp": "2025-07-12T03:51:58.661514+00:00",
+    "context": {
+      "projectPhase": "development",
+      "complexityLevel": "medium",
+      "environment": "development"
+    },
+    "toolId": "grouped_commit_workflow",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.0006,
+      "errorMessage": "Tool not found: grouped_commit_workflow"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: grouped_commit_workflow",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_status_analyzer_20250712_035822_278139",
+    "timestamp": "2025-07-12T03:58:22.278139+00:00",
+    "context": {},
+    "toolId": "git_status_analyzer",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000163,
+      "errorMessage": "Tool not found: git_status_analyzer"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_status_analyzer",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_selective_stage_20250712_035822_278418",
+    "timestamp": "2025-07-12T03:58:22.278418+00:00",
+    "context": {},
+    "toolId": "git_selective_stage",
+    "outcome": {
+      "success": false,
+      "executionTime": 1.7e-05,
+      "errorMessage": "Tool not found: git_selective_stage"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_selective_stage",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_atomic_commit_20250712_035822_278462",
+    "timestamp": "2025-07-12T03:58:22.278462+00:00",
+    "context": {},
+    "toolId": "git_atomic_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 5e-06,
+      "errorMessage": "Tool not found: git_atomic_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_atomic_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_iterative_commit_20250712_035822_278517",
+    "timestamp": "2025-07-12T03:58:22.278517+00:00",
+    "context": {},
+    "toolId": "git_iterative_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 2.5e-05,
+      "errorMessage": "Tool not found: git_iterative_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_iterative_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "generate_changelog_20250712_041252_261058",
+    "timestamp": "2025-07-12T04:12:52.261058+00:00",
+    "context": {},
+    "toolId": "generate_changelog",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.029417,
+      "metrics": {
+        "executionTimeMs": 29.416999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-12T04:12:52.290507+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250712_041359_126026",
+    "timestamp": "2025-07-12T04:13:59.126026+00:00",
+    "context": {},
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.018246,
+      "metrics": {
+        "executionTimeMs": 18.246,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-12T04:13:59.144321+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "generate_docs_update_summary_20250712_041403_056088",
+    "timestamp": "2025-07-12T04:14:03.056088+00:00",
+    "context": {},
+    "toolId": "generate_docs_update_summary",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.018065,
+      "metrics": {
+        "executionTimeMs": 18.065,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-12T04:14:03.074177+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "update_release_documentation_20250712_041408_220725",
+    "timestamp": "2025-07-12T04:14:08.220725+00:00",
+    "context": {},
+    "toolId": "update_release_documentation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.019437,
+      "metrics": {
+        "executionTimeMs": 19.437,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-12T04:14:08.240187+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "update_api_docs_20250712_041412_632850",
+    "timestamp": "2025-07-12T04:14:12.632850+00:00",
+    "context": {},
+    "toolId": "update_api_docs",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.018813,
+      "metrics": {
+        "executionTimeMs": 18.813,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-12T04:14:12.651686+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "anchor_based_cross_referencing_20250714_011053_694749",
+    "timestamp": "2025-07-14T01:10:53.694749+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "anchor_based_cross_referencing",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.049465,
+      "metrics": {
+        "executionTimeMs": 49.465,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-14T01:10:53.744236+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250714_011058_886244",
+    "timestamp": "2025-07-14T01:10:58.886244+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016621,
+      "metrics": {
+        "executionTimeMs": 16.621,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-14T01:10:58.902891+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_analyzer_20250714_011119_784540",
+    "timestamp": "2025-07-14T01:11:19.784540+00:00",
+    "context": {},
+    "toolId": "git_status_analyzer",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000968,
+      "errorMessage": "Tool not found: git_status_analyzer"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_status_analyzer",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_selective_stage_20250714_011119_786622",
+    "timestamp": "2025-07-14T01:11:19.786622+00:00",
+    "context": {},
+    "toolId": "git_selective_stage",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000132,
+      "errorMessage": "Tool not found: git_selective_stage"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_selective_stage",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_atomic_commit_20250714_011119_786802",
+    "timestamp": "2025-07-14T01:11:19.786802+00:00",
+    "context": {},
+    "toolId": "git_atomic_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000111,
+      "errorMessage": "Tool not found: git_atomic_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_atomic_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_iterative_commit_20250714_011119_786970",
+    "timestamp": "2025-07-14T01:11:19.786970+00:00",
+    "context": {},
+    "toolId": "git_iterative_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 6e-06,
+      "errorMessage": "Tool not found: git_iterative_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_iterative_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "analyze_code_changes_20250715_200147_939381",
+    "timestamp": "2025-07-15T20:01:47.939381+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016659,
+      "metrics": {
+        "executionTimeMs": 16.659,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-15T20:01:47.956060+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_analyzer_20250716_043412_822213",
+    "timestamp": "2025-07-16T04:34:12.822213+00:00",
+    "context": {},
+    "toolId": "git_status_analyzer",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000947,
+      "errorMessage": "Tool not found: git_status_analyzer"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_status_analyzer",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_selective_stage_20250716_043412_824312",
+    "timestamp": "2025-07-16T04:34:12.824312+00:00",
+    "context": {},
+    "toolId": "git_selective_stage",
+    "outcome": {
+      "success": false,
+      "executionTime": 1.4e-05,
+      "errorMessage": "Tool not found: git_selective_stage"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_selective_stage",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_atomic_commit_20250716_043412_824506",
+    "timestamp": "2025-07-16T04:34:12.824506+00:00",
+    "context": {},
+    "toolId": "git_atomic_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 6e-06,
+      "errorMessage": "Tool not found: git_atomic_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_atomic_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_iterative_commit_20250716_043412_824585",
+    "timestamp": "2025-07-16T04:34:12.824585+00:00",
+    "context": {},
+    "toolId": "git_iterative_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.00021,
+      "errorMessage": "Tool not found: git_iterative_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_iterative_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_status_analyzer_20250716_045916_705034",
+    "timestamp": "2025-07-16T04:59:16.705034+00:00",
+    "context": {},
+    "toolId": "git_status_analyzer",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000555,
+      "errorMessage": "Tool not found: git_status_analyzer"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_status_analyzer",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_selective_stage_20250716_045916_705731",
+    "timestamp": "2025-07-16T04:59:16.705731+00:00",
+    "context": {},
+    "toolId": "git_selective_stage",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.00023,
+      "errorMessage": "Tool not found: git_selective_stage"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_selective_stage",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_atomic_commit_20250716_045916_706242",
+    "timestamp": "2025-07-16T04:59:16.706242+00:00",
+    "context": {},
+    "toolId": "git_atomic_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 8e-06,
+      "errorMessage": "Tool not found: git_atomic_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_atomic_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "git_iterative_commit_20250716_045916_707764",
+    "timestamp": "2025-07-16T04:59:16.707764+00:00",
+    "context": {},
+    "toolId": "git_iterative_commit",
+    "outcome": {
+      "success": false,
+      "executionTime": 8e-06,
+      "errorMessage": "Tool not found: git_iterative_commit"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: git_iterative_commit",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "force_component_fix_system_20250716_045919_184319",
+    "timestamp": "2025-07-16T04:59:19.184319+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026479,
+      "metrics": {
+        "executionTimeMs": 26.479,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T04:59:19.210820+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250716_051029_006623",
+    "timestamp": "2025-07-16T05:10:29.006623+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.026237,
+      "metrics": {
+        "executionTimeMs": 26.237,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T05:10:29.032886+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250716_051143_951010",
+    "timestamp": "2025-07-16T05:11:43.951010+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.02553,
+      "metrics": {
+        "executionTimeMs": 25.53,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T05:11:43.976660+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250716_065347_392104",
+    "timestamp": "2025-07-16T06:53:47.392104+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.053299,
+      "metrics": {
+        "executionTimeMs": 53.299,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:53:47.445455+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250716_065347_558441",
+    "timestamp": "2025-07-16T06:53:47.558441+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.025188,
+      "metrics": {
+        "executionTimeMs": 25.188,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:53:47.583649+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250716_065347_623554",
+    "timestamp": "2025-07-16T06:53:47.623554+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.017904,
+      "metrics": {
+        "executionTimeMs": 17.904,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:53:47.641479+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_065347_697287",
+    "timestamp": "2025-07-16T06:53:47.697287+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.021277,
+      "metrics": {
+        "executionTimeMs": 21.277,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:53:47.718585+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250716_065932_765597",
+    "timestamp": "2025-07-16T06:59:32.765597+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.021893,
+      "metrics": {
+        "executionTimeMs": 21.893,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:59:32.787511+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250716_065935_042559",
+    "timestamp": "2025-07-16T06:59:35.042559+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "maintenance"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.015621,
+      "metrics": {
+        "executionTimeMs": 15.620999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T06:59:35.058201+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250716_073029_281625",
+    "timestamp": "2025-07-16T07:30:29.281625+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.028926,
+      "metrics": {
+        "executionTimeMs": 28.926000000000002,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T07:30:29.310623+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_validator_20250716_073029_349745",
+    "timestamp": "2025-07-16T07:30:29.349745+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_validator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.014859,
+      "metrics": {
+        "executionTimeMs": 14.859,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T07:30:29.364627+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250716_073029_281625_20250716_073235_055808",
+    "timestamp": "2025-07-16T07:32:35.055808+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system_20250716_073029_281625",
+    "outcome": {
+      "success": false,
+      "executionTime": 0.000113,
+      "errorMessage": "Tool not found: force_component_fix_system_20250716_073029_281625"
+    },
+    "insights": [
+      {
+        "type": "error-pattern",
+        "description": "Tool execution failed: Tool not found: force_component_fix_system_20250716_073029_281625",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "id": "force_component_fix_system_20250716_073237_055170",
+    "timestamp": "2025-07-16T07:32:37.055170+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016484,
+      "metrics": {
+        "executionTimeMs": 16.483999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T07:32:37.071676+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250716_073240_041020",
+    "timestamp": "2025-07-16T07:32:40.041020+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.0157,
+      "metrics": {
+        "executionTimeMs": 15.7,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T07:32:40.056739+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250716_122008_263260",
+    "timestamp": "2025-07-16T12:20:08.263260+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.023204,
+      "metrics": {
+        "executionTimeMs": 23.204,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T12:20:08.286609+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_status_20250716_181539_336099",
+    "timestamp": "2025-07-16T18:15:39.336099+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_status",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.028045,
+      "metrics": {
+        "executionTimeMs": 28.045,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T18:15:39.364169+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_diff_20250716_181545_060374",
+    "timestamp": "2025-07-16T18:15:45.060374+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_diff",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.020538,
+      "metrics": {
+        "executionTimeMs": 20.538,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T18:15:45.080940+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "git_commit_20250716_181549_745260",
+    "timestamp": "2025-07-16T18:15:49.745260+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "git_commit",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.029817,
+      "metrics": {
+        "executionTimeMs": 29.817,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T18:15:49.775100+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250716_182953_734397",
+    "timestamp": "2025-07-16T18:29:53.734397+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.027414,
+      "metrics": {
+        "executionTimeMs": 27.414,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T18:29:53.761837+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250716_193143_000864",
+    "timestamp": "2025-07-16T19:31:43.000864+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.038255,
+      "metrics": {
+        "executionTimeMs": 38.254999999999995,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T19:31:43.039145+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_193150_339823",
+    "timestamp": "2025-07-16T19:31:50.339823+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.019791,
+      "metrics": {
+        "executionTimeMs": 19.791,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T19:31:50.359633+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250716_193150_382672",
+    "timestamp": "2025-07-16T19:31:50.382672+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.014218,
+      "metrics": {
+        "executionTimeMs": 14.218,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T19:31:50.396906+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250716_193150_421038",
+    "timestamp": "2025-07-16T19:31:50.421038+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.016309,
+      "metrics": {
+        "executionTimeMs": 16.309,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T19:31:50.437369+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "documentation_analysis_20250716_193150_457908",
+    "timestamp": "2025-07-16T19:31:50.457908+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "deployment"
+    },
+    "toolId": "documentation_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.014616,
+      "metrics": {
+        "executionTimeMs": 14.616,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T19:31:50.472554+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250716_214308_760988",
+    "timestamp": "2025-07-16T21:43:08.760988+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000149,
+      "metrics": {
+        "executionTimeMs": 0.149,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:43:08.761160+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_214310_829255",
+    "timestamp": "2025-07-16T21:43:10.829255+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 9.6e-05,
+      "metrics": {
+        "executionTimeMs": 0.096,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:43:10.829359+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250716_214717_828443",
+    "timestamp": "2025-07-16T21:47:17.828443+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000104,
+      "metrics": {
+        "executionTimeMs": 0.104,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:47:17.828566+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250716_214722_861641",
+    "timestamp": "2025-07-16T21:47:22.861641+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 8.2e-05,
+      "metrics": {
+        "executionTimeMs": 0.082,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:47:22.861733+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250716_214752_197291",
+    "timestamp": "2025-07-16T21:47:52.197291+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000294,
+      "metrics": {
+        "executionTimeMs": 0.294,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:47:52.197906+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250716_215014_231934",
+    "timestamp": "2025-07-16T21:50:14.231934+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000483,
+      "metrics": {
+        "executionTimeMs": 0.483,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:50:14.232565+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250716_215037_589258",
+    "timestamp": "2025-07-16T21:50:37.589258+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000374,
+      "metrics": {
+        "executionTimeMs": 0.374,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T21:50:37.589659+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_221321_180183",
+    "timestamp": "2025-07-16T22:13:21.180183+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.001279,
+      "metrics": {
+        "executionTimeMs": 1.279,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:21.181651+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250716_221321_274673",
+    "timestamp": "2025-07-16T22:13:21.274673+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 7.9e-05,
+      "metrics": {
+        "executionTimeMs": 0.079,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:21.274764+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_221323_950468",
+    "timestamp": "2025-07-16T22:13:23.950468+00:00",
+    "context": {},
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 8.3e-05,
+      "metrics": {
+        "executionTimeMs": 0.083,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:23.950558+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250716_221324_027842",
+    "timestamp": "2025-07-16T22:13:24.027842+00:00",
+    "context": {},
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 8.4e-05,
+      "metrics": {
+        "executionTimeMs": 0.08399999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:24.028149+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250716_221329_029455",
+    "timestamp": "2025-07-16T22:13:29.029455+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000246,
+      "metrics": {
+        "executionTimeMs": 0.24600000000000002,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:29.029745+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250716_221329_138493",
+    "timestamp": "2025-07-16T22:13:29.138493+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000107,
+      "metrics": {
+        "executionTimeMs": 0.107,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:29.138611+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250716_221329_202678",
+    "timestamp": "2025-07-16T22:13:29.202678+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00013,
+      "metrics": {
+        "executionTimeMs": 0.12999999999999998,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:29.202817+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250716_221329_265834",
+    "timestamp": "2025-07-16T22:13:29.265834+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00011,
+      "metrics": {
+        "executionTimeMs": 0.11,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-16T22:13:29.265953+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250717_035611_255281",
+    "timestamp": "2025-07-17T03:56:11.255281+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.001072,
+      "metrics": {
+        "executionTimeMs": 1.072,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T03:56:11.256371+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250717_043009_164583",
+    "timestamp": "2025-07-17T04:30:09.164583+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000121,
+      "metrics": {
+        "executionTimeMs": 0.121,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:09.164717+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250717_043009_246762",
+    "timestamp": "2025-07-17T04:30:09.246762+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000345,
+      "metrics": {
+        "executionTimeMs": 0.345,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:09.247115+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250717_043014_198798",
+    "timestamp": "2025-07-17T04:30:14.198798+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000939,
+      "metrics": {
+        "executionTimeMs": 0.939,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:14.199746+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250717_043019_011891",
+    "timestamp": "2025-07-17T04:30:19.011891+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000722,
+      "metrics": {
+        "executionTimeMs": 0.722,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:19.012635+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250717_043024_389190",
+    "timestamp": "2025-07-17T04:30:24.389190+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000147,
+      "metrics": {
+        "executionTimeMs": 0.147,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:24.389352+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "static_analysis_20250717_043032_200976",
+    "timestamp": "2025-07-17T04:30:32.200976+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "static_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000397,
+      "metrics": {
+        "executionTimeMs": 0.397,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:30:32.201381+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250717_043626_404685",
+    "timestamp": "2025-07-17T04:36:26.404685+00:00",
+    "context": {},
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000128,
+      "metrics": {
+        "executionTimeMs": 0.128,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:36:26.404824+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250717_043626_523997",
+    "timestamp": "2025-07-17T04:36:26.523997+00:00",
+    "context": {},
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 9.3e-05,
+      "metrics": {
+        "executionTimeMs": 0.093,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T04:36:26.524097+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250717_050125_630872",
+    "timestamp": "2025-07-17T05:01:25.630872+00:00",
+    "context": {},
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.003497,
+      "metrics": {
+        "executionTimeMs": 3.497,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:01:25.635305+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250717_050125_754103",
+    "timestamp": "2025-07-17T05:01:25.754103+00:00",
+    "context": {},
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 8.4e-05,
+      "metrics": {
+        "executionTimeMs": 0.08399999999999999,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:01:25.754437+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250717_050130_528460",
+    "timestamp": "2025-07-17T05:01:30.528460+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000397,
+      "metrics": {
+        "executionTimeMs": 0.397,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:01:30.528872+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250717_050507_205371",
+    "timestamp": "2025-07-17T05:05:07.205371+00:00",
+    "context": {},
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000632,
+      "metrics": {
+        "executionTimeMs": 0.632,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:05:07.206021+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "analyze_code_changes_20250717_050507_406114",
+    "timestamp": "2025-07-17T05:05:07.406114+00:00",
+    "context": {},
+    "toolId": "analyze_code_changes",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000392,
+      "metrics": {
+        "executionTimeMs": 0.392,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:05:07.406518+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250717_053051_349164",
+    "timestamp": "2025-07-17T05:30:51.349164+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000379,
+      "metrics": {
+        "executionTimeMs": 0.379,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:30:51.349561+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250717_053054_781783",
+    "timestamp": "2025-07-17T05:30:54.781783+00:00",
+    "context": {},
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000818,
+      "metrics": {
+        "executionTimeMs": 0.8180000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T05:30:54.782612+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250717_063315_860836",
+    "timestamp": "2025-07-17T06:33:15.860836+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00237,
+      "metrics": {
+        "executionTimeMs": 2.37,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:33:15.863232+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "code_quality_check_20250717_063330_938187",
+    "timestamp": "2025-07-17T06:33:30.938187+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "code_quality_check",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000854,
+      "metrics": {
+        "executionTimeMs": 0.8540000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:33:30.939137+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250717_064059_685721",
+    "timestamp": "2025-07-17T06:40:59.685721+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000338,
+      "metrics": {
+        "executionTimeMs": 0.33799999999999997,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:40:59.686073+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250717_064104_127021",
+    "timestamp": "2025-07-17T06:41:04.127021+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000191,
+      "metrics": {
+        "executionTimeMs": 0.191,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:41:04.127233+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250717_064446_285615",
+    "timestamp": "2025-07-17T06:44:46.285615+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.004406,
+      "metrics": {
+        "executionTimeMs": 4.406000000000001,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:44:46.290473+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250717_064452_902612",
+    "timestamp": "2025-07-17T06:44:52.902612+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000355,
+      "metrics": {
+        "executionTimeMs": 0.355,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:44:52.903166+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250717_064502_586365",
+    "timestamp": "2025-07-17T06:45:02.586365+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00042,
+      "metrics": {
+        "executionTimeMs": 0.42000000000000004,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:45:02.586824+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_extraction_20250717_064516_819796",
+    "timestamp": "2025-07-17T06:45:16.819796+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_extraction",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000147,
+      "metrics": {
+        "executionTimeMs": 0.147,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:45:16.819958+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_validation_20250717_064520_486366",
+    "timestamp": "2025-07-17T06:45:20.486366+00:00",
+    "context": {
+      "complexityLevel": "high",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_validation",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000505,
+      "metrics": {
+        "executionTimeMs": 0.505,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T06:45:20.486944+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250717_072610_551493",
+    "timestamp": "2025-07-17T07:26:10.551493+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000508,
+      "metrics": {
+        "executionTimeMs": 0.508,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:26:10.552012+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250717_072612_641279",
+    "timestamp": "2025-07-17T07:26:12.641279+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00048,
+      "metrics": {
+        "executionTimeMs": 0.48000000000000004,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:26:12.641781+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "check_release_readiness_20250717_072615_043857",
+    "timestamp": "2025-07-17T07:26:15.043857+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "check_release_readiness",
+    "outcome": {
+      "success": true,
+      "executionTime": 9.3e-05,
+      "metrics": {
+        "executionTimeMs": 0.093,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:26:15.043957+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_component_fix_system_20250717_072624_183552",
+    "timestamp": "2025-07-17T07:26:24.183552+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_component_fix_system",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000749,
+      "metrics": {
+        "executionTimeMs": 0.749,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:26:24.184312+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "docs_analysis_20250717_072711_986987",
+    "timestamp": "2025-07-17T07:27:11.986987+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "docs_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.00045,
+      "metrics": {
+        "executionTimeMs": 0.45,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:27:11.987448+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "dependency_analysis_20250717_072712_130827",
+    "timestamp": "2025-07-17T07:27:12.130827+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "dependency_analysis",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000634,
+      "metrics": {
+        "executionTimeMs": 0.634,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:27:12.131472+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "check_release_readiness_20250717_072712_226076",
+    "timestamp": "2025-07-17T07:27:12.226076+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "check_release_readiness",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000364,
+      "metrics": {
+        "executionTimeMs": 0.364,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-17T07:27:12.226450+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250728_005631_342453",
+    "timestamp": "2025-07-28T00:56:31.342453+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 8.1e-05,
+      "metrics": {
+        "executionTimeMs": 0.081,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-28T00:56:31.342552+00:00"
+      }
+    },
+    "insights": []
+  },
+  {
+    "id": "force_report_generator_20250728_012147_793716",
+    "timestamp": "2025-07-28T01:21:47.793716+00:00",
+    "context": {
+      "complexityLevel": "medium",
+      "environment": "development",
+      "projectPhase": "development"
+    },
+    "toolId": "force_report_generator",
+    "outcome": {
+      "success": true,
+      "executionTime": 0.000846,
+      "metrics": {
+        "executionTimeMs": 0.846,
+        "memoryUsageMB": 0,
+        "successRate": 1.0,
+        "errorCount": 0,
+        "lastExecuted": "2025-07-28T01:21:47.794572+00:00"
+      }
+    },
+    "insights": []
+  }
+]

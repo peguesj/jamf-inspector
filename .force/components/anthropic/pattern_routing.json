@@ -1,0 +1,9 @@
+{
+  "id": "RoutingWorkflow",
+  "type": "Pattern",
+  "description": "Workflow pattern for classifying input and directing to specialized tasks.",
+  "properties": {
+    "whenToUse": "Complex tasks with distinct categories handled separately.",
+    "examples": ["Customer service query routing into categories.", "Model selection by question complexity."]
+  }
+}
