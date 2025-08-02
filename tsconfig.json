@@ -40,7 +40,7 @@
       "ESNext"
     ], /* Use DOM and ESNext libraries for frontend. */
     "types": [
-      // "vitest"
+      "vitest"
     ],
     "module": "nodenext", /* Use NodeNext modules for Vite compatibility. */
     "moduleResolution": "nodenext", /* Use NodeNext module resolution for ESM packages. */
@@ -49,7 +49,9 @@
     "paths": {
       "@/*": [
         "frontend/*",
-        "dist/*"
+        "dist/*",
+        "backend/*"
+
       ],
       "components/*": [
         "frontend/src/components/*"

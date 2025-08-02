@@ -6,8 +6,10 @@ import { SiOllama } from 'react-icons/si';
  * @see https://github.com/ollama/ollama/blob/main/docs/api.md
  */
 const OllamaSettings: React.FC = () => {
-  const [url, setUrl] = useState('http://localhost');
-  const [port, setPort] = useState('11434');
+  const defaultUrl = 'http://localhost';
+  const defaultPort = '11434';
+  const [url, setUrl] = useState(() => localStorage.getItem('ollamaUrl') || defaultUrl);
+  const [port, setPort] = useState(() => localStorage.getItem('ollamaPort') || defaultPort);
   const [models, setModels] = useState<string[]>([]);
   const [testStatus, setTestStatus] = useState('');
   const [testing, setTesting] = useState(false);
