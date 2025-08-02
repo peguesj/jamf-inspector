@@ -72,6 +72,7 @@ app.use((req, res, next) => {
 // Expose config via API
 app.get('/api/config', (req, res) => {
   res.json({ config, configFileLocation });
+});
 
 /**
  * Proxy endpoint for Jamf API requests
@@ -92,9 +93,11 @@ app.post('/api/proxy', async (req, res) => {
       token = await getValidBearerToken({ baseURL, auth: { username, password } });
     } catch (tokenErr: any) {
       // If token fetch fails, treat as invalid credentials
-      return res.status(401).json({ error: 'Unable to retrieve valid token', details: tokenErr?.message });
+      console.error('[jamf-inspector] Bearer token error:', tokenErr?.response?.data || tokenErr?.message || tokenErr);
+      return res.status(401).json({ error: 'Unable to retrieve valid token', details: tokenErr?.message, jamfError: tokenErr?.response?.data });
     }
     if (!token) {
+      console.error('[jamf-inspector] No token returned for credentials:', { baseURL, username });
       return res.status(401).json({ error: 'Unable to retrieve valid token' });
     }
     // Prepare request options
@@ -112,13 +115,21 @@ app.post('/api/proxy', async (req, res) => {
       validateStatus: () => true, // Forward all status codes
     };
     // Make request to Jamf API
-    const response = await axios(requestOptions);
+    let response;
+    try {
+      response = await axios(requestOptions);
+    } catch (apiErr: any) {
+      // Log full error response from Jamf API if available
+      console.error('[jamf-inspector] Jamf API error:', apiErr?.response?.data || apiErr?.message || apiErr);
+      return res.status(500).json({ error: 'Proxy request failed', details: apiErr?.message, jamfError: apiErr?.response?.data });
+    }
     res.status(response.status).json({
       status: response.status,
       data: response.data,
       headers: response.headers,
     });
   } catch (err: any) {
+    console.error('[jamf-inspector] Unexpected proxy error:', err);
     res.status(500).json({ error: 'Proxy request failed', details: err?.message });
   }
 });
@@ -161,7 +172,6 @@ app.post('/api/auth/invalidate', async (req, res) => {
     res.status(401).json({ error: 'Failed to invalidate token', details: (err instanceof Error ? err.message : String(err)) });
   }
 });
-
 
 /**
  * Start Express server for Jamf Inspector backend
