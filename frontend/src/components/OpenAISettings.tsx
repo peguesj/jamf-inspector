@@ -1,0 +1,49 @@
+import React, { useState } from 'react';
+import { SiOpenai } from 'react-icons/si';
+
+/**
+ * OpenAISettings - Settings for OpenAI LLM provider
+ * @see https://platform.openai.com/docs/api-reference
+ */
+const OpenAISettings: React.FC = () => {
+  const [apiKey, setApiKey] = useState('');
+  const [apiUrl, setApiUrl] = useState('https://api.openai.com/v1');
+  const [model, setModel] = useState('gpt-4o');
+  const [testStatus, setTestStatus] = useState('');
+  const [testing, setTesting] = useState(false);
+
+  const testConnection = async () => {
+    setTesting(true);
+    setTestStatus('Testing...');
+    try {
+      const res = await fetch(`${apiUrl}/models`, {
+        headers: { Authorization: `Bearer ${apiKey}` },
+      });
+      if (!res.ok) throw new Error('Connection failed');
+      const data = await res.json();
+      setTestStatus(`Success! Models: ${data.data?.map((m: any) => m.id).join(', ')}`);
+    } catch (err) {
+      setTestStatus('Failed to connect.');
+    }
+    setTesting(false);
+  };
+
+  return (
+    <div className="p-4 border rounded">
+      <div className="flex items-center gap-2 mb-2 text-lg font-semibold"><SiOpenai /> OpenAI</div>
+      <label className="block text-sm font-medium">API Key</label>
+      <input type="text" value={apiKey} onChange={e => setApiKey(e.target.value)} className="w-full rounded border px-2 py-1" placeholder="sk-..." />
+      <label className="block text-sm font-medium">API URL</label>
+      <input type="text" value={apiUrl} onChange={e => setApiUrl(e.target.value)} className="w-full rounded border px-2 py-1" placeholder="https://api.openai.com/v1" />
+      <label className="block text-sm font-medium">Model</label>
+      <input type="text" value={model} onChange={e => setModel(e.target.value)} className="w-full rounded border px-2 py-1" placeholder="gpt-4o" />
+      <button type="button" className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onClick={testConnection} disabled={testing}>
+        {testing ? 'Testing...' : 'Test Connection'}
+      </button>
+      <div className="text-xs mt-2">{testStatus}</div>
+      <div className="text-xs mt-2 text-gray-500">Reference: <a href="https://platform.openai.com/docs/api-reference" target="_blank" rel="noopener noreferrer" className="underline">OpenAI API Docs</a></div>
+    </div>
+  );
+};
+
+export default OpenAISettings;

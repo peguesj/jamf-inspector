@@ -1,7 +1,12 @@
 
-import React, { useState } from 'react';
+
+import React from 'react';
 import Header from './Header.tsx';
 import Navigation from './Navigation.tsx';
+import { useQuery } from '@tanstack/react-query';
+import { fetchServerInfo } from '../api/server';
+import { GlobalStatusProvider, useGlobalStatus } from '../context/GlobalStatusContext';
+import type { JamfServerInfo } from '../../../types/models';
 
 /**
  * AppFrame - Main layout shell for Jamf Inspector dashboard
@@ -9,22 +14,46 @@ import Navigation from './Navigation.tsx';
  * @see https://www.heroui.com/docs/components/layout
  */
 
-const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [showAssistant, setShowAssistant] = useState(false);
-  // TODO: Wire up real user/server/version/lastUpdated from state or API
-  const user = { name: 'Admin', email: 'admin@example.com' };
-  const server = 'Jamf Pro';
-  const version = 'v10.44.1';
-  const lastUpdated = new Date().toLocaleString();
-  const handleReload = () => window.location.reload();
+
+const AppFrameInner: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [showAssistant, setShowAssistant] = React.useState(false);
+  const { loading, error, setLoading, setError, lastUpdated, setLastUpdated } = useGlobalStatus();
+  // Fetch server info (name, version, lastUpdated)
+  const { data: serverInfo, isLoading, error: serverError, refetch } = useQuery<JamfServerInfo>({
+    queryKey: ['serverInfo'],
+    queryFn: fetchServerInfo,
+  });
+
+  React.useEffect(() => {
+    setLoading(isLoading);
+    if (serverInfo) {
+      setLastUpdated(serverInfo.lastUpdated);
+      setError('');
+    }
+    if (serverError) {
+      setError((serverError as any)?.message || 'Failed to load server info');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, serverInfo, serverError]);
+  React.useEffect(() => {
+    setLoading(isLoading);
+  }, [isLoading, setLoading]);
+  const handleReload = () => {
+    setLoading(true);
+    refetch();
+  };
   const handleOpenAssistant = () => setShowAssistant(true);
+  // Placeholder user info (replace with real user context if available)
+  const user = { name: 'Admin', email: 'admin@example.com' };
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header
         user={user}
-        server={server}
-        version={version}
-        lastUpdated={lastUpdated}
+        server={serverInfo && 'server' in serverInfo ? serverInfo.server : 'Jamf Pro'}
+        version={serverInfo && 'version' in serverInfo ? serverInfo.version : 'v?.?'}
+        lastUpdated={serverInfo && 'lastUpdated' in serverInfo ? serverInfo.lastUpdated : lastUpdated}
+        loading={loading}
+        error={error || (serverError as any)?.message}
         onReload={handleReload}
         onOpenAssistant={handleOpenAssistant}
       />
@@ -36,5 +65,11 @@ const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     </div>
   );
 };
+
+const AppFrame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <GlobalStatusProvider>
+    <AppFrameInner>{children}</AppFrameInner>
+  </GlobalStatusProvider>
+);
 
 export default AppFrame;
