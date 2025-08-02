@@ -12,7 +12,7 @@
 
 import React from 'react';
 import Layout from './components/Layout.js';
-import Dashboard from './components/Dashboard.tsx';
+import Dashboard from './src/components/features/Dashboard.tsx';
 import SetupWizard from './components/SetupWizard.js';
 import ModalGuide from './components/ModalGuide.js';
 import SettingsPanel from './components/SettingsPanel.js';

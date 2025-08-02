@@ -51,3 +51,11 @@ Jul 23 2025 jamf-inspector/backend/index.ts [api, feature, batch-enhancement]:
 Added caching for periodic queries (node-cache), audit logging, and improved error handling for policies endpoint. Fixed TypeScript void return type for cached response. Problem: missing node-cache and type error; Diagnosis: lint output and TypeScript docs; Reference: https://www.npmjs.com/package/node-cache, https://www.typescriptlang.org/docs/handbook/functions.html#void; Fix: installed node-cache, added explicit void return.
 
 Jul 23 2025 jamf-inspector/docs/reports/implementation-efficiency-report.md [report, telemetry, coverage-spec]:
+# 2025-08-02 jamf-inspector unified-config
+- Implemented unified configuration system for backend/frontend orchestration
+- Defined JamfInspectorConfig schema in /types/models.ts
+- Created /config/jamf-inspector.config.json for default config
+- Added /config/index.ts loader for config and configFileLocation
+- Updated backend to load config and expose via /api/config
+- Updated frontend to load config and refactored SettingsPanel to use loader
+- Documented config system in /docs/AUTHORITATIVE.md

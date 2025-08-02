@@ -1,3 +1,31 @@
+/**
+ * Proxy request payload for Jamf API
+ */
+export interface JamfProxyRequest {
+  baseURL: string;
+  path: string;
+  method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
+  headers?: Record<string, string>;
+  body?: any;
+  username: string;
+  password: string;
+}
+
+/**
+ * Proxy response from Jamf API
+ */
+export interface JamfProxyResponse {
+  status: number;
+  data: any;
+  headers: Record<string, string>;
+}
+
+/**
+ * JSDoc for /api/proxy endpoint
+ * @route POST /api/proxy
+ * @param {JamfProxyRequest} req.body
+ * @returns {JamfProxyResponse}
+ */
 
 // Version: 0.2
 // API Endpoints for Jamf Pro ITIL/ITAM Dashboard

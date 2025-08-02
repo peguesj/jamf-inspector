@@ -60,3 +60,50 @@ _Last updated: 2025-07-29 by GitHub Copilot_
 1. Create `/config/stack.ts` with stack and coding standards
 3. Scaffold backend and frontend with strict TypeScript and functional programming
 4. Reference PLANNING.md and this file in all code and documentation
+
+# Jamf Inspector Authoritative Configuration
+
+## Unified Configuration System
+
+Jamf Inspector now uses a single configuration file (`/config/jamf-inspector.config.json`) for orchestrating backend/frontend communication and loading default properties. This config validates against the strict TypeScript schema `JamfInspectorConfig` defined in `/types/models.ts`.
+
+### Schema
+See `/types/models.ts`:
+```typescript
+export interface JamfInspectorConfig {
+  backendApiUrl: string;
+  frontendBaseUrl: string;
+  jamfApiUrl: string;
+  jamfApiKey?: string;
+  defaultTheme?: 'system' | 'light' | 'dark';
+  enableNotifications?: boolean;
+  configFileLocation?: string;
+}
+```
+
+### Usage
+- **Backend** loads config at startup and exposes it via `/api/config`.
+- **Frontend** loads config via `/api/config` and provides it to components (e.g., SettingsPanel).
+- All config consumers should use the unified loader for consistency and standards compliance.
+
+### Example Config
+See `/config/jamf-inspector.config.json`:
+```json
+{
+  "backendApiUrl": "http://localhost:3001/api",
+  "frontendBaseUrl": "http://localhost:5173",
+  "jamfApiUrl": "https://jamf.example.com/JSSResource",
+  "jamfApiKey": "<your-jamf-api-key>",
+  "defaultTheme": "system",
+  "enableNotifications": true,
+  "configFileLocation": "./config/jamf-inspector.config.json"
+}
+```
+
+### References
+- `/types/models.ts` for schema
+- `/config/jamf-inspector.config.json` for config file
+- `/config/index.ts` for loader
+- `/backend/index.mts` for backend integration
+- `/frontend/src/config.ts` for frontend loader
+- `/frontend/src/components/features/SettingsPanel.tsx` for consumer example

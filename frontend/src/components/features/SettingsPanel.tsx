@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { loadConfig } from '../../config';
 import { Card } from '@heroui/react';
 
 /**
@@ -7,8 +8,19 @@ import { Card } from '@heroui/react';
  */
 
 const SettingsPanel: React.FC = () => {
-  const [apiUrl, setApiUrl] = useState(() => localStorage.getItem('jamfApiUrl') || '');
-  const [apiKey, setApiKey] = useState(() => localStorage.getItem('jamfApiKey') || '');
+  const [settingsFile, setSettingsFile] = useState<string>('');
+  const [settingsVersion, setSettingsVersion] = useState<string>('v1.0');
+  const [dirty, setDirty] = useState(false);
+  const [apiUrl, setApiUrl] = useState('');
+  const [apiKey, setApiKey] = useState('');
+  useEffect(() => {
+    loadConfig().then(({ config, configFileLocation }) => {
+      setApiUrl(config.jamfApiUrl || '');
+      setApiKey(config.jamfApiKey || '');
+      setSettingsFile(configFileLocation || '');
+      setSettingsVersion('v1.0');
+    });
+  }, []);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [testing, setTesting] = useState(false);
@@ -25,6 +37,7 @@ const SettingsPanel: React.FC = () => {
     localStorage.setItem('jamfApiUrl', apiUrl);
     localStorage.setItem('jamfApiKey', apiKey);
     setSuccess('Settings saved successfully.');
+    setDirty(false);
   };
 
   const handleTest = async () => {
@@ -47,6 +60,14 @@ const SettingsPanel: React.FC = () => {
 
   return (
     <Card title="Settings" className="mb-6">
+      {/* Sticky top bar for settings file/version/save/import/export */}
+      <div className="sticky top-0 z-20 flex items-center gap-2 bg-white/90 border-b border-gray-200 py-2 px-2 rounded-t-2xl shadow-sm">
+        <span className="font-semibold text-xs text-gray-500 tracking-wide">{settingsFile} {settingsVersion}</span>
+        {dirty && <span className="text-yellow-600 text-xs">Unsaved changes</span>}
+        <button type="button" className="px-2 py-1 bg-green-500 text-white rounded text-xs" onClick={handleSave}>Save</button>
+        <button type="button" className="px-2 py-1 bg-blue-500 text-white rounded text-xs" onClick={() => {/* export logic */}}>Export</button>
+        <input type="file" accept="application/json" className="ml-2 text-xs" onChange={e => {/* import logic */}} />
+      </div>
       <form className="space-y-4" onSubmit={handleSave}>
         <div>
           <label htmlFor="api-url" className="block text-sm font-medium">API URL</label>
@@ -55,7 +76,7 @@ const SettingsPanel: React.FC = () => {
             name="api-url"
             className="mt-1 w-full border rounded p-2"
             value={apiUrl}
-            onChange={e => setApiUrl(e.target.value)}
+            onChange={e => { setApiUrl(e.target.value); setDirty(true); }}
             required
             autoComplete="off"
           />
@@ -67,7 +88,7 @@ const SettingsPanel: React.FC = () => {
             name="api-key"
             className="mt-1 w-full border rounded p-2"
             value={apiKey}
-            onChange={e => setApiKey(e.target.value)}
+            onChange={e => { setApiKey(e.target.value); setDirty(true); }}
             required
             autoComplete="off"
             type="password"

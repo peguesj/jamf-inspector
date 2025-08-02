@@ -1,4 +1,23 @@
 /**
+ * JamfInspectorConfig - Unified configuration schema for Jamf Inspector
+ * @property backendApiUrl - URL for backend API
+ * @property frontendBaseUrl - Base URL for frontend
+ * @property jamfApiUrl - Jamf Pro API endpoint
+ * @property jamfApiKey - Jamf Pro API key
+ * @property defaultTheme - Default UI theme
+ * @property enableNotifications - Enable notification system
+ * @property configFileLocation - Path to config file
+ */
+export interface JamfInspectorConfig {
+  backendApiUrl: string;
+  frontendBaseUrl: string;
+  jamfApiUrl: string;
+  jamfApiKey?: string;
+  defaultTheme?: 'system' | 'light' | 'dark';
+  enableNotifications?: boolean;
+  configFileLocation?: string;
+}
+/**
  * Jamf Pro Server Info
  */
 export interface JamfServerInfo {

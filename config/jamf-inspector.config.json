@@ -1,0 +1,9 @@
+{
+  "backendApiUrl": "http://localhost:3001/api",
+  "frontendBaseUrl": "http://localhost:5173",
+  "jamfApiUrl": "https://jamf.example.com/JSSResource",
+  "jamfApiKey": "<your-jamf-api-key>",
+  "defaultTheme": "system",
+  "enableNotifications": true,
+  "configFileLocation": "./config/jamf-inspector.config.json"
+}

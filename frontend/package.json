@@ -17,9 +17,11 @@
     "@vitest/ui": "^3.2.4",
     "autoprefixer": "^10.4.21",
     "jsdom": "^26.1.0",
+    "supertest": "^7.1.4",
     "vitest": "^3.2.4"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.7",
     "@heroui/react": "^2.8.2",
     "@tanstack/react-query": "^5.83.0",
     "@vitejs/plugin-react": "^4.7.0",
