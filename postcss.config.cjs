@@ -1,7 +1,6 @@
-tailwindcss = require('@tailwindcss/postcss')
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    // autoprefixer: {},
+    '@tailwindcss/postcss': {},
+    autoprefixer: {},
   },
 };

@@ -1,4 +1,12 @@
 /**
+ * Jamf Pro Server Info
+ */
+export interface JamfServerInfo {
+  server: string;
+  version: string;
+  lastUpdated: string;
+}
+/**
  * Jamf Pro DirectoryBinding
  */
 export interface JamfDirectoryBinding {

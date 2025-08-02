@@ -50,8 +50,11 @@
       "@/*": [
         "frontend/*",
         "dist/*"
+      ],
+      "components/*": [
+        "frontend/src/components/*"
       ]
-    }, /* Alias for frontend directory. */
+    }, /* Alias for frontend directory and components. */
     // ...existing code...
     "allowJs": true,
     // No TypeScript plugins needed for Vite or Tailwind. Handled by Vite and PostCSS.
