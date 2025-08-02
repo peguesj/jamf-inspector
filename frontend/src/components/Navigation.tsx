@@ -15,6 +15,12 @@ export interface NavigationItem {
 const navItems: NavigationItem[] = [
   { label: 'Dashboard', icon: <HomeIcon className="w-5 h-5" />, to: '/' },
   { label: 'Devices', icon: <UsersIcon className="w-5 h-5" />, to: '/devices' },
+  { label: 'Policies', icon: <Cog6ToothIcon className="w-5 h-5" />, to: '/policies' },
+  { label: 'Profiles', icon: <Cog6ToothIcon className="w-5 h-5" />, to: '/profiles' },
+  { label: 'Users', icon: <UsersIcon className="w-5 h-5" />, to: '/users' },
+  { label: 'Groups', icon: <UsersIcon className="w-5 h-5" />, to: '/groups' },
+  { label: 'Approvals', icon: <Cog6ToothIcon className="w-5 h-5" />, to: '/approvals' },
+  { label: 'Feedback', icon: <Cog6ToothIcon className="w-5 h-5" />, to: '/feedback' },
   { label: 'Settings', icon: <Cog6ToothIcon className="w-5 h-5" />, to: '/settings' },
 ];
 
